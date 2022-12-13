@@ -1,26 +1,79 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.custom-shape-divider-bottom-1670924415 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.custom-shape-divider-bottom-1670924415 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 100px;
+    transform: rotateY(180deg);
 }
 
-* {
-  box-sizing: border-box;
+.custom-shape-divider-bottom-1670924415 .shape-fill {
+    fill: #FFFFFF;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+.custom-shape-divider-bottom-1670927066 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1670927066 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 100px;
+}
+
+.custom-shape-divider-bottom-1670927066 .shape-fill {
+    fill: #FFFFFF;
+}
+
+.custom-shape-divider-top-1670933909 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1670933909 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 100px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1670933909 .shape-fill {
+    fill: #FFFFFF;
+}
+#pricing .custom-shape-divider-top-1670933909 svg {
+    transform: rotateY(0);
+}
+
+#pricing .custom-shape-divider-bottom-1670924415 svg {
+    transform: rotateY(0);
+}
+
+#pricing .custom-shape-divider-bottom-1670924415 .shape-fill {
+    fill: #E2F0FB;
 }
