@@ -4,18 +4,15 @@ import Link from 'next/link';
 import { useState } from 'react';
 import Logo from '../public/images/logo.svg';
 import { useTranslation, LanguageSwitcher } from 'next-export-i18n';
-import { useRouter } from 'next/router';
 
 export default function Header() {
-  const router = useRouter();
-  const { query } = router;
   const { t } = useTranslation();
   const [navbar, setNavbar] = useState(false);
   const [switch_lang, set_switch_lang] = useState(false);
   return (
     <header className="fixed top-0 left-0 right-0 z-10">
       <Head>
-        <title>Anypose</title>
+        <title>AnyPos</title>
         <meta
           name="description"
           content="Create Next JS Responsive Menu with Tailwind CSS"

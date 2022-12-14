@@ -1,14 +1,18 @@
 {
-  "i18n": {
-    
+  "i18n": {    
     "navlist": {
       "home": "Home",
       "pos": "POS Device",
       "features": "Features",
       "packages": "Packages",
       "contact": "Contact us",
-      "demo": "Requested demo"
-  
+      "demo": "Requested demo"  
+    },
+    "banner": {
+      "title": "Simple solution for",
+      "heading": "Simplified Invoice",
+      "sub_heading": "Point of sale in any device.",
+      "btn_text": " Get any pos"   
     }
   }
    

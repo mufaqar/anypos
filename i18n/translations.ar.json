@@ -7,6 +7,12 @@
       "packages": "الأسعار والباقات",
       "contact": "اتصل بنا",
       "demo": "الحصول على العرض التجريبي"
+    },
+    "banner": {
+      "title": "Simple solution for",
+      "heading": "Simplified Invoice",
+      "sub_heading": "Point of sale in any device.",
+      "btn_text": " Get any pos"   
     }
   }
    
