@@ -18,7 +18,7 @@ export default function Header() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <nav className="relative w-full bg-gradient-to-r from-[#E2F0FB] via-[#E2F0FB] to-[#FFFFFF] border-b border-[#02010112]">
-                <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
+                <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-0">
                     <div>
                         <div className="flex items-center justify-between py-3 md:py-5 md:block">
                             <Link href="/" onClick={() => setNavbar(false)}>
@@ -94,6 +94,16 @@ export default function Header() {
                                     </Link>
                                 </li>
                             </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <div className="flex items-center justify-between py-3 md:py-5 gap-3">
+                            <Link href="#" className="text-sm font-semibold uppercase inline-block text-[#FF4014] border-2 border-[#FF4014] bg-transparent hover:bg-[#FF4014] hover:text-white rounded-[10px] py-[8px] px-[24px]">
+                            Arabic
+                            </Link>
+                            <Link href="#" className="text-sm font-semibold uppercase inline-block text-[#4267F1] border-2 border-[#4267F1] bg-transparent hover:bg-[#4267F1] hover:text-white rounded-[10px] py-[8px] px-[24px]">
+                            Requested demo
+                            </Link>
                         </div>
                     </div>
                 </div>
