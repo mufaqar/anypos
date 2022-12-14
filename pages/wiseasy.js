@@ -1,0 +1,167 @@
+import Image from 'next/image';
+import Link from 'next/link';
+import React from 'react';
+import ImageBox from '../components/image_box';
+import Hand from '../public/images/hand.png';
+import Android from '../public/images/android.png';
+import Circle from '../public/images/circle.png';
+import Saudi from '../public/images/saudi.png';
+import Wifi from '../public/images/wifi.png';
+import Network from '../public/images/network.png';
+import BT from '../public/images/bt.png';
+import OS_icon from '../public/images/1.png';
+import OS_icon2 from '../public/images/2.png';
+import OS_icon3 from '../public/images/3.png';
+import OS_icon4 from '../public/images/4.png';
+
+export default function Wiseasy() {
+    return (
+        <>
+            <section className='flip relative py-[13rem] md:bg-[url(/images/hand.png)] bg-cover bg-no-repeat bg-center bg-[#E2F0FB] '>
+                <div className="custom-shape-divider-bottom-1670927066">
+                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                        <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" className="shape-fill"></path>
+                    </svg>
+                </div>
+
+                <div className='container mx-auto flex md:flex-row flex-col-reverse md:gap-0 gap-10 items-center'>
+                    <div className=''>
+                        <Image src={Hand} alt="banner" className='md:hidden block' />
+                    </div>
+                    <div className='md:w-1/2 ml-auto'>
+                        <h1 className='text-[#2A2A2A] md:text-[52px] text-[42px] leading-[1em] font-medium tracking-[0.5px] mb-4'>Get The Best Deal...!</h1>
+                        <ul>
+                            <li className='text-[#54595F] text-lg font-medium flex items-center'>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="3" stroke="currentColor" className="w-8 h-6 rounded text-[#4267F1]">
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M18 12H6" />
+                                </svg> Buy the POS terminal and get any free any POS software for 12 months.
+                            </li>
+                            <li className='text-[#54595F] text-lg font-medium flex items-center'>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="3" stroke="currentColor" className="w-8 h-6 rounded text-[#4267F1]">
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M18 12H6" />
+                                </svg> Pay in easy 3 months instalments.
+                            </li>
+                            <li className='text-[#54595F] text-lg font-medium flex items-center'>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="3" stroke="currentColor" className="w-8 h-6 rounded text-[#4267F1]">
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M18 12H6" />
+                                </svg> 12 months local warranty .
+                            </li>
+                        </ul>
+                        <Link href="#" className="text-sm font-semibold uppercase inline-block mt-10 text-[#4267F1] border-2 border-[#4267F1] bg-transparent hover:bg-[#4267F1] hover:text-white rounded-[10px] py-[8px] px-[24px]">
+                            Get it now
+                        </Link>
+                    </div>
+                </div>
+            </section>
+
+            <section className='relative py-14'>
+                <div className='container mx-auto grid md:grid-cols-3 grid-cols-1 gap-10 items-center'>
+                    <ImageBox
+                        Featue_Img={Android}
+                        title="More Than Smart"
+                        features={[
+                            'Android OS',
+                            'Exquisite & compact ID design',
+                            'Powerful battery',
+                            'Excellent user experience',
+                        ]} 
+                        variations="grid gap-3 justify-items-center"/>
+                    <ImageBox
+                        Featue_Img={Circle}
+                        title="More Than Smart"
+                        features={[
+                            'Online Top-up',
+                            'Logistic scanning',
+                            'Tickets printing',
+                            'Inventory Management',
+                        ]} 
+                        variations="grid gap-3 justify-items-center"/>
+                    <ImageBox
+                        Featue_Img={Saudi}
+                        variations="grid gap-3 justify-items-center"
+                    />
+                </div>
+            </section>
+
+            <section className='relative py-14 bg-[#F0F2F5]'>
+                <div className='container mx-auto text-center mb-16'>
+                    <h2 className='text-[#2A2A2A] md:text-[36px] text-[32px] leading-[1em] font-medium tracking-[0.5px] mb-5'>Supports real-time network connection</h2>
+                    <p className='text-[#5C5C5C] text-xl font-normal'>
+                        N5 plus cloud service stands by anytime to ensure secure deals.
+                    </p>
+                </div>
+                <div className='container mx-auto grid md:grid-cols-3 grid-cols-1 gap-5'>
+                    <ImageBox
+                        Featue_Img={Wifi}
+                        size="w-1/4"
+                        title="More Than Smart"
+                        variations="bg-white py-5 rounded-[5px] hover:shadow-lg grid gap-3 justify-items-center" />
+                    <ImageBox
+                        Featue_Img={Network}
+                        size="w-1/4"
+                        title="More Than Smart"
+                        variations="bg-white py-5 rounded-[5px] hover:shadow-lg grid gap-3 justify-items-center"
+                    />
+                    <ImageBox
+                        Featue_Img={BT}
+                        size="w-1/4"
+                        title="More Than Smart"
+                        variations="bg-white py-5 rounded-[5px] hover:shadow-lg grid gap-3 justify-items-center"
+                    />
+                </div>
+            </section>
+
+            <section className='flip relative h-[90vh] md:bg-[url(/images/spiral.png)] bg-cover bg-no-repeat bg-center'>
+                <div className='container mx-auto text-center pt-10'>
+                    <h2 className='text-[#2A2A2A] md:text-[36px] text-[32px] leading-[1em] font-medium tracking-[0.5px] mb-5'>
+                    Large battery capacity for long business hours
+                    </h2>
+                    <p className='text-[#5C5C5C] text-xl font-normal'>
+                    With a 5200mAh battery, N5 is designed to have a 120-hour long standby time to satisfy cash register operational needs for your business.
+                    </p>
+                </div>
+            </section>
+
+            <section className='relative py-14 bg-[#F0F2F5]'>
+                <div className='container mx-auto text-center mb-16'>
+                    <h2 className='text-[#2A2A2A] md:text-[36px] text-[32px] leading-[1em] font-medium tracking-[0.5px] mb-5'>Specification</h2>
+                </div>
+                <div className='container mx-auto grid md:grid-cols-4 grid-cols-1 gap-5'>
+                    <ImageBox
+                        Featue_Img={OS_icon}
+                        size="w-1/4"
+                        title="Operating System"
+                        features={[
+                            'Android 8.1 WiseOS',
+                        ]} 
+                        variations="bg-white py-5 rounded-[5px] hover:shadow-lg flex gap-3 items-center" />
+                        <ImageBox
+                        Featue_Img={OS_icon2}
+                        size="w-1/4"
+                        title="Operating System"
+                        features={[
+                            'Android 8.1 WiseOS',
+                        ]} 
+                        variations="bg-white py-5 rounded-[5px] hover:shadow-lg flex gap-3 items-center" />
+                        <ImageBox
+                        Featue_Img={OS_icon3}
+                        size="w-1/4"
+                        title="Operating System"
+                        features={[
+                            'Android 8.1 WiseOS',
+                        ]} 
+                        variations="bg-white py-5 rounded-[5px] hover:shadow-lg flex gap-3 items-center" />
+                        <ImageBox
+                        Featue_Img={OS_icon4}
+                        size="w-1/4"
+                        title="Operating System"
+                        features={[
+                            'Android 8.1 WiseOS',
+                        ]} 
+                        variations="bg-white py-5 rounded-[5px] hover:shadow-lg flex gap-3 items-center" />
+                    
+                </div>
+            </section>
+        </>
+    )
+}

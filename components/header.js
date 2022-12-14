@@ -1,13 +1,11 @@
-import Head from "next/head";
-import Image from "next/image";
-import Link from "next/link";
-import { useState } from "react";
-import Logo from "../public/images/logo.svg";
-import { useTranslation, LanguageSwitcher } from "next-export-i18n";
-import Form from '../components/form'
+import Head from 'next/head';
+import Image from 'next/image';
+import Link from 'next/link';
+import { useState } from 'react';
+import Logo from '../public/images/logo.svg';
+import { useTranslation, LanguageSwitcher } from 'next-export-i18n';
+import Form from '../components/form';
 import Modal from 'react-modal';
-
-
 
 const customStyles = {
   content: {
@@ -20,13 +18,11 @@ const customStyles = {
   },
 };
 
-
 export default function Header() {
   const { t } = useTranslation();
   const [navbar, setNavbar] = useState(false);
   const [switch_lang, set_switch_lang] = useState(false);
   const [modalIsOpen, setIsOpen] = useState(false);
-
 
   function openModal() {
     setIsOpen(true);
@@ -95,34 +91,34 @@ export default function Header() {
               <div
                 className={`flex-1 justify-self-center md:block ${
                   navbar
-                    ? "block max-md:absolute max-md:top-16 max-md:left-0 max-md:right-0 max-md:z-20 max-md:bg-[#E2F0FB] px-4 py-5"
-                    : "hidden"
+                    ? 'block max-md:absolute max-md:top-16 max-md:left-0 max-md:right-0 max-md:z-20 max-md:bg-[#E2F0FB] px-4 py-5'
+                    : 'hidden'
                 }`}
               >
                 <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
                   <li className="text-[#373737] text-base font-semibold tracking-wider">
                     <Link href="/" onClick={() => setNavbar(false)}>
-                      {t("navlist.home")}
+                      {t('navlist.home')}
                     </Link>
                   </li>
                   <li className="text-[#373737] text-base font-semibold tracking-wider">
-                    <Link href="#" onClick={() => setNavbar(false)}>
-                      {t("navlist.pos")}
+                    <Link href="/wiseasy" onClick={() => setNavbar(false)}>
+                      {t('navlist.pos')}
                     </Link>
                   </li>
                   <li className="text-[#373737] text-base font-semibold tracking-wider">
                     <Link href="/#features" onClick={() => setNavbar(false)}>
-                      {t("navlist.features")}
+                      {t('navlist.features')}
                     </Link>
                   </li>
                   <li className="text-[#373737] text-base font-semibold tracking-wider">
                     <Link href="/#pricing" onClick={() => setNavbar(false)}>
-                      {t("navlist.packages")}
+                      {t('navlist.packages')}
                     </Link>
                   </li>
                   <li className="text-[#373737] text-base font-semibold tracking-wider">
                     <Link href="/#contact" onClick={() => setNavbar(false)}>
-                      {t("navlist.contact")}
+                      {t('navlist.contact')}
                     </Link>
                   </li>
                 </ul>
@@ -130,20 +126,20 @@ export default function Header() {
             </div>
             <div>
               <div className="flex items-center justify-between py-3 md:py-5 gap-3">
-                <LanguageSwitcher lang={switch_lang ? "en" : "ar"}>
+                <LanguageSwitcher lang={switch_lang ? 'en' : 'ar'}>
                   <div
                     className="text-sm font-semibold uppercase inline-block text-[#FF4014] border-2 border-[#FF4014] bg-transparent hover:bg-[#FF4014] hover:text-white rounded-[10px] py-[8px] px-[24px]"
                     onClick={() => set_switch_lang(!switch_lang)}
                   >
-                    {switch_lang ? "English" : "Arabic"}
+                    {switch_lang ? 'English' : 'Arabic'}
                   </div>
                 </LanguageSwitcher>
 
                 <div
-                onClick={openModal}
+                  onClick={openModal}
                   className="text-sm font-semibold uppercase inline-block text-[#4267F1] border-2 border-[#4267F1] bg-transparent hover:bg-[#4267F1] hover:text-white rounded-[10px] py-[8px] px-[24px]"
                 >
-                  {t("navlist.demo")}
+                  {t('navlist.demo')}
                 </div>
               </div>
             </div>
@@ -156,9 +152,7 @@ export default function Header() {
         style={customStyles}
         contentLabel="Example Modal"
       >
-      
-        <Form/>
-      
+        <Form />
       </Modal>
     </>
   );
