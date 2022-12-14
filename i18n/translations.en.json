@@ -1,0 +1,16 @@
+{
+  "i18n": {
+    
+    "navlist": {
+      "home": "Home",
+      "pos": "POS Device",
+      "features": "Features",
+      "packages": "Packages",
+      "contact": "Contact us",
+      "demo": "Requested demo"
+  
+    }
+  }
+   
+ 
+}
