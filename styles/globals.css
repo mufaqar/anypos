@@ -6,6 +6,22 @@
 .container{
     @apply px-5;
 }
+
+.content_box h3{
+    @apply text-[#5C5C5C] md:text-[32px] text-[28px] leading-[1em] font-medium tracking-[0.5px];
+}
+
+.content_box p , li{
+    @apply text-[#5C5C5C] text-base font-medium;
+}
+.content_box div{
+    @apply grid gap-3 py-3;
+}
+
+.content_box li{
+    @apply list-disc list-inside;
+}
+
 .custom-shape-divider-bottom-1670924415 {
     position: absolute;
     bottom: 0;
