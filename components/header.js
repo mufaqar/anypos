@@ -8,7 +8,7 @@ import Logo from '../public/images/logo.svg';
 export default function Header() {
     const [navbar, setNavbar] = useState(false);
     return (
-        <header>
+        <header className='fixed top-0 left-0 right-0 z-10'>
             <Head>
                 <title>Anypose</title>
                 <meta
@@ -21,8 +21,8 @@ export default function Header() {
                 <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
                     <div>
                         <div className="flex items-center justify-between py-3 md:py-5 md:block">
-                            <Link href="#">
-                                <Image src={Logo} alt="Logo" className='w-1/2' />
+                            <Link href="/" onClick={() => setNavbar(false)}>
+                                <Image src={Logo} alt="Logo" className='md:w-1/2 w-1/3' />
                             </Link>
                             <div className="md:hidden">
                                 <button
@@ -64,32 +64,32 @@ export default function Header() {
                     </div>
                     <div>
                         <div
-                            className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${navbar ? 'block' : 'hidden'
+                            className={`flex-1 justify-self-center md:block ${navbar ? 'block max-md:absolute max-md:top-16 max-md:left-0 max-md:right-0 max-md:z-20 max-md:bg-[#E2F0FB] px-4 py-5' : 'hidden'
                                 }`}
                         >
                             <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
                                 <li className="text-[#373737] text-base font-semibold tracking-wider">
-                                    <Link href="/">
+                                    <Link href="/" onClick={() => setNavbar(false)}>
                                         Home
                                     </Link>
                                 </li>
                                 <li className="text-[#373737] text-base font-semibold tracking-wider">
-                                    <Link href="#">
+                                    <Link href="#" onClick={() => setNavbar(false)}>
                                         POS Device
                                     </Link>
                                 </li>
                                 <li className="text-[#373737] text-base font-semibold tracking-wider">
-                                    <Link href="#">
+                                    <Link href="/#features" onClick={() => setNavbar(false)}>
                                         Features
                                     </Link>
                                 </li>
                                 <li className="text-[#373737] text-base font-semibold tracking-wider">
-                                    <Link href="#">
+                                    <Link href="/#pricing" onClick={() => setNavbar(false)}>
                                         Pricing/Packages
                                     </Link>
                                 </li>
                                 <li className="text-[#373737] text-base font-semibold tracking-wider">
-                                    <Link href="#">
+                                    <Link href="/#contact" onClick={() => setNavbar(false)}>
                                         Contact us
                                     </Link>
                                 </li>

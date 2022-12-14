@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 
+.container{
+    @apply px-5;
+}
 .custom-shape-divider-bottom-1670924415 {
     position: absolute;
     bottom: 0;

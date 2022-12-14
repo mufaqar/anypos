@@ -12,13 +12,13 @@ export default function Pricing() {
 
 function Pricing_Table({title, period, pricing, Btn_txt}) {
     return (<>
-    <div className='bg-[#EDEDED] p-7 text-center'>
-                <h3 className='text-[#2A2A2A] md:text-[32px] leading-[1em] font-medium tracking-[0.5px]'>
+    <div className='bg-[#EDEDED] p-3 text-center'>
+                <h3 className='text-[#2A2A2A] text-[32px] leading-[1em] font-medium tracking-[0.5px]'>
                     {title}
                 </h3>
-                <h1 className='text-[#202121] md:text-[60px] font-medium tracking-[0.5px]'>
+                <h1 className='text-[#202121] md:text-[60px] text-[50px] font-medium tracking-[0.5px]'>
                     {pricing}
-                    <span className='text-[#202121] md:text-[26px] font-normal tracking-[0.5px]'>
+                    <span className='text-[#202121] text-[26px] font-normal tracking-[0.5px]'>
                         {period}
                     </span>
                 </h1>
