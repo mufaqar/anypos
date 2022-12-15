@@ -7,12 +7,12 @@ export default function ImageBox({ title, features, Featue_Img, variations, size
         <div className={`${variations}`}>
             <Image src={Featue_Img} alt="Image" className={`${size}`} />
             <div>
-                <h5 className='text-[#2A2A2A] text-xl font-bold tracking-[0.5px] text-center'>
+                <h5 className='text-[#2A2A2A] text-xl font-bold tracking-[0.5px]'>
                     {title}
                 </h5>
                 <ul>
                     {features?.map((feature) => (
-                        <li key={feature} className='text-[#54595F] text-base font-medium text-center'>
+                        <li key={feature} className='text-[#54595F] text-base font-medium'>
                             {feature}
                         </li>
                     ))}
