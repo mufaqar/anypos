@@ -1,7 +1,8 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
-import Img from '../public/images/anypose.png';
+
+import Any_device from '../public/images/any_device.png';
 import { useTranslation } from 'next-export-i18n';
 
 export default function Banner() {
@@ -22,8 +23,8 @@ export default function Banner() {
         </svg>
       </div>
 
-      <div className="container mx-auto grid md:grid-cols-3 grid-cols-1 gap-10 items-center">
-        <div className="col-span-2">
+      <div className="container mx-auto grid md:grid-cols-2 grid-cols-1 gap-10 items-center">
+        <div className="">
           <h3 className="text-[#2A2A2A] md:text-[32px] text-[28px] leading-[1em] font-medium tracking-[0.5px] mb-4">
             {t('banner.title')}
           </h3>
@@ -41,7 +42,7 @@ export default function Banner() {
           </Link>
         </div>
         <div className="flex justify-end">
-          <Image src={Img} alt="banner" />
+          <Image src={Any_device} alt="banner" />
         </div>
       </div>
     </section>
