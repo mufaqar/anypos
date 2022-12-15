@@ -170,9 +170,13 @@ export default function Home() {
         <div className='container mx-auto pb-16 grid md:grid-cols-2 grid-cols-1 gap-10 items-center'>
           <div className=''>
             <ul className='flex flex-col space-y-2'>
-           <li>
-           {t('billing.list')}
-           </li>
+            {t('billing.list')?.map((item) => (
+                <li className='text-white text-base font-medium flex items-center group'>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className="w-5 h-5 mr-1 text-white group-hover:text-[#FF4014]">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>{item}
+                </li>
+              ))}
             </ul>
           </div>
           <div className=''>

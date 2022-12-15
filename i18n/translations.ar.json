@@ -47,7 +47,7 @@
       "sub_heading": "تمنحك لوحة المعلومات المركزية لـ AnyPOS القدرة على مراجعة المبيعات وبيانات العملاء والأداء العام لنشاطك. اتخاذ أفضل القرارات من خلال إستخدام برنامج AnyPOS السحابي"
     },
     "billing": {
-      "heading": "Simple Billing Plan's",
+      "heading": "خطة الدفع والاشتراك",
       "list": [
         "e-invoicing enabled",
         "Worked online and offline",
@@ -63,9 +63,12 @@
       ]
     },
     "contact": {  
-      "heading": "Start your free 14-day trial",
-      "email_heading": "E-MAIL US", 
+      "heading": "ابدأ الإصدار التجريبي مجانا لمدة 14 يوما",
+      "email_heading": "ارسل لنا عبر البريد الإلكتروني", 
       "email_title": "hi@anypos.app" 
+    },
+    "footer": {  
+      "copyright": "© anypos 2022 ، جميع الحقوق محفوظة"
     }
     
   }

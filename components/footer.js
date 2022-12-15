@@ -2,8 +2,11 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 import FtLogo from '../public/images/ftlogo.png';
+import { useTranslation } from 'next-export-i18n';
 
 export default function Footer() {
+    const { t } = useTranslation();
+
     return (
         <footer className='bg-[#6482F4] py-14'>
             <div className='container mx-auto grid md:grid-cols-2 grid-cols-1 gap-3 items-center mb-5'>
@@ -33,7 +36,7 @@ export default function Footer() {
             <div className='container mx-auto grid md:grid-cols-2 grid-cols-1 gap-3 items-center'>
                 <div className='grid md:justify-start justify-center'>
                     <p className='text-white text-base font-medium'>
-                        © anypos 2022, All Rights Reserved
+                    {t('billing.heading')}
                     </p>
                 </div>
                 <div>

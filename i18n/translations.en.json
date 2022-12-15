@@ -66,6 +66,10 @@
       "heading": "Start your free 14-day trial",
       "email_heading": "E-MAIL US",
       "email_title": "hi@anypos.app"
+    },
+    "footer": {  
+      "copyright": "© anypos 2022, All Rights Reserved"
     }
+    
   }
 }
