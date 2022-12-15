@@ -36,7 +36,7 @@ export default function Footer() {
             <div className='container mx-auto grid md:grid-cols-2 grid-cols-1 gap-3 items-center'>
                 <div className='grid md:justify-start justify-center'>
                     <p className='text-white text-base font-medium'>
-                    {t('billing.heading')}
+                    {t('footer.copyright')}
                     </p>
                 </div>
                 <div>
