@@ -2,13 +2,11 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Banner from '../components/banner';
 import Features from '../components/features';
-import ImageBox from '../components/image_box';
 import Hand from '../public/images/hand.png';
-import Android from '../public/images/android.png';
-import Circle from '../public/images/circle.png';
-import Saudi from '../public/images/saudi.png';
 import Payments from '../public/images/payments.png';
 import { useTranslation } from 'next-export-i18n';
+import { AiFillHome } from 'react-icons/ai';
+import { BsFillEnvelopeFill, BsFillTelephoneFill } from 'react-icons/bs';
 
 export default function Home() {
   const { t } = useTranslation();
@@ -66,36 +64,34 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="features" className="relative py-10">
-      <div className="container mx-auto grid md:grid-cols-3 grid-cols-1 gap-10 ">
-        <ImageBox
-          Featue_Img={Android}
-          size="w-1/6"
-          title=""
-          features={[
-            'Android 8.1 WiseOS',
-          ]}
-          variations="grid gap-3 justify-items-center text-center" />
-          <ImageBox
-          Featue_Img={Android}
-          size="w-1/6"
-          title=""
-          features={[
-            'Android 8.1 WiseOS',
-          ]}
-          variations="grid gap-3 justify-items-center text-center" />
-          <ImageBox
-          Featue_Img={Android}
-          size="w-1/6"
-          title=""
-          features={[
-            'Android 8.1 WiseOS',
-          ]}
-          variations="grid gap-3 justify-items-center text-center" />
-      </div>
-    </section>
+      <section className="relative py-10">
+        <div className="container mx-auto grid md:grid-cols-3 grid-cols-1 gap-10 ">
+          <div className='grid gap-5 justify-items-center text-center group'>
+            <AiFillHome size={42} className='text-[#FF4014] group-hover:text-[#6482F4]' />
+            <p className='text-[#5C5C5C] text-xl font-normal'>
+              Address
+            </p>
+          </div>
+          <div className='grid gap-5 justify-items-center text-center group'>
+            <BsFillTelephoneFill size={42} className='text-[#FF4014] group-hover:text-[#6482F4]' />
+            <Link href="#" target="_blank" className='text-[#5C5C5C] text-xl font-normal'>
+              <span>
+                +123-456789
+              </span>
+            </Link>
+          </div>
+          <div className='grid gap-5 justify-items-center text-center group'>
+            <BsFillEnvelopeFill size={42} className='text-[#FF4014] group-hover:text-[#6482F4]' />
+            <Link href="mailto:hi@anypos.app" target="_blank" className='text-[#5C5C5C] text-xl font-normal'>
+              <span>
+                hi@anypos.app
+              </span>
+            </Link>
+          </div>
+        </div>
+      </section>
 
-      
+
 
 
     </>

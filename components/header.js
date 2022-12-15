@@ -124,7 +124,7 @@ export default function Header() {
                 </ul>
               </div>
             </div>
-            <div>
+            <div className='md:block hidden'>
               <div className="flex items-center justify-between py-3 md:py-5 gap-3">
                 <LanguageSwitcher lang={switch_lang ? 'en' : 'ar'}>
                   <div
