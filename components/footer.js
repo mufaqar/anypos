@@ -8,13 +8,20 @@ export default function Footer() {
     const { t } = useTranslation();
 
     return (
-        <footer className='bg-[#6482F4] py-14'>
-            <div className='container mx-auto grid md:grid-cols-2 grid-cols-1 gap-3 items-center mb-5'>
-                <div className='grid md:justify-start justify-center'>
+
+
+        <footer className='relative bg-[#6482F4] pt-14 pb-8'>
+            <div className="custom-shape-divider-top-1670933909">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" className="shape-fill"></path>
+                </svg>
+            </div>
+            <div className='container mx-auto pt-16 grid grid-cols-1 gap-5 items-center'>
+                <div className='grid justify-center'>
                     <Image src={FtLogo} alt='logo' />
                 </div>
                 <div>
-                    <ul className='flex gap-2 md:justify-end justify-center'>
+                    <ul className='flex gap-2 justify-center'>
                         <li>
                             <Link href="#" target='_blank'>
                                 <svg className="md:h-10 md:w-10 h-8 w-8 md:p-2 p-1 text-white border border-white rounded-full bg-transparent hover:bg-[#FF4014] hover:border-[#FF4014]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" /></svg>
@@ -32,32 +39,30 @@ export default function Footer() {
                         </li>
                     </ul>
                 </div>
-            </div>
-            <div className='container mx-auto grid md:grid-cols-2 grid-cols-1 gap-3 items-center'>
-                <div className='grid md:justify-start justify-center'>
-                    <p className='text-white text-base font-medium'>
-                    {t('footer.copyright')}
-                    </p>
-                </div>
                 <div>
-                    <ul className='md:flex gap-3 md:justify-end md:text-left text-center'>
+                    <ul className='md:flex gap-3 justify-center'>
                         <li>
                             <Link href="/privacy-policy" className='text-white text-base font-medium'>
-                            Privacy Policy
+                                Privacy Policy
                             </Link>
                         </li>
                         <li>
                             <Link href="/terms-of-service" className='text-white text-base font-medium'>
-                            Website Terms Of Use
+                                Website Terms Of Use
                             </Link>
                         </li>
                         <li>
                             <Link href="/acceptable-use-policy" className='text-white text-base font-medium'>
-                            Cookie Policy
+                                Cookie Policy
                             </Link>
                         </li>
                     </ul>
                 </div>
+                <div className='grid justify-center'>
+                    <p className='text-white text-base font-medium'>
+                        {t('footer.copyright')}
+                    </p>
+                </div>                
             </div>
         </footer>
     )
