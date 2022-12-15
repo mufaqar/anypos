@@ -2,6 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'sqmarketmedium';
+  src: url('../public/fonts/sqmarket-medium.woff2');
+}
+
+@font-face {
+  font-family: 'Roboto-Regular';
+  src: url('../public/fonts/Roboto-Regular.ttf');
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'sqmarketmedium';
+}
+
+header,
+nav {
+  font-family: 'sqmarketmedium';
+}
+p,
+li,
+span {
+  font-family: 'Roboto-Regular';
+}
+
 .container {
   @apply px-5;
 }
