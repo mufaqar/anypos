@@ -15,13 +15,59 @@
       "btn_text": "أحصل على نظام ANY POS"   
     },
     "features": {  
-      "heading": "  Easiest POS software to use",
-      "sub_heading": "with all features you need to grow your business",
-      "feature_title": "Omni channel POS", 
-      "feature_list1": "Sell in the store"  ,
-      "feature_list2": "Sell on the go"  ,
-      "feature_list3": "Sell online"  
+      "heading": "أسهل برنامج نقاط بيع وفواتير الكترونية",
+      "sub_heading": "مع جميع المزايا التي تحتاجها لتنمية عملك",
+      "feature_title": "برنامج نقاط بيع متعدد الاستخدامات", 
+      "feature_list1": "البيع في المتجر"  ,
+      "feature_list2": "البيع ميدانياً"  ,
+      "feature_list3": "البيع عبر الإنترنت"  
+    },
+    "features1": {  
+      "heading": "يعمل على جميع الأجهزة",
+      "sub_heading": "برنامج AnyPos يعمل على أي جهاز محمول، تابلت أو جهاز الكمبيوتر. أحصل الأن على نظام نقاط بيع متكامل دون الحاجة إلى إنفاق الآلاف على الأجهزة والبرامج عالية التكلفة."
+    },
+    "features2": {  
+      "heading": "فواتير الكترونية متوافقة مع هيئة الزكاة والضريبة",
+      "sub_heading": "نظام طباعة الفاتورة المبسطة الالكترونية متوافق مع أنظمة وإشتراطات هيئة الزكاة والضريبة"
+    },
+    "features3": {  
+      "heading": "نظام سحابي!",
+      "sub_heading": "يتوفر برنامج AnyPos على السحابة (الكلاود) حتى تتمكن من الوصول إليه في أي وقت ومن أي مكان 24/7. تتبع مبيعات متجرك مباشرة من خلال لوحة معلومات متكاملة. ونقوم بتخزين بيانات عملك المهمة بأمان في السحابة (الكلاود) لحماية نشاطك التجاري من أي أحداث مثل الاختراقات والفيروسات والأعطال غير المتوقعة."
+    },
+    "features4": {  
+      "heading": "متصل بالانترنت أو غير متصل",
+      "sub_heading": "برنامج AnyPOS هو منصة سحابية وتعمل ايضا دون اتصال بالانترنت. وتتم مزامنة جميع عمليات متجرك دون اتصال مع السحابة (الكلاود) تلقائيا مجرد عودة الاتصال بالانترنت. لذا، استمر في البيع ، حتى في حال عدم وجود اتصال او توفر خدمة الإنترنت."
+    },
+    "features5": {  
+      "heading": "إقبل المدفوعات",
+      "sub_heading": "مع برنامج AnyPOS يمكنك قبول الدفع بسرعة وسهولة. حيث وفرنا الربط والتكامل مع جميع بوابات الدفع الالكتروني الرئيسية في المملكة العربية السعودية."
+    },
+    "features6": {  
+      "heading": "تقارير عالية المستوى",
+      "sub_heading": "تمنحك لوحة المعلومات المركزية لـ AnyPOS القدرة على مراجعة المبيعات وبيانات العملاء والأداء العام لنشاطك. اتخاذ أفضل القرارات من خلال إستخدام برنامج AnyPOS السحابي"
+    },
+    "billing": {
+      "heading": "Simple Billing Plan's",
+      "list": [
+        "e-invoicing enabled",
+        "Worked online and offline",
+        "Unlimited products",
+        "Multi-Type Payments",
+        "Import/edit products by a CSV file",
+        "Print daily sell summary report",
+        "Various sales reports",
+        "Customer management system",
+        "Stock management",
+        "Dashboard (Real-time sale dashboard)",
+        "Store e-invoices online"
+      ]
+    },
+    "contact": {  
+      "heading": "Start your free 14-day trial",
+      "email_heading": "E-MAIL US", 
+      "email_title": "hi@anypos.app" 
     }
+    
   }
    
  

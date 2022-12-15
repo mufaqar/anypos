@@ -12,8 +12,11 @@ import Payments from '../public/images/payments.png';
 import Reports from '../public/images/payments.png';
 import Email from '../public/images/email.png';
 import Link from 'next/link';
+import { useTranslation } from 'next-export-i18n';
 
 export default function Home() {
+  const { t } = useTranslation();
+
   return (
     <>
       <Banner />
@@ -32,8 +35,12 @@ export default function Home() {
             <Image src={Any_device} alt="banner" />
           </div>
           <div className=''>
-            <h3 className='text-[#2A2A2A] text-[28px] leading-[1em] font-medium tracking-[0.5px] mb-5'>POS on any Device</h3>
-            <p className='text-[#54595F] text-base font-medium'>Any pos software works on any mobile, tab or PC. Get full POS without spending thousands on clunky hardware and legacy software’s.</p>
+            <h3 className='text-[#2A2A2A] text-[28px] leading-[1em] font-medium tracking-[0.5px] mb-5'>
+              {t('features1.heading')}
+            </h3>
+            <p className='text-[#54595F] text-base font-medium'>
+              {t('features1.sub_heading')}
+            </p>
           </div>
         </div>
 
@@ -47,8 +54,12 @@ export default function Home() {
       <section className='relative py-10 '>
         <div className='container mx-auto grid md:grid-cols-2 grid-cols-1 gap-10 items-center'>
           <div className=''>
-            <h3 className='text-[#2A2A2A] text-[28px] leading-[1em] font-medium tracking-[0.5px] mb-5'>ZATCA e-Invoicing</h3>
-            <p className='text-[#54595F] text-base font-medium'>Print simplified invoices in compliance with ZATCA standards.</p>
+            <h3 className='text-[#2A2A2A] text-[28px] leading-[1em] font-medium tracking-[0.5px] mb-5'>
+              {t('features2.heading')}
+            </h3>
+            <p className='text-[#54595F] text-base font-medium'>
+              {t('features2.sub_heading')}
+            </p>
           </div>
           <div className=''>
             <Image src={Invoicing} alt="banner" />
@@ -68,8 +79,12 @@ export default function Home() {
             <Image src={Cloud} alt="banner" />
           </div>
           <div className=''>
-            <h3 className='text-[#2A2A2A] text-[28px] leading-[1em] font-medium tracking-[0.5px] mb-5'>It’s on Cloud!</h3>
-            <p className='text-[#54595F] text-base font-medium'>As any POS is on cloud so you can access it anytime from anywhere in the word its available 24/7. See the live progress of your store sales through our integrated dashboard. We store your important business data securely in the cloud to protect your business against events like computer theft, viruses, and unexpected breakdowns.</p>
+            <h3 className='text-[#2A2A2A] text-[28px] leading-[1em] font-medium tracking-[0.5px] mb-5'>
+              {t('features3.heading')}
+            </h3>
+            <p className='text-[#54595F] text-base font-medium'>
+              {t('features3.sub_heading')}
+            </p>
           </div>
         </div>
 
@@ -83,9 +98,11 @@ export default function Home() {
       <section className='relative py-10 '>
         <div className='container mx-auto grid md:grid-cols-2 grid-cols-1 gap-10 items-center'>
           <div className=''>
-            <h3 className='text-[#2A2A2A] text-[28px] leading-[1em] font-medium tracking-[0.5px] mb-5'>Online & Offline</h3>
+            <h3 className='text-[#2A2A2A] text-[28px] leading-[1em] font-medium tracking-[0.5px] mb-5'>
+              {t('features4.heading')}
+            </h3>
             <p className='text-[#54595F] text-base font-medium'>
-              anyPOS is a cloud-based platform that can also work offline. All offline transactions are automatically synced with your store’s cloud once you get back online. So, continue selling, even when there’s no internet.
+              {t('features4.sub_heading')}
             </p>
           </div>
           <div className=''>
@@ -107,10 +124,10 @@ export default function Home() {
           </div>
           <div className=''>
             <h3 className='text-[#2A2A2A] text-[28px] leading-[1em] font-medium tracking-[0.5px] mb-5'>
-              Accept Payments
+              {t('features5.heading')}
             </h3>
             <p className='text-[#54595F] text-base font-medium'>
-              With any POS you can accept payment quickly and easily. We are integrated with all major payment gateways of Saudi Arabia.
+              {t('features5.sub_heading')}
             </p>
           </div>
         </div>
@@ -126,10 +143,10 @@ export default function Home() {
         <div className='container mx-auto grid md:grid-cols-2 grid-cols-1 gap-10 items-center'>
           <div className=''>
             <h3 className='text-[#2A2A2A] text-[28px] leading-[1em] font-medium tracking-[0.5px] mb-5'>
-              High Level Reports
+              {t('features6.heading')}
             </h3>
             <p className='text-[#54595F] text-base font-medium'>
-              anyPOS central dashboard gives you an ability to review sales, customer, and overall business performances. Make better decisions with anyPOS cloud-based POS.
+              {t('features6.sub_heading')}
             </p>
           </div>
           <div className=''>
@@ -147,78 +164,15 @@ export default function Home() {
 
         <div className='container mx-auto pt-16 text-center mb-5'>
           <h2 className='text-white md:text-[36px] text-[32px] leading-[1em] font-medium tracking-[0.5px] mb-5'>
-            Simple Billing Plan's
+            {t('billing.heading')}
           </h2>
         </div>
         <div className='container mx-auto pb-16 grid md:grid-cols-2 grid-cols-1 gap-10 items-center'>
           <div className=''>
             <ul className='flex flex-col space-y-2'>
-              <li className='text-white text-base font-medium flex items-center group'>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className="w-5 h-5 mr-1 text-white group-hover:text-[#FF4014]">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-                e-invoicing enabled
-              </li>
-              <li className='text-white text-base font-medium flex items-center group'>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className="w-5 h-5 mr-1 text-white group-hover:text-[#FF4014]">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-                Worked online and offline
-              </li>
-              <li className='text-white text-base font-medium flex items-center group'>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className="w-5 h-5 mr-1 text-white group-hover:text-[#FF4014]">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-                Unlimited products
-              </li>
-              <li className='text-white text-base font-medium flex items-center group'>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className="w-5 h-5 mr-1 text-white group-hover:text-[#FF4014]">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-                Multi-Type Payments
-              </li>
-              <li className='text-white text-base font-medium flex items-center group'>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className="w-5 h-5 mr-1 text-white group-hover:text-[#FF4014]">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-                Import/edit products by a CSV file
-              </li>
-              <li className='text-white text-base font-medium flex items-center group'>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className="w-5 h-5 mr-1 text-white group-hover:text-[#FF4014]">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-                Print daily sell summary report
-              </li>
-              <li className='text-white text-base font-medium flex items-center group'>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className="w-5 h-5 mr-1 text-white group-hover:text-[#FF4014]">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-                Various sales reports
-              </li>
-              <li className='text-white text-base font-medium flex items-center group'>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className="w-5 h-5 mr-1 text-white group-hover:text-[#FF4014]">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-                Customer management system
-              </li>
-              <li className='text-white text-base font-medium flex items-center group'>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className="w-5 h-5 mr-1 text-white group-hover:text-[#FF4014]">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-                Stock management
-              </li>
-              <li className='text-white text-base font-medium flex items-center group'>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className="w-5 h-5 mr-1 text-white group-hover:text-[#FF4014]">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-                Dashboard (Real-time sale dashboard)
-              </li>
-              <li className='text-white text-base font-medium flex items-center group'>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className="w-5 h-5 mr-1 text-white group-hover:text-[#FF4014]">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-                Store e-invoices online
-              </li>
+           <li>
+           {t('billing.list')}
+           </li>
             </ul>
           </div>
           <div className=''>
@@ -236,21 +190,23 @@ export default function Home() {
       <section id="contact" className='relative py-10 bg-gradient-to-br from-[#E2F0FB] via-[#E2F0FB] to-[#FFFFFF]'>
         <div className='container mx-auto text-center mb-5'>
           <h2 className='text-[#2A2A2A] md:text-[36px] text-[32px] leading-[1em] font-medium tracking-[0.5px] mb-5'>
-            Start your free 14-day trial
+            {t('contact.heading')}
           </h2>
         </div>
         <div className='container mx-auto grid md:grid-cols-2 grid-cols-1 gap-10 items-center'>
           <div className='grid justify-center'>
             <Image src={Email} alt="banner" className='mx-auto mb-3' />
-            <h3 className='text-[#2A2A2A] md:text-[26px] leading-[1em] font-medium tracking-[0.5px] mb-3'>E-MAIL US</h3>
+            <h3 className='text-[#2A2A2A] md:text-[26px] leading-[1em] font-medium tracking-[0.5px] mb-3'>
+              {t('contact.email_heading')}
+            </h3>
             <Link href="mailto:hi@anypos.app" target="_blank"
               className='text-[#2A2A2A] md:text-[18px] leading-[1em] font-medium tracking-[0.5px]'>
-              hi@anypos.app
+              {t('contact.email_title')}
             </Link>
           </div>
           <div className=''>
             <form className='grid gap-5'>
-              <div className='grid md:grid-cols-2 grid-cols-1 gap-10 gap-5'>
+              <div className='grid md:grid-cols-2 grid-cols-1 gap-5'>
                 <input className="border border-[#02010126] text-base w-full font-normal leading-none text-[#585858] p-4 focus:outline-none bg-white placeholder-[#585858]"
                   type='text'
                   name='name'
@@ -262,7 +218,7 @@ export default function Home() {
                   id="email"
                   placeholder="Email" />
               </div>
-              <div className='grid md:grid-cols-2 grid-cols-1 gap-10 gap-5'>
+              <div className='grid md:grid-cols-2 grid-cols-1 gap-5'>
                 <input className="border border-[#02010126] text-base w-full font-normal leading-none text-[#585858] p-4 focus:outline-none bg-white placeholder-[#585858]"
                   type='tel'
                   name='phone'

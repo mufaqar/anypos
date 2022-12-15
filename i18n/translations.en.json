@@ -1,28 +1,71 @@
 {
-  "i18n": {    
+  "i18n": {
     "navlist": {
       "home": "Home",
       "pos": "POS Device",
       "features": "Features",
       "packages": "Packages",
       "contact": "Contact us",
-      "demo": "Requested demo"  
+      "demo": "Requested demo"
     },
     "banner": {
       "title": "Simple solution for",
       "heading": "Simplified Invoice",
       "sub_heading": "Point of sale in any device.",
-      "btn_text": " Get any pos"   
+      "btn_text": " Get any pos"
     },
-    "features": {  
+    "features": {
       "heading": "  Easiest POS software to use",
       "sub_heading": "with all features you need to grow your business",
-      "feature_title": "Omni channel POS", 
-      "feature_list1": "Sell in the store"  ,
-      "feature_list2": "Sell on the go"  ,
-      "feature_list3": "Sell online"  
+      "feature_title": "Omni channel POS",
+      "feature_list1": "Sell in the store",
+      "feature_list2": "Sell on the go",
+      "feature_list3": "Sell online"
+    },
+    "features1": {
+      "heading": "POS on any Device ",
+      "sub_heading": "Any pos software works on any mobile, tab or PC. Get full POS without spending thousands on clunky hardware and legacy software’s."
+    },
+    "features2": {
+      "heading": "ZATCA e-Invoicing",
+      "sub_heading": "Print simplified invoices in compliance with ZATCA standards"
+    },
+    "features3": {
+      "heading": "It’s on Cloud!",
+      "sub_heading": "As any POS is on cloud so you can access it anytime from anywhere in the word its available 24/7. See the live progress of your store sales through our integrated dashboard. We store your important business data securely in the cloud to protect your business against events like computer theft, viruses, and unexpected breakdowns."
+    },
+    "features4": {
+      "heading": "Online & Offline",
+      "sub_heading": "anyPOS is a cloud-based platform that can also work offline. All offline transactions are automatically synced with your store’s cloud once you get back online. So, continue selling, even when there’s no internet."
+    },
+    "features5": {
+      "heading": "Accept Payments",
+      "sub_heading": "With any POS you can accept payment quickly and easily. We are integrated with all major payment gateways of Saudi Arabia."
+    },
+    "features6": {
+      "heading": "High Level Reports",
+      "sub_heading": "anyPOS central dashboard gives you an ability to review sales, customer, and overall business performances. Make better decisions with anyPOS cloud-based POS."
+    },
+    "billing": {
+      "heading": "Simple Billing Plan's",
+      "list": [
+        "e-invoicing enabled",
+        "Worked online and offline",
+        "Unlimited products",
+        "Multi-Type Payments",
+        "Import/edit products by a CSV file",
+        "Print daily sell summary report",
+        "Various sales reports",
+        "Customer management system",
+        "Stock management",
+        "Dashboard (Real-time sale dashboard)",
+        "Store e-invoices online"
+      ]
+    },
+    "contact": {
+      "heading": "Start your free 14-day trial",
+      "email_heading": "E-MAIL US",
+      "email_title": "hi@anypos.app"
     }
   }
-   
- 
 }
