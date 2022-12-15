@@ -1,22 +1,24 @@
 import React from 'react';
 import Img_Cpos from '../public/images/cpos.png';
 import Image from 'next/image';
+import { useTranslation } from 'next-export-i18n';
 
 export default function Features() {
+  const { t } = useTranslation();
   return (
     <section id="features" className="relative py-10">
       <div className="container mx-auto text-center mb-5">
         <h2 className="text-[#2A2A2A] md:text-[36px] text-[32px] leading-[1em] font-medium tracking-[0.5px] mb-5">
-          Easiest POS software to use
+          {t('features.heading')}
         </h2>
         <p className="text-[#5C5C5C] text-base font-normal">
-          with all features you need to grow your business
+          {t('features.sub_heading')}
         </p>
       </div>
       <div className="container mx-auto grid md:grid-cols-2 grid-cols-1 gap-10 items-center">
         <div className="">
           <h3 className="text-[#2A2A2A] text-[28px] leading-[1em] font-medium tracking-[0.5px] mb-5">
-            Omni channel POS
+            {t('features.feature_title')}
           </h3>
           <ul>
             <li className="text-[#54595F] text-base font-medium flex items-center">
@@ -33,8 +35,8 @@ export default function Features() {
                   strokeLinejoin="round"
                   d="M18 12H6"
                 />
-              </svg>{' '}
-              Sell in the store
+              </svg>
+              {t('features.feature_list1')}
             </li>
             <li className="text-[#54595F] text-base font-medium flex items-center">
               <svg
