@@ -19,13 +19,13 @@ export default function Home() {
 
       <Features />
 
-      <section className='relative py-[13rem] md:bg-[url(/images/hand.png)] bg-cover bg-no-repeat bg-center bg-[#E2F0FB] '>
+      <section className='relative md:py-[13rem] py-[5rem] md:bg-[url(/images/hand.png)] bg-cover bg-no-repeat bg-center bg-[#E2F0FB] '>
         <div className='container mx-auto flex md:flex-row flex-col-reverse md:gap-0 gap-10 items-center'>
           <div className=''>
             <Image src={Hand} alt="banner" className='md:hidden block' />
           </div>
           <div className='md:w-1/2 ml-auto'>
-            <h1 className='text-[#2A2A2A] md:text-[52px] text-[42px] leading-[1em] font-medium tracking-[0.5px] mb-4'>Get The Best Deal...!</h1>
+            <h1 className='text-[#2A2A2A] md:text-[52px] text-[36px] leading-[1em] font-medium tracking-[0.5px] mb-4'>Get The Best Deal...!</h1>
             <ul>
               <li className='text-[#54595F] text-lg font-medium flex items-center'>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="3" stroke="currentColor" className="w-8 h-6 rounded text-[#4267F1]">

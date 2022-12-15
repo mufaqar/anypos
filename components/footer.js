@@ -40,7 +40,7 @@ export default function Footer() {
                     </ul>
                 </div>
                 <div>
-                    <ul className='md:flex gap-3 justify-center'>
+                    <ul className='md:flex gap-3 justify-center text-center'>
                         <li>
                             <Link href="/privacy-policy" className='text-white text-base font-medium'>
                                 Privacy Policy
