@@ -65,7 +65,7 @@ export default function Home() {
             <h3 className='text-[#2A2A2A] text-[28px] leading-[1em] font-medium tracking-[0.5px] mb-5'>
               Best Technical Support
             </h3>
-            <p className='text-[#54595F] text-base font-medium'>
+            <p className='text-[#54595F] text-lg font-medium max-w-xs px-2'>
               Create a ticket for helpdesk and our staff will contact you to address your inquiry or call us at 1-800-820-9814.
             </p>
           </div>
