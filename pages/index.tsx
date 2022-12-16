@@ -3,10 +3,11 @@ import Link from 'next/link';
 import Banner from '../components/banner';
 import Features from '../components/features';
 import Hand from '../public/images/hand.png';
-import Payments from '../public/images/payments.png';
+import Support from '../public/images/sport.png';
+import Emal from '../public/images/eml.png';
+import Address from '../public/images/address.png';
+import Phone from '../public/images/phone.png';
 import { useTranslation } from 'next-export-i18n';
-import { AiFillHome } from 'react-icons/ai';
-import { BsFillEnvelopeFill, BsFillTelephoneFill } from 'react-icons/bs';
 
 export default function Home() {
   const { t } = useTranslation();
@@ -17,7 +18,12 @@ export default function Home() {
 
       <Features />
 
-      <section className='relative md:py-[13rem] py-[5rem] md:bg-[url(/images/hand.png)] bg-cover bg-no-repeat bg-center bg-[#E2F0FB] '>
+      <section id="pricing" className='flip relative md:py-[13rem] py-[9rem] md:bg-[url(/images/hand.png)] bg-cover bg-no-repeat bg-center bg-[#E2F0FB] '>
+        <div className="custom-shape-divider-top-1670933909">
+          <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" className="shape-fill"></path>
+          </svg>
+        </div>
         <div className='container mx-auto flex md:flex-row flex-col-reverse md:gap-0 gap-10 items-center'>
           <div className=''>
             <Image src={Hand} alt="banner" className='md:hidden block' />
@@ -46,46 +52,57 @@ export default function Home() {
             </Link>
           </div>
         </div>
+        <div className="custom-shape-divider-bottom-1670927066">
+          <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" className="shape-fill"></path>
+          </svg>
+        </div>
       </section>
 
-      <section className="relative py-10">
+      <section className="relative py-8">
         <div className='container mx-auto py-16 grid md:grid-cols-2 grid-cols-1 gap-10 items-center'>
           <div className=''>
             <h3 className='text-[#2A2A2A] text-[28px] leading-[1em] font-medium tracking-[0.5px] mb-5'>
-              {t('features5.heading')}
+              Best Technical Support
             </h3>
             <p className='text-[#54595F] text-base font-medium'>
-              {t('features5.sub_heading')}
+              Create a ticket for helpdesk and our staff will contact you to address your inquiry or call us at 1-800-820-9814.
             </p>
           </div>
-          <div className=''>
-            <Image src={Payments} alt="banner" />
+          <div className='md:flex md:justify-end'>
+            <Image src={Support} alt="banner" />
           </div>
         </div>
       </section>
 
-      <section className="relative py-10">
-        <div className="container mx-auto grid md:grid-cols-3 grid-cols-1 gap-10 ">
-          <div className='grid gap-5 justify-items-center text-center group'>
-            <AiFillHome size={42} className='text-[#FF4014] group-hover:text-[#6482F4]' />
-            <p className='text-[#5C5C5C] text-xl font-normal'>
+      <section id="contact" className="relative py-10">
+        <div className="container mx-auto grid md:grid-cols-3 grid-cols-1 gap-5 ">
+          <div className='grid gap-2 py-3 justify-items-center text-center border border-[]'>
+            <Image src={Address} alt="" className='w-1/4' />
+            <h3 className='text-[#2A2A2A] text-[28px] leading-[1em] font-medium tracking-[0.5px]'>
               Address
+            </h3>
+            <p className='text-[#5C5C5C] text-xl font-normal'>
+              Khalid Bin Alwaleed, Ghirnatah
+              Second floor, Riyadh 11564
             </p>
           </div>
-          <div className='grid gap-5 justify-items-center text-center group'>
-            <BsFillTelephoneFill size={42} className='text-[#FF4014] group-hover:text-[#6482F4]' />
-            <Link href="#" target="_blank" className='text-[#5C5C5C] text-xl font-normal'>
-              <span>
-                +123-456789
-              </span>
+          <div className='grid gap-2 py-3 justify-items-center text-center border border-[]'>
+            <Image src={Emal} alt="" className='w-1/4' />
+            <h3 className='text-[#2A2A2A] text-[28px] leading-[1em] font-medium tracking-[0.5px]'>
+              E-mail
+            </h3>
+            <Link href="mailto:info@anypos.app" target="_blank" className='text-[#5C5C5C] text-xl font-normal'>
+              info@anypos.app
             </Link>
           </div>
-          <div className='grid gap-5 justify-items-center text-center group'>
-            <BsFillEnvelopeFill size={42} className='text-[#FF4014] group-hover:text-[#6482F4]' />
-            <Link href="mailto:hi@anypos.app" target="_blank" className='text-[#5C5C5C] text-xl font-normal'>
-              <span>
-                hi@anypos.app
-              </span>
+          <div className='grid gap-2 py-3 justify-items-center text-center border border-[]'>
+            <Image src={Phone} alt="" className='w-1/4' />
+            <h3 className='text-[#2A2A2A] text-[28px] leading-[1em] font-medium tracking-[0.5px]'>
+              Phone
+            </h3>
+            <Link href="tel:92 000 8927" target="_blank" className='text-[#5C5C5C] text-xl font-normal'>
+              92 000 8927
             </Link>
           </div>
         </div>

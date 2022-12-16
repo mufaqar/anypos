@@ -39,8 +39,15 @@ export default function Footer() {
                         </li>
                     </ul>
                 </div>
+            </div>
+            <div className='container mx-auto pt-5 grid md:grid-cols-2 grid-cols-1 items-center'>
+            <div className='grid md:justify-start justify-center'>
+                    <p className='text-white text-base font-medium'>
+                        {t('footer.copyright')}
+                    </p>
+                </div>
                 <div>
-                    <ul className='md:flex gap-3 justify-center text-center'>
+                    <ul className='md:flex gap-3 md:justify-end justify-center text-center'>
                         <li>
                             <Link href="/privacy-policy" className='text-white text-base font-medium'>
                                 Privacy Policy
@@ -57,13 +64,9 @@ export default function Footer() {
                             </Link>
                         </li>
                     </ul>
-                </div>
-                <div className='grid justify-center'>
-                    <p className='text-white text-base font-medium'>
-                        {t('footer.copyright')}
-                    </p>
                 </div>                
             </div>
+
         </footer>
     )
 }

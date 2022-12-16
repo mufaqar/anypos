@@ -24,75 +24,67 @@ export default function Features() {
         <ImageBox
           Featue_Img={Icon1}
           size="w-1/6"
-          title="Operating System"
+          title="POS on any Device"
           features={[
-            'Android 8.1 WiseOS',
+            'Any POS software works on any mobile, tab or PC. Get full POS without spending thousands on clunky hardware and legacy software’s.',
           ]}
-          variations="bg-white py-5 rounded-[5px] hover:shadow-lg flex gap-3 px-2" />
+          variations="bg-white py-5 rounded-[5px] hover:shadow-lg flex gap-3 px-3 items-start" />
           <ImageBox
           Featue_Img={Icon2}
           size="w-1/6"
-          title="Operating System"
+          title="POS on any Device"
           features={[
-            'Android 8.1 WiseOS',
+            'Print simplified invoices in compliance with ZATCA standards.',
           ]}
-          variations="bg-white py-5 rounded-[5px] hover:shadow-lg flex gap-3 px-2" />
+          variations="bg-white py-5 rounded-[5px] hover:shadow-lg flex gap-3 px-3 items-start" />
           <ImageBox
           Featue_Img={Icon3}
           size="w-1/6"
-          title="Operating System"
+          title="It’s on Cloud!"
           features={[
-            'Android 8.1 WiseOS',
+            "As any POS is on the cloud so you can access it anytime from anywhere in the word it's available 24/7. See the live progress of your store sales through our integrated dashboard. ",
           ]}
-          variations="bg-white py-5 rounded-[5px] hover:shadow-lg flex gap-3 px-2" />
+          variations="bg-white py-5 rounded-[5px] hover:shadow-lg flex gap-3 px-3 items-start" />
           <ImageBox
           Featue_Img={Icon4}
           size="w-1/6"
-          title="Operating System"
+          title="Record Payments"
           features={[
-            'Android 8.1 WiseOS',
+            'With any POS you can Record payment quickly and easily. We Support Mada Visa Master Etc',
           ]}
-          variations="bg-white py-5 rounded-[5px] hover:shadow-lg flex gap-3 px-2" />
+          variations="bg-white py-5 rounded-[5px] hover:shadow-lg flex gap-3 px-3 items-start" />
           <ImageBox
           Featue_Img={Icon5}
           size="w-1/6"
-          title="Operating System"
+          title="Online & Offline"
           features={[
-            'Android 8.1 WiseOS',
+            'anyPOS is a cloud-based platform that can also work offline. All offline transactions are automatically synced with your store’s cloud once you get back online. So, continue selling, even when there’s no internet.',
           ]}
-          variations="bg-white py-5 rounded-[5px] hover:shadow-lg flex gap-3 px-2" />
+          variations="bg-white py-5 rounded-[5px] hover:shadow-lg flex gap-3 px-3 items-start" />
           <ImageBox
           Featue_Img={Icon6}
           size="w-1/6"
-          title="Operating System"
+          title="Multi-Store Management"
           features={[
-            'Android 8.1 WiseOS',
+            'Manage multiple stores under one account from the dashboard. Track your sales, employees, and customer.',
           ]}
-          variations="bg-white py-5 rounded-[5px] hover:shadow-lg flex gap-3 px-2" />
+          variations="bg-white py-5 rounded-[5px] hover:shadow-lg flex gap-3 px-3 items-start" />
           <ImageBox
           Featue_Img={Icon7}
           size="w-1/6"
-          title="Operating System"
+          title="High Level Reports"
           features={[
-            'Android 8.1 WiseOS',
+            'anyPOS central dashboard gives you the ability to review sales, customer, and overall business performances. Make better decisions with anyPOS cloud-based POS.',
           ]}
-          variations="bg-white py-5 rounded-[5px] hover:shadow-lg flex gap-3 px-2" />
+          variations="bg-white py-5 rounded-[5px] hover:shadow-lg flex gap-3 px-3 items-start" />
           <ImageBox
           Featue_Img={Icon8}
           size="w-1/6"
-          title="Operating System"
+          title="Win XP"
           features={[
-            'Android 8.1 WiseOS',
+            'No need to change or upgrade your current POS  as anyPOS works on win XP. ',
           ]}
-          variations="bg-white py-5 rounded-[5px] hover:shadow-lg flex gap-3 px-2" />
-          <ImageBox
-          Featue_Img={Icon9}
-          size="w-1/6"
-          title="Operating System"
-          features={[
-            'Android 8.1 WiseOS',
-          ]}
-          variations="bg-white py-5 rounded-[5px] hover:shadow-lg flex gap-3 px-2" />
+          variations="bg-white py-5 rounded-[5px] hover:shadow-lg flex gap-3 px-3 items-start" />
       </div>
     </section>
   );
