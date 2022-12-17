@@ -35,7 +35,7 @@ export default function Header() {
     <>
       <header className="fixed top-0 left-0 right-0 z-10">
         <Head>
-          <title>AnyPos</title>
+          <title>anyPOS</title>
           <meta
             name="description"
             content="Create Next JS Responsive Menu with Tailwind CSS"
@@ -111,11 +111,7 @@ export default function Header() {
                       {t('navlist.features')}
                     </Link>
                   </li>
-                  <li className="text-[#373737] text-base font-semibold tracking-wider">
-                    <Link href="/#pricing" onClick={() => setNavbar(false)}>
-                      {t('navlist.packages')}
-                    </Link>
-                  </li>
+
                   <li className="text-[#373737] text-base font-semibold tracking-wider">
                     <Link href="/#contact" onClick={() => setNavbar(false)}>
                       {t('navlist.contact')}
@@ -124,14 +120,14 @@ export default function Header() {
                 </ul>
               </div>
             </div>
-            <div className='md:block hidden'>
+            <div className="md:block hidden">
               <div className="flex items-center justify-between py-3 md:py-5 gap-3">
                 <LanguageSwitcher lang={switch_lang ? 'en' : 'ar'}>
                   <div
                     className="text-sm font-semibold uppercase inline-block text-[#FF4014] border-2 border-[#FF4014] bg-transparent hover:bg-[#FF4014] hover:text-white rounded-[10px] py-[8px] px-[24px]"
                     onClick={() => set_switch_lang(!switch_lang)}
                   >
-                    {switch_lang ? 'English' : 'Arabic'}
+                    {switch_lang ? 'English' : 'العربية'}
                   </div>
                 </LanguageSwitcher>
 

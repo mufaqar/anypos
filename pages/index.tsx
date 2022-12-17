@@ -34,13 +34,9 @@ export default function Home() {
               <li className='text-[#54595F] text-lg font-medium flex items-center'>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="3" stroke="currentColor" className="w-8 h-6 rounded text-[#4267F1]">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M18 12H6" />
-                </svg> Buy the POS terminal and get any free any POS software for 12 months.
+                </svg> Buy the POS terminal and get any free anyPOS software for 12 months.
               </li>
-              <li className='text-[#54595F] text-lg font-medium flex items-center'>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="3" stroke="currentColor" className="w-8 h-6 rounded text-[#4267F1]">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M18 12H6" />
-                </svg> Pay in easy 3 months instalments.
-              </li>
+
               <li className='text-[#54595F] text-lg font-medium flex items-center'>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="3" stroke="currentColor" className="w-8 h-6 rounded text-[#4267F1]">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M18 12H6" />
