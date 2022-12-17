@@ -93,6 +93,15 @@ export default function Features() {
           ]}
           variations="bg-white py-5 rounded-[5px] hover:shadow-lg flex gap-3 px-3 items-start"
         />
+        <ImageBox
+          Featue_Img={Icon9}
+          size="w-1/6"
+          title="Multi-Language"
+          features={[
+            ' anyPOS supports multiple languages, and allows users to use multiple languages on any device.',
+          ]}
+          variations="bg-white py-5 rounded-[5px] hover:shadow-lg flex gap-3 px-3 items-start"
+        />
       </div>
     </section>
   );

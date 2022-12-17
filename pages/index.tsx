@@ -97,8 +97,8 @@ export default function Home() {
             <h3 className='text-[#2A2A2A] text-[28px] leading-[1em] font-medium tracking-[0.5px]'>
               Phone
             </h3>
-            <Link href="tel:92 000 8927" target="_blank" className='text-[#5C5C5C] text-xl font-normal'>
-              92 000 8927
+            <Link href="tel:1-800-820-9814" target="_blank" className='text-[#5C5C5C] text-xl font-normal'>
+              1-800-820-9814
             </Link>
           </div>
         </div>
