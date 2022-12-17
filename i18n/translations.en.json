@@ -15,53 +15,45 @@
       "btn_text": " Get anyPOS"
     },
     "features": {
-      "heading": "  Easiest POS software to use",
-      "sub_heading": "with all features you need to grow your business",
-      "feature_title": "Omni channel POS",
-      "feature_list1": "Sell in the store",
-      "feature_list2": "Sell on the go",
-      "feature_list3": "Sell online"
+      "heading": "Easiest POS software to use"
     },
     "features1": {
-      "heading": "POS on any Device ",
+      "heading": "POS on any Device",
       "sub_heading": "anyPOS software works on any mobile, tab or PC. Get full POS without spending thousands on clunky hardware and legacy software’s."
     },
     "features2": {
-      "heading": "ZATCA e-Invoicing",
-      "sub_heading": "Print simplified invoices in compliance with ZATCA standards"
+      "heading": "POS on any Device",
+      "sub_heading": "Print simplified invoices in compliance with ZATCA standards."
     },
     "features3": {
       "heading": "It’s on Cloud!",
-      "sub_heading": "As anyPOS is on cloud so you can access it anytime from anywhere in the word its available 24/7. See the live progress of your store sales through our integrated dashboard. We store your important business data securely in the cloud to protect your business against events like computer theft, viruses, and unexpected breakdowns."
+      "sub_heading": "As anyPOS is on the cloud so you can access it anytime from anywhere in the word it's available 24/7. See the live progress of your store sales through our integrated dashboard."
     },
     "features4": {
+      "heading": "Record Payments",
+      "sub_heading": "With anyPOS you can Record payment quickly and easily. We Support Mada Visa Master Etc"
+    },
+    "features5": {
       "heading": "Online & Offline",
       "sub_heading": "anyPOS is a cloud-based platform that can also work offline. All offline transactions are automatically synced with your store’s cloud once you get back online. So, continue selling, even when there’s no internet."
     },
-    "features5": {
-      "heading": "Accept Payments",
-      "sub_heading": "With anyPOS you can accept payment quickly and easily. We are integrated with all major payment gateways of Saudi Arabia."
-    },
     "features6": {
+      "heading": "Multi-Store Management",
+      "sub_heading": "Manage multiple stores under one account from the dashboard. Track your sales, employees, and customer."
+    },
+    "features7": {
       "heading": "High Level Reports",
-      "sub_heading": "anyPOS central dashboard gives you an ability to review sales, customer, and overall business performances. Make better decisions with anyPOS cloud-based POS."
+      "sub_heading": "anyPOS central dashboard gives you the ability to review sales, customer, and overall business performances. Make better decisions with anyPOS cloud-based POS."
     },
-    "billing": {
-      "heading": "Simple Billing Plan's",
-      "list": [
-        "e-invoicing enabled",
-        "Worked online and offline",
-        "Unlimited products",
-        "Multi-Type Payments",
-        "Import/edit products by a CSV file",
-        "Print daily sell summary report",
-        "Various sales reports",
-        "Customer management system",
-        "Stock management",
-        "Dashboard (Real-time sale dashboard)",
-        "Store e-invoices online"
-      ]
+    "features8": {
+      "heading": "Win XP",
+      "sub_heading": "No need to change or upgrade your current POS as anyPOS works on win XP."
     },
+    "features9": {
+      "heading": "Multi-Language",
+      "sub_heading": "anyPOS supports multiple languages, and allows users to use multiple languages on any device."
+    },
+   
     "contact": {
       "heading": "Start your free 14-day trial",
       "email_heading": "E-MAIL US",
