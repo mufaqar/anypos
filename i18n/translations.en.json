@@ -27,7 +27,7 @@
     },
     "features3": {
       "heading": "It’s on Cloud!",
-      "sub_heading": "As anyPOS is on the cloud so you can access it anytime from anywhere in the word it's available 24/7. See the live progress of your store sales through our integrated dashboard."
+      "sub_heading":"As anyPOS is on the cloud so you can access it anytime from anywhere in the word it's available 24/7. See the live progress of your store sales through our integrated dashboard."
     },
     "features4": {
       "heading": "Record Payments",
@@ -47,7 +47,7 @@
     },
     "features8": {
       "heading": "Win XP",
-      "sub_heading": "No need to change or upgrade your current POS as anyPOS works on win XP."
+      "sub_heading":"No need to change or upgrade your current POS as anyPOS works on win XP."
     },
     "features9": {
       "heading": "Multi-Language",
@@ -60,7 +60,7 @@
       "email_title": "hi@anypos.app"
     },
     "footer": {  
-      "copyright": "© anypos 2022, All Rights Reserved"
+      "copyright": "© anyPOS 2022, All Rights Reserved"
     }
     
   }
