@@ -98,13 +98,13 @@ export default function Header() {
                     </Link>
                   </li>
                   <li className="text-[#373737] text-base font-semibold tracking-wider">
-                    <Link href="/#features" onClick={() => setNavbar(false)}>
+                    <Link href="#features" onClick={() => setNavbar(false)}>
                       {t('navlist.features')}
                     </Link>
                   </li>
 
                   <li className="text-[#373737] text-base font-semibold tracking-wider">
-                    <Link href="/#contact" onClick={() => setNavbar(false)}>
+                    <Link href="#contact" onClick={() => setNavbar(false)}>
                       {t('navlist.contact')}
                     </Link>
                   </li>
