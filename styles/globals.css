@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap');
+
 @font-face {
   font-family: 'sqmarketmedium';
   src: url('../public/fonts/sqmarket-medium.woff2');
@@ -30,6 +32,13 @@ li,
 span {
   font-family: 'Roboto-Regular';
 }
+p,
+li,
+span {
+  font-family: 'Cairo', sans-serif;
+}
+
+
 
 .container {
   @apply px-5;
