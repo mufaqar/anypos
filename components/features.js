@@ -74,8 +74,8 @@ export default function Features() {
         <ImageBox
           Featue_Img={Icon8}
           size="w-1/6"
-          title={t('features9.heading')}
-          features={t('features9.sub_heading')}
+          title={t('features8.heading')}
+          features={t('features8.sub_heading')}
           variations="bg-white py-5 rounded-[5px] hover:shadow-lg flex gap-3 px-3 items-start"
         />
         <ImageBox

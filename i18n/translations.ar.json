@@ -15,7 +15,7 @@
       "btn_text": "أحصل على نظام anyPOS"   
     },
     "features": {
-      "heading": "Easiest POS software to use"
+      "heading": "أسهل برنامج نقاط بيع وفواتير الكترونية"
     },
     "features1": {
       "heading": "يعمل على جميع الأجهزة",
@@ -50,24 +50,17 @@
       "sub_heading": "لست بحاجة لتغيير أو ترقية اجهزة نقاط البيع التي تملكها حاليا لأن نظام anyPOS يعمل ايضا على انظمة ويندوز XP"
     },
     "features9": {
-      "heading": "Multi-Language",
-      "sub_heading": "anyPOS supports multiple languages, and allows users to use multiple languages on any device."
+      "heading": "متعدد اللغات:",
+      "sub_heading": " يدعم anyPOS لغات متعددة ، ويسمح للمستخدمين باستخدام لغات متعددة على أي جهاز"
     },
-    "billing": {
-      "heading": "خطة الدفع والاشتراك",
-      "list": [
-        "e-invoicing enabled",
-        "Worked online and offline",
-        "Unlimited products",
-        "Multi-Type Payments",
-        "Import/edit products by a CSV file",
-        "Print daily sell summary report",
-        "Various sales reports",
-        "Customer management system",
-        "Stock management",
-        "Dashboard (Real-time sale dashboard)",
-        "Store e-invoices online"
-      ]
+    "deal": {
+      "heading": "احصل على افضل عرض الان ...!",
+      "list":  "اشترِ جهاز نقاط البيع المتنقل مع ضمان لمدة ١٢ شهر.",
+       "list2": "واحصل معه على برنامج إدارة نقاط البيع مجاني لمدة 12 شهرًا."
+    },
+    "support": {
+      "heading": "أفضل دعم فني",
+      "sub_heading": "قم بإنشاء تذكرة طلب دعم فني وسيقوم موظفونا بالاتصال بك لمعالجة استفسارك"
     },
     "contact": {  
       "heading": "ابدأ الإصدار التجريبي مجانا لمدة 14 يوما",

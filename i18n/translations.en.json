@@ -52,8 +52,16 @@
     "features9": {
       "heading": "Multi-Language",
       "sub_heading": "anyPOS supports multiple languages, and allows users to use multiple languages on any device."
-    },
-   
+    },    
+    "deal": {
+      "heading": "Get The Best Deal...!",
+      "list":  "Buy the POS terminal and get any free anyPOS software for 12 months.",
+      "list2": "12 months local warranty ."
+    },  
+    "support": {
+      "heading": "Best Technical Support",
+      "sub_heading": "Create a ticket for helpdesk and our staff will contact you to address your inquiry or call us at 1-800-820-9814."
+    }, 
     "contact": {
       "heading": "Start your free 14-day trial",
       "email_heading": "E-MAIL US",

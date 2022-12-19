@@ -29,23 +29,22 @@ export default function Home() {
             <Image src={Hand} alt="banner" className='md:hidden block' />
           </div>
           <div className='md:w-1/2 ml-auto'>
-            <h1 className='text-[#2A2A2A] md:text-[52px] text-[36px] leading-[1em] font-medium tracking-[0.5px] mb-4'>Get The Best Deal...!</h1>
+            <h1 className='text-[#2A2A2A] md:text-[52px] text-[36px] leading-[1em] font-medium tracking-[0.5px] mb-4'>
+            {t('deal.heading')}
+            </h1>
             <ul>
               <li className='text-[#54595F] text-lg font-medium flex items-center'>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="3" stroke="currentColor" className="w-8 h-6 rounded text-[#4267F1]">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M18 12H6" />
-                </svg> Buy the POS terminal and get any free anyPOS software for 12 months.
+                </svg> {t('deal.list')}
               </li>
 
               <li className='text-[#54595F] text-lg font-medium flex items-center'>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="3" stroke="currentColor" className="w-8 h-6 rounded text-[#4267F1]">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M18 12H6" />
-                </svg> 12 months local warranty .
+                </svg> {t('deal.list2')}
               </li>
             </ul>
-            <Link href="#" className="text-sm font-semibold uppercase inline-block mt-10 text-[#4267F1] border-2 border-[#4267F1] bg-transparent hover:bg-[#4267F1] hover:text-white rounded-[10px] py-[8px] px-[24px]">
-              Get it now
-            </Link>
           </div>
         </div>
         <div className="custom-shape-divider-bottom-1670927066">
@@ -59,10 +58,10 @@ export default function Home() {
         <div className='container mx-auto py-16 grid md:grid-cols-2 grid-cols-1 gap-10 items-center'>
           <div className=''>
             <h3 className='text-[#2A2A2A] text-[28px] leading-[1em] font-medium tracking-[0.5px] mb-5'>
-              Best Technical Support
+            {t('support.heading')}
             </h3>
             <p className='text-[#54595F] text-lg font-medium max-w-xs px-2'>
-              Create a ticket for helpdesk and our staff will contact you to address your inquiry or call us at 1-800-820-9814.
+            {t('support.sub_heading')}
             </p>
           </div>
           <div className='md:flex md:justify-end'>
