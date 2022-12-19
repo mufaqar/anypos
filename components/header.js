@@ -4,8 +4,6 @@ import Link from 'next/link';
 import { useState } from 'react';
 import Logo from '../public/images/logo.svg';
 import { useTranslation, LanguageSwitcher } from 'next-export-i18n';
-import Form from '../components/form';
-import Modal from 'react-modal';
 
 const customStyles = {
   content: {
@@ -22,15 +20,8 @@ export default function Header() {
   const { t } = useTranslation();
   const [navbar, setNavbar] = useState(false);
   const [switch_lang, set_switch_lang] = useState(false);
-  const [modalIsOpen, setIsOpen] = useState(false);
 
-  function openModal() {
-    setIsOpen(true);
-  }
-  function closeModal() {
-    setIsOpen(false);
-  }
-
+  
   return (
     <>
       <header className="fixed top-0 left-0 right-0 z-10">
@@ -132,7 +123,6 @@ export default function Header() {
                 </LanguageSwitcher>
 
                 <div
-                  onClick={openModal}
                   className="text-sm font-semibold uppercase inline-block text-[#4267F1] border-2 border-[#4267F1] bg-transparent hover:bg-[#4267F1] hover:text-white rounded-[10px] py-[8px] px-[24px]"
                 >
                   {t('navlist.demo')}
@@ -142,14 +132,6 @@ export default function Header() {
           </div>
         </nav>
       </header>
-      <Modal
-        isOpen={modalIsOpen}
-        onRequestClose={closeModal}
-        style={customStyles}
-        contentLabel="Example Modal"
-      >
-        <Form />
-      </Modal>
     </>
   );
 }
