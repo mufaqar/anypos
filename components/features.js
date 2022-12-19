@@ -9,6 +9,7 @@ import Icon6 from '../public/images/icon6.svg';
 import Icon7 from '../public/images/icon7.svg';
 import Icon8 from '../public/images/icon8.svg';
 import Icon9 from '../public/images/icon9.svg';
+import Icon10 from '../public/images/icon10.svg';
 import { useTranslation } from 'next-export-i18n';
 
 export default function Features() {
@@ -79,7 +80,7 @@ export default function Features() {
           variations="bg-white py-5 rounded-[5px] hover:shadow-lg flex gap-3 px-3 items-start"
         />
         <ImageBox
-          Featue_Img={Icon9}
+          Featue_Img={Icon10}
           size="w-1/6"
           title={t('features9.heading')}
           features={t('features9.sub_heading')}

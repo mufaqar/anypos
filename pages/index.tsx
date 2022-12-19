@@ -55,7 +55,7 @@ export default function Home() {
       </section>
 
       <section className="relative py-8">
-        <div className='container mx-auto py-16 grid md:grid-cols-2 grid-cols-1 gap-10 items-center'>
+        <div className='container mx-auto grid md:grid-cols-2 grid-cols-1 gap-10 items-center'>
           <div className=''>
             <h3 className='text-[#2A2A2A] text-[28px] leading-[1em] font-medium tracking-[0.5px] mb-5'>
             {t('support.heading')}
@@ -65,7 +65,7 @@ export default function Home() {
             </p>
           </div>
           <div className='md:flex md:justify-end'>
-            <Image src={Support} alt="banner" />
+            <Image src={Support} alt="banner" className='md:w-3/4 w-full ' />
           </div>
         </div>
       </section>
