@@ -20,7 +20,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'sqmarketmedium';
+  font-family: 'sqmarketmedium', sans-serif;
 }
 
 header,
@@ -32,14 +32,17 @@ li,
 span {
   font-family: 'Roboto-Regular';
 }
-p,
-li,
-span {
-  font-family: 'Cairo', sans-serif;
-}
 
-.rtl header {
-  font-family: 'Cairo';
+.rtl h1,
+.rtl h2,
+.rtl h3,
+.rtl h4,
+.rtl h5,
+.rtl h6,
+.rtl p,
+.rtl li,
+.rtl span {
+  font-family: 'Cairo', sans-serif;
 }
 
 .container {
