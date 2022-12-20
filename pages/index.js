@@ -8,14 +8,13 @@ import Emal from '../public/images/eml.png';
 import Address from '../public/images/address.png';
 import Phone from '../public/images/phone.png';
 import { useTranslation } from 'next-export-i18n';
-import { Html } from 'next/document';
 
 export default function Home() {
   const { t } = useTranslation();
 
   return (
     <>
-      <Html>
+  
         <Banner />
         <Features />
         <section
@@ -149,7 +148,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-      </Html>
+     
     </>
   );
 }
