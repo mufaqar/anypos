@@ -38,7 +38,9 @@ span {
   font-family: 'Cairo', sans-serif;
 }
 
-
+.rtl header {
+  font-family: 'Cairo';
+}
 
 .container {
   @apply px-5;
@@ -124,7 +126,6 @@ li {
 .custom-shape-divider-top-1670933909 .shape-fill {
   fill: #ffffff;
 }
-
 
 #pricing .custom-shape-divider-bottom-1670924415 svg {
   transform: rotateY(0);
