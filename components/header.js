@@ -21,7 +21,6 @@ export default function Header() {
   const [navbar, setNavbar] = useState(false);
   const [switch_lang, set_switch_lang] = useState(false);
 
-  
   return (
     <>
       <header className="fixed top-0 left-0 right-0 z-10">
@@ -121,12 +120,11 @@ export default function Header() {
                     {switch_lang ? 'English' : 'العربية'}
                   </div>
                 </LanguageSwitcher>
-
-                <div
-                  className="text-sm font-semibold uppercase inline-block text-[#4267F1] border-2 border-[#4267F1] bg-transparent hover:bg-[#4267F1] hover:text-white rounded-[10px] py-[8px] px-[24px]"
-                >
-                  {t('navlist.demo')}
-                </div>
+                <a href="https://portal.anypos.app/login" className="">
+                  <div className="text-sm font-semibold uppercase inline-block text-[#4267F1] border-2 border-[#4267F1] bg-transparent hover:bg-[#4267F1] hover:text-white rounded-[10px] py-[8px] px-[24px]">
+                    {t('navlist.demo')}
+                  </div>
+                </a>
               </div>
             </div>
           </div>

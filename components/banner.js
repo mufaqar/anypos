@@ -34,12 +34,12 @@ export default function Banner() {
           <h3 className="text-[#2A2A2A] md:text-[32px] text-[28px] leading-[1em] font-medium tracking-[0.5px] mb-4">
             {t('banner.sub_heading')}
           </h3>
-          <Link
-            href="#"
+          <a
+            href="https://portal.anypos.app/login"
             className="text-sm font-semibold uppercase inline-block mt-10 text-[#4267F1] border-2 border-[#4267F1] bg-transparent hover:bg-[#4267F1] hover:text-white rounded-[10px] py-[8px] px-[24px]"
           >
             {t('banner.btn_text')}
-          </Link>
+          </a>
         </div>
         <div className="flex justify-end">
           <Image src={Any_device} alt="banner" />

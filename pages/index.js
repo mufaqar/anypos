@@ -122,9 +122,7 @@ export default function Home() {
             <h3 className="text-[#2A2A2A] text-[28px] leading-[1em] font-medium tracking-[0.5px]">
               Address
             </h3>
-            <p className="text-[#5C5C5C] text-xl font-normal">
-              Khalid Bin Alwaleed, Ghirnatah Second floor, Riyadh 11564
-            </p>
+            <p className="text-[#5C5C5C] text-xl font-normal"></p>
           </div>
           <div className="grid gap-2 py-3 justify-items-center text-center border border-[]">
             <Image src={Emal} alt="" className="w-1/4" />
@@ -135,9 +133,7 @@ export default function Home() {
               href="mailto:info@anypos.app"
               target="_blank"
               className="text-[#5C5C5C] text-xl font-normal"
-            >
-              info@anypos.app
-            </Link>
+            ></Link>
           </div>
           <div className="grid gap-2 py-3 justify-items-center text-center border border-[]">
             <Image src={Phone} alt="" className="w-1/4" />
@@ -148,9 +144,7 @@ export default function Home() {
               href="tel:1-800-820-9814"
               target="_blank"
               className="text-[#5C5C5C] text-xl font-normal"
-            >
-              1-800-820-9814
-            </Link>
+            ></Link>
           </div>
         </div>
       </section>
