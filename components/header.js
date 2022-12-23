@@ -86,23 +86,23 @@ export default function Header() {
                 }`}
               >
                 <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
-                  <li className="text-[#373737] text-base font-semibold tracking-wider">
+                  <li className="text-[#373737] text-base font-semibold tracking-wider  hover:text-[#FF4014]">
                     <Link href="/" onClick={() => setNavbar(false)}>
                       {t('navlist.home')}
                     </Link>
                   </li>
-                  <li className="text-[#373737] text-base font-semibold tracking-wider">
+                  <li className="text-[#373737] text-base font-semibold tracking-wider  hover:text-[#FF4014]">
                     <Link href="/wiseasy" onClick={() => setNavbar(false)}>
                       {t('navlist.pos')}
                     </Link>
                   </li>
-                  <li className="text-[#373737] text-base font-semibold tracking-wider">
+                  <li className="text-[#373737] text-base font-semibold tracking-wider  hover:text-[#FF4014]">
                     <Link href="#features" onClick={() => setNavbar(false)}>
                       {t('navlist.features')}
                     </Link>
                   </li>
 
-                  <li className="text-[#373737] text-base font-semibold tracking-wider">
+                  <li className="text-[#373737] text-base font-semibold tracking-wider  hover:text-[#FF4014]">
                     <Link href="#contact" onClick={() => setNavbar(false)}>
                       {t('navlist.contact')}
                     </Link>

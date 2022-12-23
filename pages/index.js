@@ -106,7 +106,7 @@ export default function Home() {
             <h3 className="text-[#2A2A2A] text-[28px] leading-[1em] font-medium tracking-[0.5px] mb-5">
               {t('support.heading')}
             </h3>
-            <p className="text-[#54595F] text-lg font-medium max-w-xs px-2">
+            <p className="text-[#54595F] text-lg font-medium max-w-xs">
               {t('support.sub_heading')}
             </p>
           </div>

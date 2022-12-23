@@ -114,7 +114,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/privacy-policy"
-                  className="text-white text-base font-medium"
+                  className="text-white text-base font-medium  hover:text-[#FF4014]"
                 >
                   Privacy Policy
                 </Link>
@@ -122,7 +122,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/terms-of-service"
-                  className="text-white text-base font-medium"
+                  className="text-white text-base font-medium  hover:text-[#FF4014]"
                 >
                   Website Terms Of Use
                 </Link>
@@ -130,7 +130,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/acceptable-use-policy"
-                  className="text-white text-base font-medium"
+                  className="text-white text-base font-medium  hover:text-[#FF4014]"
                 >
                   Cookie Policy
                 </Link>
