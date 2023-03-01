@@ -1,18 +1,18 @@
-import Head from 'next/head';
-import Image from 'next/image';
-import Link from 'next/link';
-import { useState } from 'react';
-import Logo from '../public/images/logo.svg';
-import { useTranslation, LanguageSwitcher } from 'next-export-i18n';
+import Head from "next/head";
+import Image from "next/image";
+import Link from "next/link";
+import { useEffect, useState } from "react";
+import Logo from "../public/images/logo.svg";
+import { useTranslation, LanguageSwitcher } from "next-export-i18n";
 
 const customStyles = {
   content: {
-    top: '50%',
-    left: '50%',
-    right: 'auto',
-    bottom: 'auto',
-    marginRight: '-50%',
-    transform: 'translate(-50%, -50%)',
+    top: "50%",
+    left: "50%",
+    right: "auto",
+    bottom: "auto",
+    marginRight: "-50%",
+    transform: "translate(-50%, -50%)",
   },
 };
 
@@ -21,9 +21,25 @@ export default function Header() {
   const [navbar, setNavbar] = useState(false);
   const [switch_lang, set_switch_lang] = useState(false);
 
+
+  const [scrollTop, setScrollTop] = useState(0);
+  const [headerClr, setHeaderClr] = useState(false);
+
+  useEffect(() => {
+    function onScroll() {
+      let currentPosition = window.pageYOffset;
+      setScrollTop(currentPosition <= 0 ? 0 : currentPosition);
+    }
+    scrollTop >= '20' ? setHeaderClr(true) : setHeaderClr(false);
+    window.addEventListener('scroll', onScroll);
+    return () => window.removeEventListener('scroll', onScroll);
+  
+  }, [scrollTop]);
+
+
   return (
     <>
-      <header className="fixed top-0 left-0 right-0 z-10">
+      <header className={`fixed top-0 md:px-4 left-0 right-0 z-10 ${headerClr && 'bg-white' }`}>
         <Head>
           <title>anyPOS</title>
           <meta
@@ -32,7 +48,7 @@ export default function Header() {
           />
           <link rel="icon" href="/favicon.ico" />
         </Head>
-        <nav className="relative w-full bg-gradient-to-r from-[#E2F0FB] via-[#E2F0FB] to-[#FFFFFF] border-b border-[#02010112]">
+        <nav className="relative w-full">
           <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-0">
             <div>
               <div className="flex items-center justify-between py-3 md:py-5 md:block">
@@ -77,54 +93,54 @@ export default function Header() {
                 </div>
               </div>
             </div>
-            <div>
+            <div className="flex items-center gap-5">
               <div
                 className={`flex-1 justify-self-center md:block ${
                   navbar
-                    ? 'block max-md:absolute max-md:top-16 max-md:left-0 max-md:right-0 max-md:z-20 max-md:bg-[#E2F0FB] px-4 py-5'
-                    : 'hidden'
+                    ? "block max-md:absolute max-md:top-16 max-md:left-0 max-md:right-0 max-md:z-20 max-md:bg-[#E2F0FB] px-4 py-5"
+                    : "hidden"
                 }`}
               >
                 <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
-                  <li className="text-[#373737] text-base font-semibold tracking-wider  hover:text-[#FF4014]">
+                  <li className={`text-base font-semibold tracking-wider  hover:underline ${headerClr ? 'text-[#FF4014]' : 'md:text-white text-[#FF4014]'}`}>
                     <Link href="/" onClick={() => setNavbar(false)}>
-                      {t('navlist.home')}
+                      {t("navlist.home")}
                     </Link>
                   </li>
-                  <li className="text-[#373737] text-base font-semibold tracking-wider  hover:text-[#FF4014]">
+                  <li className={`text-base font-semibold tracking-wider  hover:underline ${headerClr ? 'text-[#FF4014]' : 'md:text-white text-[#FF4014]'}`}>
                     <Link href="/wiseasy" onClick={() => setNavbar(false)}>
-                      {t('navlist.pos')}
+                      {t("navlist.pos")}
                     </Link>
                   </li>
-                  <li className="text-[#373737] text-base font-semibold tracking-wider  hover:text-[#FF4014]">
+                  <li className={`text-base font-semibold tracking-wider  hover:underline ${headerClr ? 'text-[#FF4014]' : 'md:text-white text-[#FF4014]'}`}>
                     <Link href="#features" onClick={() => setNavbar(false)}>
-                      {t('navlist.features')}
+                      {t("navlist.features")}
                     </Link>
                   </li>
 
-                  <li className="text-[#373737] text-base font-semibold tracking-wider  hover:text-[#FF4014]">
+                  <li className={`text-base font-semibold tracking-wider  hover:underline ${headerClr ? 'text-[#FF4014]' : 'md:text-white text-[#FF4014]'}`}>
                     <Link href="#contact" onClick={() => setNavbar(false)}>
-                      {t('navlist.contact')}
+                      {t("navlist.contact")}
                     </Link>
                   </li>
                 </ul>
               </div>
-            </div>
-            <div className="md:block hidden">
-              <div className="flex items-center justify-between py-3 md:py-5 gap-3">
-                <LanguageSwitcher lang={switch_lang ? 'en' : 'ar'}>
-                  <div
-                    className="text-sm font-semibold uppercase inline-block text-[#FF4014] border-2 border-[#FF4014] bg-transparent hover:bg-[#FF4014] hover:text-white rounded-[10px] py-[8px] px-[24px]"
-                    onClick={() => set_switch_lang(!switch_lang)}
-                  >
-                    {switch_lang ? 'English' : 'العربية'}
-                  </div>
-                </LanguageSwitcher>
-                <a href="https://portal.anypos.app/login" className="">
-                  <div className="text-sm font-semibold uppercase inline-block text-[#4267F1] border-2 border-[#4267F1] bg-transparent hover:bg-[#4267F1] hover:text-white rounded-[10px] py-[8px] px-[24px]">
-                    {t('navlist.demo')}
-                  </div>
-                </a>
+              <div className="md:block hidden">
+                <div className="flex items-center justify-between py-3 md:py-5 gap-3">
+                  <LanguageSwitcher lang={switch_lang ? "en" : "ar"}>
+                    <div
+                      className={`text-sm font-semibold uppercase inline-block  rounded-md py-[10px] px-[24px] hover:shadow-lg ${headerClr ? 'bg-[#4267F1] text-white' : 'text-[#4267F1] bg-white'}`}
+                      onClick={() => set_switch_lang(!switch_lang)}
+                    >
+                      {switch_lang ? "English" : "العربية"}
+                    </div>
+                  </LanguageSwitcher>
+                  <a href="https://portal.anypos.app/login" className="">
+                    <div className="text-sm font-semibold uppercase inline-block text-white bg-[#5DCCDA] hover:text-white rounded-md py-[10px] px-[24px] hover:shadow-lg">
+                      {t("navlist.demo")}
+                    </div>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
