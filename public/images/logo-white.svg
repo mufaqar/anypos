@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="211.364" height="67.763" viewBox="0 0 211.364 67.763">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_3068" data-name="Rectangle 3068" width="211.364" height="67.763" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="Group_3672" data-name="Group 3672" transform="translate(0 0)">
+    <g id="Group_3671" data-name="Group 3671" transform="translate(0 0)">
+      <g id="Group_3670" data-name="Group 3670" clip-path="url(#clip-path)">
+        <path id="Path_1343" data-name="Path 1343" d="M293.807,41.947a16.495,16.495,0,1,1-.245-.187c-.123.072-.229.145-.343.2-1.5.718-3,1.446-4.512,2.139a1.228,1.228,0,0,1-.81.05,12.609,12.609,0,1,0,8.491,13.734,12.264,12.264,0,0,0-2.739-9.771,1.165,1.165,0,0,1-.256-.72c.115-1.8.269-3.591.414-5.444" transform="translate(-122.786 -17.862)" fill="#fff"/>
+        <path id="Path_1344" data-name="Path 1344" d="M299.858,64.268a7.754,7.754,0,1,1-7.767-7.733,7.728,7.728,0,0,1,7.767,7.733m-7.749,3.181a3.161,3.161,0,1,0-.013-6.322,3.161,3.161,0,1,0,.013,6.322" transform="translate(-130.982 -26.042)" fill="#fff"/>
+        <text id="any" transform="translate(0 54.246)" fill="#fff" font-size="63" font-family="Modulus-Bold, Modulus" font-weight="700"><tspan x="0" y="0">any</tspan></text>
+        <text id="p" transform="translate(104.982 54.246)" fill="#fff" font-size="63" font-family="Modulus-Bold, Modulus" font-weight="700"><tspan x="0" y="0">p</tspan></text>
+      </g>
+    </g>
+    <text id="s" transform="translate(179.787 53.734)" fill="#fff" font-size="63" font-family="Modulus-Bold, Modulus" font-weight="700"><tspan x="0" y="0">s</tspan></text>
+  </g>
+</svg>

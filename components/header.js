@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import Logo from "../public/images/logo.svg";
+import LogoWhite from '../public/images/logo-white.png'
 import { useTranslation, LanguageSwitcher } from "next-export-i18n";
 
 const customStyles = {
@@ -39,7 +40,7 @@ export default function Header() {
 
   return (
     <>
-      <header className={`fixed top-0 md:px-4 left-0 right-0 z-10 ${headerClr && 'bg-white' }`}>
+      <header className={`fixed top-0 md:px-4 left-0 right-0 transition-all duration-500 ease-in-out  z-10 ${headerClr && 'bg-white'}`}>
         <Head>
           <title>anyPOS</title>
           <meta
@@ -53,7 +54,7 @@ export default function Header() {
             <div>
               <div className="flex items-center justify-between py-3 md:py-5 md:block">
                 <Link href="/" onClick={() => setNavbar(false)}>
-                  <Image src={Logo} alt="Logo" className="md:w-1/2 w-1/3" />
+                  <Image src={headerClr ? Logo : LogoWhite} alt="Logo" width={170} height={30}  />
                 </Link>
                 <div className="md:hidden">
                   <button

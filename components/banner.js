@@ -24,19 +24,18 @@ export default function Banner() {
           <div className="flex items-center gap-6">
             <a
               href="https://portal.anypos.app/login"
+              target="_blank"
+              rel="noreferrer"
               className="text-sm font-semibold uppercase inline-block mt-5 bg-[#5DCCDA] p-3 px-4 md:px-10 shadow-sm rounded-md hover:shadow-lg text-white "
             >
               {t("banner.btn_text")}
             </a>
-            <a
-              href="https://portal.anypos.app/login"
-              className="text-sm font-semibold uppercase inline-block mt-5  bg-white p-3 px-4 md:px-7 shadow-sm rounded-md hover:shadow-lg text-[#6433D4] "
-            >
-              <span className="flex items-center gap-3">
-                <FaPlay color="#5DCCDA" size={20} />
-                {t("banner.watch_video")}
-              </span>
-            </a>
+          
+            <Link className=" items-center gap-3 p-3 px-4 md:px-7 text-sm font-semibold uppercase inline-flex mt-5 cursor-pointer bg-white  shadow-sm rounded-md hover:shadow-lg text-[#6433D4]"  href="#">
+              <FaPlay color="#5DCCDA" size={20} />
+              <span> Watch a video</span>
+            </Link>
+            
           </div>
         </div>
         <div className="flex justify-end z-[1]">

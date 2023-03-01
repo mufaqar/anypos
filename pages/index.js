@@ -1,13 +1,14 @@
-import Image from 'next/image';
-import Link from 'next/link';
-import Banner from '../components/banner';
-import Features from '../components/features';
-import Hand from '../public/images/hand.png';
-import Support from '../public/images/sport.png';
-import Emal from '../public/images/eml.png';
-import Address from '../public/images/address.png';
-import Phone from '../public/images/phone.png';
-import { useTranslation } from 'next-export-i18n';
+import Image from "next/image";
+import Link from "next/link";
+import Banner from "../components/banner";
+import Features from "../components/features";
+import Hand from "../public/images/hand.png";
+import Support from "../public/images/sport.png";
+import Emal from "../public/images/eml.png";
+import Address from "../public/images/address.png";
+import Phone from "../public/images/phone.png";
+import { useTranslation } from "next-export-i18n";
+import Application from "../components/application";
 
 export default function Home() {
   const { t } = useTranslation();
@@ -16,138 +17,82 @@ export default function Home() {
     <>
       <Banner />
       <Features />
-      <section
-        id="pricing"
-        className="flip relative md:py-[13rem] py-[9rem] md:bg-[url(/images/hand.png)] bg-cover bg-no-repeat bg-center bg-[#E2F0FB] "
-      >
-        <div className="custom-shape-divider-top-1670933909">
-          <svg
-            data-name="Layer 1"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 1200 120"
-            preserveAspectRatio="none"
-          >
-            <path
-              d="M1200 120L0 16.48 0 0 1200 0 1200 120z"
-              className="shape-fill"
-            ></path>
-          </svg>
-        </div>
-        <div className="container mx-auto flex md:flex-row flex-col-reverse md:gap-0 gap-10 items-center">
-          <div className="">
-            <Image src={Hand} alt="banner" className="md:hidden block" />
+      <Application />
+      <section className="main gap-16 flex flex-col justify-center items-center relative h-[700px] xl:h-[800px] ">
+        <img
+          src="/images/_top.png"
+          className="absolute right-0 left-0 -top-1 w-full"
+        />
+        <img
+          src="/images/_bottom.png"
+          className="absolute right-0 left-0 -bottom-1 w-full"
+        />
+        <div className="container grid grid-cols-1 items-center md:grid-cols-2 mx-auto">
+          <div className="z-[1]">
+            <Image src="/images/mbl.png" alt="mbl" width={700} height={500} />
           </div>
-          <div className="md:w-1/2 ml-auto">
-            <h1 className="text-[#2A2A2A] md:text-[52px] text-[36px] leading-[1em] font-medium tracking-[0.5px] mb-4">
-              {t('deal.heading')}
-            </h1>
-            <ul>
-              <li className="text-[#54595F] text-lg font-medium flex items-center">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth="3"
-                  stroke="currentColor"
-                  className="w-8 h-6 rounded text-[#4267F1]"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M18 12H6"
-                  />
-                </svg>{' '}
-                {t('deal.list')}
-              </li>
-              <li className="text-[#54595F] text-lg font-medium flex items-center">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth="3"
-                  stroke="currentColor"
-                  className="w-8 h-6 rounded text-[#4267F1]"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M18 12H6"
-                  />
-                </svg>{' '}
-                {t('deal.list2')}
-              </li>
-            </ul>
-
+          <div className="md:pl-20 ">
+            <h3 className="text-white font-medium text-3xl md:text-5xl">
+              {" "}
+              simple solution for{" "}
+            </h3>
+            <h2 className="text-white font-bold mt-2 text-4xl md:text-6xl">
+              {" "}
+              simplified Invoice{" "}
+            </h2>
             <Link
-              href="/wiseasy"
-              className="text-sm font-semibold uppercase inline-block mt-10 text-[#4267F1] border-2 border-[#4267F1] bg-transparent hover:bg-[#4267F1] hover:text-white rounded-[10px] py-[8px] px-[24px]"
+              className=" items-center gap-3 p-3 px-4 md:px-7 font-semibold uppercase inline-flex mt-5 cursor-pointer bg-[#5DCCDA]  shadow-sm rounded-md hover:shadow-lg text-white"
+              href="#"
             >
-              POS Device
+              Get anypose
             </Link>
           </div>
         </div>
-        <div className="custom-shape-divider-bottom-1670927066">
-          <svg
-            data-name="Layer 1"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 1200 120"
-            preserveAspectRatio="none"
-          >
-            <path
-              d="M1200 120L0 16.48 0 0 1200 0 1200 120z"
-              className="shape-fill"
-            ></path>
-          </svg>
-        </div>
       </section>
-      <section className="relative py-8">
-        <div className="container mx-auto grid md:grid-cols-2 grid-cols-1 gap-10 items-center">
-          <div className="">
-            <h3 className="text-[#2A2A2A] text-[28px] leading-[1em] font-medium tracking-[0.5px] mb-5">
-              {t('support.heading')}
-            </h3>
-            <p className="text-[#54595F] text-lg font-medium max-w-xs">
-              {t('support.sub_heading')}
-            </p>
-          </div>
-          <div className="md:flex md:justify-end">
-            <Image src={Support} alt="banner" className="md:w-3/4 w-full " />
-          </div>
+      <section className="container relative mx-auto my-20 gap-10 md:gap-28 md:flex">
+        <div>
+          <h4 className="uppercase pl-2 font-semibold text-lg font-sans text-[#542ACA]">
+            Chose Us
+          </h4>
+          <h2 className="text-[#2A2A2A] pl-2 md:text-5xl mt-3 text-[32px] leading-[1em] font-bold tracking-[0.5px] mb-5">
+            Why chose us?
+          </h2>
+         <div className="flex items-center gap-20">
+         <Image src="/images/circle-design.svg" alt="circle" width={280} height={300} className="-ml-20"/>
+          <Image src="/images/circle-design.svg" alt="circle" width={150} height={300} className=""/>
+         </div>
         </div>
-      </section>
-      <section id="contact" className="relative py-10">
-        <div className="container mx-auto grid md:grid-cols-3 grid-cols-1 gap-5 ">
-          <div className="grid gap-2 py-3 justify-items-center text-center border border-[]">
-            <Image src={Address} alt="" className="w-1/4" />
-            <h3 className="text-[#2A2A2A] text-[28px] leading-[1em] font-medium tracking-[0.5px]">
-              Address
-            </h3>
-            <p className="text-[#5C5C5C] text-xl font-normal"></p>
-          </div>
-          <div className="grid gap-2 py-3 justify-items-center text-center border border-[]">
-            <Image src={Emal} alt="" className="w-1/4" />
-            <h3 className="text-[#2A2A2A] text-[28px] leading-[1em] font-medium tracking-[0.5px]">
-              E-mail
-            </h3>
-            <Link
-              href="mailto:info@anypos.app"
-              target="_blank"
-              className="text-[#5C5C5C] text-xl font-normal"
-            ></Link>
-          </div>
-          <div className="grid gap-2 py-3 justify-items-center text-center border border-[]">
-            <Image src={Phone} alt="" className="w-1/4" />
-            <h3 className="text-[#2A2A2A] text-[28px] leading-[1em] font-medium tracking-[0.5px]">
-              Phone
-            </h3>
-            <Link
-              href="tel:1-800-820-9814"
-              target="_blank"
-              className="text-[#5C5C5C] text-xl font-normal"
-            ></Link>
-          </div>
+        <div className="flex md:flex-row flex-col gap-5 w-full lg:pl-40">
+          {
+            data.map((item,idx)=>{
+              return(
+                <div className="main rounded-lg w-full" key={idx}>
+                  <div className="">
+                  <h2 className="text-white px-4 mt-3 pt-6 text-[32px] leading-[1em] font-bold tracking-[0.5px] mb-6"> {item.title}</h2>
+                  <p className="text-white px-4 pb-6 font-sans font-light">{item.info}</p>
+                  <Image src={item.image} alt="circle" width={550} height={300} className="rounded-br-lg"/>
+                  </div>
+                </div>
+              )
+            })
+          }
         </div>
+       
       </section>
     </>
   );
 }
+
+
+const data = [
+  {
+    title: 'Meets eCommerce.',
+    info: 'Sell in-person, online, or from anywhere. Take secure payments from customers, clients, and more.',
+    image: '/images/selling-online.png'
+  },
+  {
+    title: 'Meets eCommerce.',
+    info: 'Sell in-person, online, or from anywhere. Take secure payments from customers, clients, and more.',
+    image: '/images/selling-online.png'
+  }
+]

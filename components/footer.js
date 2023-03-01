@@ -5,6 +5,12 @@ import FtLogo from '../public/images/ftlogo.png';
 import { useTranslation } from 'next-export-i18n';
 import TawkTo from 'tawkto-react';
 import { useEffect } from 'react';
+import {FaFacebookF, FaTwitter, FaYoutube} from 'react-icons/fa'
+import {FiInstagram} from 'react-icons/fi'
+import LogoWhite from '../public/images/logo-white.png'
+
+import {HiLocationMarker} from 'react-icons/hi'
+import {BsFillTelephoneFill, BsFillEnvelopeFill} from 'react-icons/bs'
 
 export default function Footer() {
   const { t } = useTranslation();
@@ -20,125 +26,97 @@ export default function Footer() {
 
   return (
     <>
-      <footer className="relative bg-[#6482F4] pt-14 pb-8">
-        <div className="custom-shape-divider-top-1670933909">
-          <svg
-            data-name="Layer 1"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 1200 120"
-            preserveAspectRatio="none"
-          >
-            <path
-              d="M1200 120L0 16.48 0 0 1200 0 1200 120z"
-              className="shape-fill"
-            ></path>
-          </svg>
-        </div>
-        <div className="container mx-auto pt-16 grid grid-cols-1 gap-5 items-center">
-          <div className="grid justify-center">
-            <Image src={FtLogo} alt="logo" />
-          </div>
+      <footer className="relative pt-14 pb-8 bg-[url('/images/footer-bg.svg')] bg-no-repeat bg-cover bg-top">
+        <div className='grid container mx-auto my-20 mt-40 grid-cols-1 md:grid-cols-2 lg:grid-cols-4'>
           <div>
-            <ul className="flex gap-2 justify-center">
-              <li>
-                <Link href="#" target="_blank">
-                  <svg
-                    className="md:h-10 md:w-10 h-8 w-8 md:p-2 p-1 text-white border border-white rounded-full bg-transparent hover:bg-[#FF4014] hover:border-[#FF4014]"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  >
-                    {' '}
-                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
-                  </svg>
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="https://twitter.com/anyposapp?s=21&t=SH40O0hc32J-9PQ1Dm8Wpg"
-                  target="_blank"
-                >
-                  <svg
-                    className="md:h-10 md:w-10 h-8 w-8 md:p-2 p-1 text-white border border-white rounded-full bg-transparent hover:bg-[#FF4014] hover:border-[#FF4014]"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  >
-                    {' '}
-                    <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" />
-                  </svg>
-                </Link>
-              </li>
-              <li>
-                <Link href="#" target="_blank">
-                  <svg
-                    className="md:h-10 md:w-10 h-8 w-8 md:p-2 p-1 text-white border border-white rounded-full bg-transparent hover:bg-[#FF4014] hover:border-[#FF4014]"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  >
-                    {' '}
-                    <rect
-                      x="2"
-                      y="2"
-                      width="20"
-                      height="20"
-                      rx="5"
-                      ry="5"
-                    />{' '}
-                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />{' '}
-                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
-                  </svg>
-                </Link>
-              </li>
+            <Image src={LogoWhite} alt="Logo" width={200} height={30}  />
+            <ul className='flex items-center gap-3 mt-8'>
+              {
+                socials.map((item,idx)=>{
+                  return(
+                    <li key={idx} className='bg-white p-2 hover:shadow-xl cursor-pointer text-[#5427C9] rounded-full'><a href="" target="_blank">{item.icon}</a></li>
+                  )
+                })
+              }
             </ul>
           </div>
-        </div>
-        <div className="container mx-auto pt-5 grid md:grid-cols-2 grid-cols-1 items-center">
-          <div className="grid md:justify-start justify-center">
-            <p className="text-white text-base font-medium">
-              {t('footer.copyright')}
-            </p>
+          <div></div>
+          <div className='mt-10 md:mt-0'>
+              <ul className='flex flex-col gap-4'>
+                <li className='flex gap-2 justify-start text-white font-sans font-extralight text-lg items-start'>
+                  <HiLocationMarker size={35}/>
+                  Khalid Bin Alwaleed, Ghirnatah Second floor, Riyadh 11564
+                </li>
+                <li className='flex gap-2 justify-start text-white font-sans font-extralight text-lg items-start'>
+                  <BsFillEnvelopeFill size={21}/>
+                  info@anypose.app
+                </li>
+                <li className='flex gap-2 justify-start text-white font-sans font-extralight text-lg items-start'>
+                <BsFillTelephoneFill size={21}/>
+                +92 000 8927
+              </li>
+              </ul>
           </div>
-          <div>
-            <ul className="md:flex gap-3 md:justify-end justify-center text-center">
-              <li>
-                <Link
-                  href="/privacy-policy"
-                  className="text-white text-base font-medium  hover:text-[#FF4014]"
-                >
-                  Privacy Policy
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/terms-of-service"
-                  className="text-white text-base font-medium  hover:text-[#FF4014]"
-                >
-                  Website Terms Of Use
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/acceptable-use-policy"
-                  className="text-white text-base font-medium  hover:text-[#FF4014]"
-                >
-                  Cookie Policy
-                </Link>
-              </li>
-            </ul>
+          <div className='flex md:justify-center mt-10'>
+              <ul className='flex flex-col gap-7'>
+                {
+                  footerNav.map((nav,idx)=>{
+                    return(
+                      <li key={idx} className="text-white font-sans font-extralight"><Link href={nav.link}>{nav.name}</Link></li>
+                    )
+                  })
+                }
+              </ul>
           </div>
         </div>
+        <section className='container mx-auto text-white md:flex justify-between items-center'>
+            <p className='font-light text-center mb-5 md:mb-0 md:text-left font-sans'>© anyPOS 2022, All Rights Reserved</p>
+            <div className='flex gap-8'>
+                <Link className='hover:underline' href="#">Privacy Policy</Link>
+                <Link className='hover:underline' href="#">Website Term of Uses</Link>
+                <Link className='hover:underline' href="#">Cookies Policy</Link>
+            </div>
+        </section>
       </footer>
     </>
   );
 }
+
+const socials = [
+  {
+    icon: <FaFacebookF/>,
+    link: "#"
+  },
+  {
+    icon: <FiInstagram/>,
+    link: "#"
+  },
+  {
+    icon: <FaTwitter/>,
+    link: "#"
+  },
+  {
+    icon: <FaYoutube/>,
+    link: "#"
+  }
+]
+
+  
+const footerNav = [
+  {
+    name: 'e-Commerce',
+    link: '#'
+  },
+  {
+    name: 'Retail',
+    link: '#'
+  },
+  {
+    name: 'About Us',
+    link: '#'
+  },
+  {
+    name: 'Contact',
+    link: '#'
+  },
+]
