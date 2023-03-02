@@ -62,7 +62,7 @@ span {
 .rtl h6,
 .rtl p,
 .rtl li,
-.rtl span, ul,li,a {
+.rtl span, ul,li,a, button {
   /* font-family: 'Cairo', sans-serif; */
   font-family: system-ui !important
 }
