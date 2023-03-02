@@ -27,7 +27,7 @@ export default function Footer() {
   return (
     <>
       <footer className="relative pt-14 pb-8 bg-[url('/images/footer-bg.svg')] bg-no-repeat bg-cover bg-top">
-        <div className='grid container mx-auto my-20 mt-40 grid-cols-1 md:grid-cols-2 lg:grid-cols-4'>
+        <div className='grid container mx-auto my-20 mt-48 grid-cols-1 md:grid-cols-2 lg:grid-cols-4'>
           <div>
             <Image src={LogoWhite} alt="Logo" width={200} height={30}  />
             <ul className='flex items-center gap-3 mt-8'>
@@ -57,12 +57,12 @@ export default function Footer() {
               </li>
               </ul>
           </div>
-          <div className='flex md:justify-center mt-10'>
+          <div className='flex md:justify-center mt-10 md:mt-0'>
               <ul className='flex flex-col gap-7'>
                 {
                   footerNav.map((nav,idx)=>{
                     return(
-                      <li key={idx} className="text-white font-sans font-extralight"><Link href={nav.link}>{nav.name}</Link></li>
+                      <li key={idx} className="text-white font-sans font-extralight"><Link href={nav.link}>{t(`footer.link${idx+1}`)}</Link></li>
                     )
                   })
                 }
@@ -70,11 +70,11 @@ export default function Footer() {
           </div>
         </div>
         <section className='container mx-auto text-white md:flex justify-between items-center'>
-            <p className='font-light text-center mb-5 md:mb-0 md:text-left font-sans'>© anyPOS 2022, All Rights Reserved</p>
+            <p className='font-light text-center mb-5 md:mb-0 md:text-left font-sans'>{t("footer.copyright")}</p>
             <div className='flex gap-8'>
-                <Link className='hover:underline' href="#">Privacy Policy</Link>
-                <Link className='hover:underline' href="#">Website Term of Uses</Link>
-                <Link className='hover:underline' href="#">Cookies Policy</Link>
+                <Link className='hover:underline' href="#">{t("footer.pp")}</Link>
+                <Link className='hover:underline' href="#">{t("footer.tu")}</Link>
+                <Link className='hover:underline' href="#">{t("footer.cp")}</Link>
             </div>
         </section>
       </footer>

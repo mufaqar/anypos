@@ -33,7 +33,7 @@ export default function Banner() {
           
             <Link className=" items-center gap-3 p-3 px-4 md:px-7 text-sm font-semibold uppercase inline-flex mt-5 cursor-pointer bg-white  shadow-sm rounded-md hover:shadow-lg text-[#6433D4]"  href="#">
               <FaPlay color="#5DCCDA" size={20} />
-              <span> Watch a video</span>
+              <span> {t("banner.watch_video")} </span>
             </Link>
             
           </div>

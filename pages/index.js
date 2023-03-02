@@ -33,18 +33,18 @@ export default function Home() {
           </div>
           <div className="md:pl-20 ">
             <h3 className="text-white font-medium text-3xl md:text-5xl">
-              {" "}
-              simple solution for{" "}
+              
+              {t("mobile_banner.sub_title")}
             </h3>
             <h2 className="text-white font-bold mt-2 text-4xl md:text-6xl">
-              {" "}
-              simplified Invoice{" "}
+              
+            {t("mobile_banner.title")}
             </h2>
             <Link
               className=" items-center gap-3 p-3 px-4 md:px-7 font-semibold uppercase inline-flex mt-5 cursor-pointer bg-[#5DCCDA]  shadow-sm rounded-md hover:shadow-lg text-white"
               href="#"
             >
-              Get anypose
+            {t("mobile_banner.btn")}
             </Link>
           </div>
         </div>
@@ -52,10 +52,10 @@ export default function Home() {
       <section className="container relative mx-auto my-20 gap-10 md:gap-28 md:flex">
         <div>
           <h4 className="uppercase pl-2 font-semibold text-lg font-sans text-[#542ACA]">
-            Chose Us
+          {t("choseus.tag")}
           </h4>
           <h2 className="text-[#2A2A2A] pl-2 md:text-5xl mt-3 text-[32px] leading-[1em] font-bold tracking-[0.5px] mb-5">
-            Why chose us?
+          {t("choseus.title")}
           </h2>
          <div className="flex items-center gap-20">
          <Image src="/images/circle-design.svg" alt="circle" width={280} height={300} className="-ml-20"/>
@@ -68,8 +68,8 @@ export default function Home() {
               return(
                 <div className="main rounded-lg w-full" key={idx}>
                   <div className="">
-                  <h2 className="text-white px-4 mt-3 pt-6 text-[32px] leading-[1em] font-bold tracking-[0.5px] mb-6"> {item.title}</h2>
-                  <p className="text-white px-4 pb-6 font-sans font-light">{item.info}</p>
+                  <h2 className="text-white px-4 mt-3 pt-6 text-[32px] leading-[1em] font-bold tracking-[0.5px] mb-6"> {t(`choseus.items${idx+1}.title`)}</h2>
+                  <p className="text-white px-4 pb-6 font-sans font-light">{t(`choseus.items${idx+1}.info`)}</p>
                   <Image src={item.image} alt="circle" width={550} height={300} className="rounded-br-lg"/>
                   </div>
                 </div>

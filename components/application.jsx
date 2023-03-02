@@ -29,16 +29,15 @@ const Application = () => {
           height={650}
         />
       </div>
-      <div className=" text-left mb-10">
+      <div className=" mb-10">
         <h4 className="uppercase pl-2 font-semibold text-lg font-sans text-[#542ACA]">
-          Application
+          {t("application.tag")}
         </h4>
         <h2 className="text-[#2A2A2A] pl-2 md:text-[36px] mt-3 text-[32px] leading-[1em] font-bold tracking-[0.5px] mb-5">
-          Discover our suit of inovation
+        {t("application.title")}
         </h2>
         <p className="max-w-[500px] pl-2 text-gray-500 font-light">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's.
+        {t("application.short_info")}
         </p>
         <section className="application">
           <Slider ref={sliderRef} {...settings}>
@@ -55,10 +54,10 @@ const Application = () => {
                       />
                     </div>
                     <h3 className="font-bold text-xl mt-4">
-                      Interfaces for accounting
+                    {t(`application.slider${idx+1}.title`)}
                     </h3>
                     <p className="font-sans font-light text-gray-600 mt-2">
-                      We integrate commission payments into your accounting.
+                    {t(`application.slider${idx+1}.info`)}
                     </p>
                   </div>
                 </div>

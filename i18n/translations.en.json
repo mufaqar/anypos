@@ -16,7 +16,10 @@
       "watch_video": "Watch a video"
     },
     "features": {
-      "heading": "Easiest POS software to use"
+      "heading": "Easiest POS software to use",
+      "tag": "BENEFIT",
+      "short_info": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.",
+      "download_btn": "DOWNLOAD THE BROCHURE"
     },
     "features1": {
       "heading": "POS on any Device",
@@ -69,8 +72,45 @@
       "email_title": "hi@anypos.app"
     },
     "footer": {  
-      "copyright": "© anyPOS 2022, All Rights Reserved"
+      "copyright": "© anyPOS 2022, All Rights Reserved",
+      "pp":"Privacy Policy",
+      "tu":"Website Term of Uses",
+      "cp":"Cookies Policy",
+      "link1": "e-Commerce",
+      "link2": "Retail",
+      "link3": "About Us",
+      "link14": "Contact"
+
+    },
+    "application":{
+      "tag": "APPLICATION",
+      "title": "Discover our suit of inovation",
+      "short_info": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.",
+      "slider1":{
+        "title": "Interfaces for accounting",
+        "info" : "We integrate commission payments into your accounting."
+      },
+      "slider2":{
+        "title": "Interfaces for accounting",
+        "info" : "We integrate commission payments into your accounting."
+      }
+    },
+    "mobile_banner":{
+      "sub_title":"simple solution for ",
+      "title": "simplified Invoice ",
+      "btn": "GET ANYPOSE"
+    },
+    "choseus":{
+      "tag":"CHOSE US ",
+      "title":"Why chose us?",
+      "items1":{
+        "title":"Meets eCommerce. ",
+        "info":"Sell in-person, online, or from anywhere. Take secure payments from customers, clients, and more. "
+      },
+      "items2":{
+        "title":"Meets eCommerce. ",
+        "info":"Sell in-person, online, or from anywhere. Take secure payments from customers, clients, and more. "
+      }
     }
-    
   }
 }

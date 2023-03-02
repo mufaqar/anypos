@@ -31,16 +31,15 @@ export default function Features() {
 
   return (
     <section id="features" className="relative py-20 mt-20">
-      <div className="container mx-auto text-left mb-10">
+      <div className="container mx-auto mb-10">
         <h4 className="upparcase font-semibold text-lg font-sans text-[#542ACA]">
-          BENEFIT
+        {t("features.tag")}
         </h4>
         <h2 className="text-[#2A2A2A] md:text-[36px] mt-3 text-[32px] leading-[1em] font-bold tracking-[0.5px] mb-5">
           {t("features.heading")}
         </h2>
         <p className="max-w-[500px] text-gray-500 font-light">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's.
+          {t("features.short_info")}
         </p>
       </div>
       <div className="container relative mx-auto ">
@@ -84,7 +83,7 @@ export default function Features() {
         </div>
       </div>
       <div className="flex justify-center mt-24">
-          <a className="uppercase bg-[#5DCCDA] inline-flex items-center gap-1 px-6 text-sm text-white p-3 hover:shadow-xl cursor-pointer rounded-md"><span>Download the Brochure </span><MdOutlinePictureAsPdf color="white" size={20} /></a>
+          <a className="uppercase bg-[#5DCCDA] inline-flex items-center gap-1 px-6 text-sm text-white p-3 hover:shadow-xl cursor-pointer rounded-md"><span>{t("features.download_btn")} </span><MdOutlinePictureAsPdf color="white" size={20} /></a>
       </div>
     </section>
   );
