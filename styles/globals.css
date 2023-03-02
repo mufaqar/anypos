@@ -30,6 +30,8 @@
   font-weight: 300;
 }
 
+
+
 h1,
 h2,
 h3,
@@ -37,6 +39,7 @@ h4,
 h5,
 h6 {
   font-family: Modulus, sans-serif;
+  
 }
 body{
   background: #F0F4FF;
@@ -59,8 +62,9 @@ span {
 .rtl h6,
 .rtl p,
 .rtl li,
-.rtl span {
-  font-family: 'Cairo', sans-serif;
+.rtl span, ul,li,a {
+  /* font-family: 'Cairo', sans-serif; */
+  font-family: system-ui !important
 }
 
 
