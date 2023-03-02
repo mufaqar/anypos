@@ -20,7 +20,8 @@ const Application = () => {
   };
 
   return (
-    <section id="application" className="container mx-auto grid grid-cols-1 md:grid-cols-2">
+    <section id="application" className="relative container mx-auto grid grid-cols-1 md:grid-cols-2">
+    <Image src="/images/c2.svg" alt="circle" width={120} height={300} className="bottom-1/2 -left-20 absolute"/>
       <div>
         <Image
           src='/images/application.png'

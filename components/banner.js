@@ -46,6 +46,8 @@ export default function Banner() {
         src="/images/fondo-banner.png"
         className="absolute -bottom-1 w-full"
       />
+      <Image src="/images/circle-design.svg" alt="circle" width={280} height={300} className="-bottom-28 right-0 absolute"/>
+      <Image src="/images/c2.svg" alt="circle" width={120} height={300} className="-bottom-0 right-80 absolute"/>
     </section>
   );
 }
