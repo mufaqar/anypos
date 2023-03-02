@@ -18,7 +18,7 @@ export default function Home() {
       <Banner />
       <Features />
       <Application />
-      <section className="main gap-16 flex flex-col justify-center items-center relative h-[700px] xl:h-[800px] ">
+      <section id="home" className="main gap-16 flex flex-col justify-center items-center relative h-[700px] xl:h-[800px] ">
         <img
           src="/images/_top.png"
           className="absolute right-0 left-0 -top-1 w-full"
@@ -49,7 +49,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="container relative mx-auto my-20 gap-10 md:gap-28 md:flex">
+      <section id="contact" className="container relative mx-auto my-20 gap-10 md:gap-28 md:flex">
         <div>
           <h4 className="uppercase pl-2 font-semibold text-lg font-sans text-[#542ACA]">
           {t("choseus.tag")}

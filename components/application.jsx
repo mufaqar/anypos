@@ -20,7 +20,7 @@ const Application = () => {
   };
 
   return (
-    <section className="container mx-auto grid grid-cols-1 md:grid-cols-2">
+    <section id="application" className="container mx-auto grid grid-cols-1 md:grid-cols-2">
       <div>
         <Image
           src='/images/application.png'

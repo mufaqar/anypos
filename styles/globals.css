@@ -68,7 +68,9 @@ span {
 }
 
 
-
+html {
+  scroll-behavior: smooth !important;
+}
 
 .container {
   @apply px-5;

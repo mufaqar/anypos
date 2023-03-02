@@ -104,7 +104,7 @@ export default function Header() {
               >
                 <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
                   <li className={`text-base font-semibold tracking-wider  hover:underline ${headerClr ? 'text-[#FF4014]' : 'md:text-white text-[#FF4014]'}`}>
-                    <Link href="/" onClick={() => setNavbar(false)}>
+                    <Link href="#home" onClick={() => setNavbar(false)}>
                       {t("navlist.home")}
                     </Link>
                   </li>

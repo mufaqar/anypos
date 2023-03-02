@@ -9,7 +9,7 @@ import { useTranslation } from "next-export-i18n";
 export default function Banner() {
   const { t } = useTranslation();
   return (
-    <section className="relative py-40 main">
+    <section id="home" className="relative py-40 main">
       <div className="container  mx-auto grid md:grid-cols-2 grid-cols-1 gap-10 items-center md:pl-20">
         <div className="z-[1]">
           <h3 className="text-white md:text-[32px] text-[28px] leading-[1em] font-medium tracking-[0.5px] mb-4">
