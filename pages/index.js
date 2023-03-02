@@ -58,7 +58,7 @@ export default function Home() {
           {t("choseus.title")}
           </h2>
          <div className="flex items-center gap-20">
-         <Image src="/images/circle-design.svg" alt="circle" width={280} height={300} className="-ml-20"/>
+          <Image src="/images/circle-design.svg" alt="circle" width={280} height={300} className="-ml-20"/>
           <Image src="/images/circle-design.svg" alt="circle" width={150} height={300} className=""/>
          </div>
         </div>
