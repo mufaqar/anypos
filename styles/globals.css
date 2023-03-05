@@ -15,7 +15,7 @@
 }
 
 @font-face {
-  font-family: Modulus;
+  font-family: 'Modulus';
   src: url('../public/fonts/Modulus-Bold.otf');
   font-weight: 700;
 }
@@ -30,8 +30,6 @@
   font-weight: 300;
 }
 
-
-
 h1,
 h2,
 h3,
@@ -39,10 +37,9 @@ h4,
 h5,
 h6 {
   font-family: Modulus, sans-serif;
-  
 }
-body{
-  background: #F0F4FF;
+body {
+  background: #f0f4ff;
 }
 header,
 nav {
@@ -62,11 +59,14 @@ span {
 .rtl h6,
 .rtl p,
 .rtl li,
-.rtl span, ul,li,a, button {
+.rtl span,
+ul,
+li,
+a,
+button {
   /* font-family: 'Cairo', sans-serif; */
-  font-family: system-ui !important
+  font-family: system-ui !important;
 }
-
 
 html {
   scroll-behavior: smooth !important;
@@ -169,15 +169,15 @@ li {
   transform: rotateY(180deg);
 }
 
-.main{
+.main {
   background-color: transparent;
-  background-image: linear-gradient(220deg,#9854FF 0%,#4529C7 100%);
+  background-image: linear-gradient(220deg, #9854ff 0%, #4529c7 100%);
 }
-.slick-track{
+.slick-track {
   padding-top: 50px;
 }
-.slick-dots{
-    bottom: -60px !important;
+.slick-dots {
+  bottom: -60px !important;
 }
 .slick-dots li {
   width: 8px;
@@ -185,14 +185,14 @@ li {
   margin: 0 6px !important;
 }
 
-.slick-dots li button:before{
+.slick-dots li button:before {
   content: '' !important;
-  background: #4529C7;
+  background: #4529c7;
   border-radius: 40px;
   width: 14px !important;
   height: 14px !important;
 }
 
-.application .slick-track{
+.application .slick-track {
   padding-top: 1rem !important;
 }
