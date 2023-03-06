@@ -3,79 +3,95 @@ import Link from 'next/link';
 import React from 'react';
 import FtLogo from '../public/images/ftlogo.png';
 import { useTranslation } from 'next-export-i18n';
-import TawkTo from 'tawkto-react';
+//import TawkTo from 'tawkto-react';
 import { useEffect } from 'react';
-import {FaFacebookF, FaTwitter, FaYoutube} from 'react-icons/fa'
-import {FiInstagram} from 'react-icons/fi'
-import LogoWhite from '../public/images/logo-white.png'
+import { FaFacebookF, FaTwitter, FaYoutube } from 'react-icons/fa';
+import { FiInstagram } from 'react-icons/fi';
+import LogoWhite from '../public/images/logo-white.png';
 
-import {HiLocationMarker} from 'react-icons/hi'
-import {BsFillTelephoneFill, BsFillEnvelopeFill} from 'react-icons/bs'
+import { HiLocationMarker } from 'react-icons/hi';
+import { BsFillTelephoneFill, BsFillEnvelopeFill } from 'react-icons/bs';
 
 export default function Footer() {
   const { t } = useTranslation();
-  useEffect(() => {
-    const propertyId = '639eea61b0d6371309d4fd77';
-    const tawkId = '1gkic73os';
-    var tawk = new TawkTo(propertyId, tawkId);
+  // useEffect(() => {
+  //   // const propertyId = '639eea61b0d6371309d4fd77';
+  //   // const tawkId = '1gkic73os';
+  //   // var tawk = new TawkTo(propertyId, tawkId);
 
-    tawk.onStatusChange((status) => {
-      // console.log(status);
-    });
-  }, []);
+  //   tawk.onStatusChange((status) => {
+  //     // console.log(status);
+  //   });
+  // }, []);
 
   return (
     <>
       <footer className="relative pt-14 pb-8 bg-[url('/images/footer-bg.svg')] bg-no-repeat bg-cover bg-top">
-        <div className='grid container mx-auto my-20 mt-48 grid-cols-1 md:grid-cols-2 lg:grid-cols-4'>
+        <div className="grid container mx-auto my-20 mt-48 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
           <div>
-            <Image src={LogoWhite} alt="Logo" width={200} height={30}  />
-            <ul className='flex items-center gap-3 mt-8'>
-              {
-                socials.map((item,idx)=>{
-                  return(
-                    <li key={idx} className='bg-white p-2 hover:shadow-xl cursor-pointer text-[#5427C9] rounded-full'><a href="" target="_blank">{item.icon}</a></li>
-                  )
-                })
-              }
+            <Image src={LogoWhite} alt="Logo" width={200} height={30} />
+            <ul className="flex items-center gap-3 mt-8">
+              {socials.map((item, idx) => {
+                return (
+                  <li
+                    key={idx}
+                    className="bg-white p-2 hover:shadow-xl cursor-pointer text-[#5427C9] rounded-full"
+                  >
+                    <a href="" target="_blank">
+                      {item.icon}
+                    </a>
+                  </li>
+                );
+              })}
             </ul>
           </div>
           <div></div>
-          <div className='mt-10 md:mt-0'>
-              <ul className='flex flex-col gap-4'>
-                <li className='flex gap-2 justify-start text-white font-sans font-extralight text-lg items-start'>
-                  <HiLocationMarker size={35}/>
-                  Khalid Bin Alwaleed, Ghirnatah Second floor, Riyadh 11564
-                </li>
-                <li className='flex gap-2 justify-start text-white font-sans font-extralight text-lg items-start'>
-                  <BsFillEnvelopeFill size={21}/>
-                  info@anypose.app
-                </li>
-                <li className='flex gap-2 justify-start text-white font-sans font-extralight text-lg items-start'>
-                <BsFillTelephoneFill size={21}/>
+          <div className="mt-10 md:mt-0">
+            <ul className="flex flex-col gap-4">
+              <li className="flex gap-2 justify-start text-white font-sans font-extralight text-lg items-start">
+                <HiLocationMarker size={35} />
+                Khalid Bin Alwaleed, Ghirnatah Second floor, Riyadh 11564
+              </li>
+              <li className="flex gap-2 justify-start text-white font-sans font-extralight text-lg items-start">
+                <BsFillEnvelopeFill size={21} />
+                info@anypose.app
+              </li>
+              <li className="flex gap-2 justify-start text-white font-sans font-extralight text-lg items-start">
+                <BsFillTelephoneFill size={21} />
                 +92 000 8927
               </li>
-              </ul>
+            </ul>
           </div>
-          <div className='flex md:justify-center mt-10 md:mt-0'>
-              <ul className='flex flex-col gap-7'>
-                {
-                  footerNav.map((nav,idx)=>{
-                    return(
-                      <li key={idx} className="text-white font-sans font-extralight"><Link href={nav.link}>{t(`footer.link${idx+1}`)}</Link></li>
-                    )
-                  })
-                }
-              </ul>
+          <div className="flex md:justify-center mt-10 md:mt-0">
+            <ul className="flex flex-col gap-7">
+              {footerNav.map((nav, idx) => {
+                return (
+                  <li
+                    key={idx}
+                    className="text-white font-sans font-extralight"
+                  >
+                    <Link href={nav.link}>{t(`footer.link${idx + 1}`)}</Link>
+                  </li>
+                );
+              })}
+            </ul>
           </div>
         </div>
-        <section className='container mx-auto text-white md:flex justify-between items-center'>
-            <p className='font-light text-center mb-5 md:mb-0 md:text-left font-sans'>{t("footer.copyright")}</p>
-            <div className='flex gap-8'>
-                <Link className='hover:underline' href="#">{t("footer.pp")}</Link>
-                <Link className='hover:underline' href="#">{t("footer.tu")}</Link>
-                <Link className='hover:underline' href="#">{t("footer.cp")}</Link>
-            </div>
+        <section className="container mx-auto text-white md:flex justify-between items-center">
+          <p className="font-light text-center mb-5 md:mb-0 md:text-left font-sans">
+            {t('footer.copyright')}
+          </p>
+          <div className="flex gap-8">
+            <Link className="hover:underline" href="#">
+              {t('footer.pp')}
+            </Link>
+            <Link className="hover:underline" href="#">
+              {t('footer.tu')}
+            </Link>
+            <Link className="hover:underline" href="#">
+              {t('footer.cp')}
+            </Link>
+          </div>
         </section>
       </footer>
     </>
@@ -84,39 +100,38 @@ export default function Footer() {
 
 const socials = [
   {
-    icon: <FaFacebookF/>,
-    link: "#"
+    icon: <FaFacebookF />,
+    link: '#',
   },
   {
-    icon: <FiInstagram/>,
-    link: "#"
+    icon: <FiInstagram />,
+    link: '#',
   },
   {
-    icon: <FaTwitter/>,
-    link: "#"
+    icon: <FaTwitter />,
+    link: '#',
   },
   {
-    icon: <FaYoutube/>,
-    link: "#"
-  }
-]
+    icon: <FaYoutube />,
+    link: '#',
+  },
+];
 
-  
 const footerNav = [
   {
     name: 'e-Commerce',
-    link: '#'
+    link: '#',
   },
   {
     name: 'Retail',
-    link: '#'
+    link: '#',
   },
   {
     name: 'About Us',
-    link: '#'
+    link: '#',
   },
   {
     name: 'Contact',
-    link: '#'
+    link: '#',
   },
-]
+];
