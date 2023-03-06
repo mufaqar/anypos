@@ -85,7 +85,10 @@ export default function Footer() {
             <Link className="hover:underline" href="#">
               {t('footer.pp')}
             </Link>
-            <Link className="hover:underline" href="#">
+            <Link
+              className="hover:underline"
+              href="https://twitter.com/anyposapp"
+            >
               {t('footer.tu')}
             </Link>
             <Link className="hover:underline" href="#">
