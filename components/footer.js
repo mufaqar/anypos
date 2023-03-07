@@ -101,19 +101,19 @@ export default function Footer() {
 const socials = [
   {
     icon: <FaFacebookF />,
-    link: '#',
+    link: 'https://www.facebook.com/profile.php?id=100090413934551&mibextid=LQQJ4d',
   },
   {
     icon: <FiInstagram />,
-    link: '#',
+    link: 'https://instagram.com/any__pos?igshid=YmMyMTA2M2Y=',
   },
   {
     icon: <FaTwitter />,
-    link: '#',
+    link: 'https://twitter.com/anypossocial?s=11&t=jQfRVt7Utg9jlhHOybpOSQ',
   },
   {
     icon: <FaYoutube />,
-    link: '#',
+    link: 'https://youtube.com/@anyposApp',
   },
 ];
 
