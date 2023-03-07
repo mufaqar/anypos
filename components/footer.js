@@ -37,7 +37,7 @@ export default function Footer() {
                     key={idx}
                     className="bg-white p-2 hover:shadow-xl cursor-pointer text-[#5427C9] rounded-full"
                   >
-                    <a href="" target="_blank">
+                    <a href={item.link} target="_blank" rel="noreferrer">
                       {item.icon}
                     </a>
                   </li>
