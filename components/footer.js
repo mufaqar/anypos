@@ -133,8 +133,4 @@ const footerNav = [
     name: 'About Us',
     link: '#',
   },
-  {
-    name: 'Contact',
-    link: '#',
-  },
 ];
