@@ -82,17 +82,11 @@ export default function Footer() {
             {t('footer.copyright')}
           </p>
           <div className="flex gap-8">
-            <Link className="hover:underline" href="#">
+            <Link className="hover:underline" href="privacy-policy">
               {t('footer.pp')}
             </Link>
-            <Link
-              className="hover:underline"
-              href="https://twitter.com/anyposapp"
-            >
+            <Link className="hover:underline" href="/terms-of-service">
               {t('footer.tu')}
-            </Link>
-            <Link className="hover:underline" href="#">
-              {t('footer.cp')}
             </Link>
           </div>
         </section>
