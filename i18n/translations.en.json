@@ -16,7 +16,7 @@
       "watch_video": "Watch a video"
     },
     "features": {
-      "heading": "Easiest POS software to use",
+      "heading": "The most user-friendly point of sale software",
       "tag": "BENEFIT",
       "short_info": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.",
       "download_btn": "DOWNLOAD THE BROCHURE"
@@ -85,10 +85,10 @@
     "application":{
       "tag": "APPLICATION",
       "title": "Discover our suit of inovation",
-      "short_info": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.",
+      "short_info": "Enjoy the convenience of full POS capabilities without spending thousands on bulky hardware and outdated software. With anyPOS, you can access the software from any mobile, tablet, or PC.",
       "slider1":{
-        "title": "Interfaces for accounting",
-        "info" : "We integrate commission payments into your accounting."
+        "title": "Dashboard Reporting",
+        "info" : "AnyPOS provides detailed sales insights through its dashboard reporting."
       },
       "slider2":{
         "title": "Interfaces for accounting",
