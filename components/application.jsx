@@ -94,9 +94,7 @@ const ApplicationData = [
   {
     Featue_Img: Icon2,
   },
-  {
-    Featue_Img: Icon3,
-  },
+ 
 ];
 
 var settings = {
