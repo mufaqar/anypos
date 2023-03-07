@@ -88,6 +88,9 @@ export default function Footer() {
             <Link className="hover:underline" href="/terms-of-service">
               {t('footer.tu')}
             </Link>
+            <Link className="hover:underline" href="acceptable-use-policy">
+              {t('footer.cp')}
+            </Link>
           </div>
         </section>
       </footer>
