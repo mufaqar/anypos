@@ -2,11 +2,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Banner from '../components/banner';
 import Features from '../components/features';
-import Hand from '../public/images/hand.png';
-import Support from '../public/images/sport.png';
-import Emal from '../public/images/eml.png';
-import Address from '../public/images/address.png';
-import Phone from '../public/images/phone.png';
 import { useTranslation } from 'next-export-i18n';
 import Application from '../components/application';
 
