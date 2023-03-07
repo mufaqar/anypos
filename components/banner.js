@@ -31,13 +31,14 @@ export default function Banner() {
               {t('banner.btn_text')}
             </a>
 
-            <Link
+            <a
               className=" items-center gap-3 p-3 px-4 md:px-7 text-sm font-semibold uppercase inline-flex mt-5 cursor-pointer bg-white  shadow-sm rounded-md hover:shadow-lg text-[#6433D4]"
-              href="#"
+              href="https://youtu.be/fKb9m8uiFbY"
+              rel="noreferrer"
             >
               <FaPlay color="#5DCCDA" size={20} />
               <span> {t('banner.watch_video')} </span>
-            </Link>
+            </a>
           </div>
         </div>
         <div className="flex justify-end z-[1]">
