@@ -2,33 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@300;400;500;600;700;800;900&display=swap');
-
 @font-face {
   font-family: 'sqmarketmedium';
   src: url('../public/fonts/sqmarket-medium.woff2');
 }
 
-/* @font-face {
-  font-family: 'Roboto-Regular';
-  src: url('../public/fonts/Roboto-Regular.ttf');
-} */
+@font-face {
+  font-family: 'Comfortaa';
+  src: url('../public/fonts/Comfortaa-Regular.ttf');
+  font-weight: 400;
+}
 
 @font-face {
-  font-family: 'Modulus-Bold';
-  src: url('../public/fonts/Modulus-Bold.otf');
-  font-weight: 700;
-}
-@font-face {
-  font-family: 'Modulus-Medium';
-  src: url('../public/fonts/Modulus_Medium.ttf');
-  font-weight: 500;
-}
-@font-face {
-  font-family: 'Modulus';
-  src: url('../public/fonts/Modulus.ttf');
-  font-weight: 300;
+  font-family: 'Kufi';
+  src: url('../public/fonts/NotoKufiArabic-Regular.ttf');
+  font-weight: 400;
 }
 html,
 h1,
@@ -41,7 +29,7 @@ p,
 ul,
 li,
 a {
-  font-family: 'Comfortaa', cursive;
+  font-family: 'Comfortaa', cursive !important;
 }
 body {
   background: #f0f4ff;
@@ -60,7 +48,7 @@ body {
 .rtl li,
 .rtl a,
 .rtl button {
-  font-family: 'Noto Kufi Arabic', sans-serif;
+  font-family: 'Kufi' !important;
 }
 
 .rtl .bg-white {
