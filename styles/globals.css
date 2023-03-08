@@ -10,10 +10,10 @@
   src: url('../public/fonts/sqmarket-medium.woff2');
 }
 
-@font-face {
+/* @font-face {
   font-family: 'Roboto-Regular';
   src: url('../public/fonts/Roboto-Regular.ttf');
-}
+} */
 
 @font-face {
   font-family: 'Modulus-Bold';
@@ -30,13 +30,17 @@
   src: url('../public/fonts/Modulus.ttf');
   font-weight: 300;
 }
-
+html,
 h1,
 h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p,
+ul,
+li,
+a {
   font-family: 'Modulus';
 }
 body {
@@ -65,7 +69,6 @@ span {
 .rtl li,
 .rtl a,
 .rtl button {
-  /* font-family: 'Cairo', sans-serif; */
   font-family: 'Noto Kufi Arabic', sans-serif;
 }
 
