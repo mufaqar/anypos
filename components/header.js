@@ -1,19 +1,19 @@
-import Head from "next/head";
-import Image from "next/image";
-import Link from "next/link";
-import { useEffect, useState } from "react";
-import Logo from "../public/images/logo.svg";
-import LogoWhite from '../public/images/logo-white.png'
-import { useTranslation, LanguageSwitcher } from "next-export-i18n";
+import Head from 'next/head';
+import Image from 'next/image';
+import Link from 'next/link';
+import { useEffect, useState } from 'react';
+import Logo from '../public/images/logo.svg';
+import LogoWhite from '../public/images/logo-white.png';
+import { useTranslation, LanguageSwitcher } from 'next-export-i18n';
 
 const customStyles = {
   content: {
-    top: "50%",
-    left: "50%",
-    right: "auto",
-    bottom: "auto",
-    marginRight: "-50%",
-    transform: "translate(-50%, -50%)",
+    top: '50%',
+    left: '50%',
+    right: 'auto',
+    bottom: 'auto',
+    marginRight: '-50%',
+    transform: 'translate(-50%, -50%)',
   },
 };
 
@@ -21,7 +21,6 @@ export default function Header() {
   const { t } = useTranslation();
   const [navbar, setNavbar] = useState(false);
   const [switch_lang, set_switch_lang] = useState(false);
-
 
   const [scrollTop, setScrollTop] = useState(0);
   const [headerClr, setHeaderClr] = useState(false);
@@ -34,18 +33,20 @@ export default function Header() {
     scrollTop >= '20' ? setHeaderClr(true) : setHeaderClr(false);
     window.addEventListener('scroll', onScroll);
     return () => window.removeEventListener('scroll', onScroll);
-  
   }, [scrollTop]);
-
 
   return (
     <>
-      <header className={`fixed top-0 md:px-4 left-0 right-0 transition-all duration-500 ease-in-out  z-10 ${headerClr && 'bg-white'}`}>
+      <header
+        className={`fixed top-0 md:px-4 left-0 right-0 transition-all duration-500 ease-in-out  z-10 ${
+          headerClr && 'bg-white'
+        }`}
+      >
         <Head>
-          <title>anyPOS</title>
+          <title>anyPOS | Point of sale in any device</title>
           <meta
             name="description"
-            content="Create Next JS Responsive Menu with Tailwind CSS"
+            content="Simple solution for Simplified Invoice"
           />
           <link rel="icon" href="/favicon.ico" />
         </Head>
@@ -54,7 +55,12 @@ export default function Header() {
             <div>
               <div className="flex items-center justify-between py-3 md:py-5 md:block">
                 <Link href="/" onClick={() => setNavbar(false)}>
-                  <Image src={headerClr ? Logo : LogoWhite} alt="Logo" width={170} height={30}  />
+                  <Image
+                    src={headerClr ? Logo : LogoWhite}
+                    alt="Logo"
+                    width={170}
+                    height={30}
+                  />
                 </Link>
                 <div className="md:hidden">
                   <button
@@ -98,47 +104,75 @@ export default function Header() {
               <div
                 className={`flex-1 justify-self-center md:block ${
                   navbar
-                    ? "block max-md:absolute max-md:top-16 max-md:left-0 max-md:right-0 max-md:z-20 max-md:bg-[#E2F0FB] px-4 py-5"
-                    : "hidden"
+                    ? 'block max-md:absolute max-md:top-16 max-md:left-0 max-md:right-0 max-md:z-20 max-md:bg-[#E2F0FB] px-4 py-5'
+                    : 'hidden'
                 }`}
               >
                 <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
-                  <li className={`text-base font-semibold tracking-wider  hover:underline ${headerClr ? 'text-[#FF4014]' : 'md:text-white text-[#FF4014]'}`}>
+                  <li
+                    className={`text-base font-semibold tracking-wider  hover:underline ${
+                      headerClr
+                        ? 'text-[#FF4014]'
+                        : 'md:text-white text-[#FF4014]'
+                    }`}
+                  >
                     <Link href="#home" onClick={() => setNavbar(false)}>
-                      {t("navlist.home")}
+                      {t('navlist.home')}
                     </Link>
                   </li>
-                  <li className={`text-base font-semibold tracking-wider  hover:underline ${headerClr ? 'text-[#FF4014]' : 'md:text-white text-[#FF4014]'}`}>
+                  <li
+                    className={`text-base font-semibold tracking-wider  hover:underline ${
+                      headerClr
+                        ? 'text-[#FF4014]'
+                        : 'md:text-white text-[#FF4014]'
+                    }`}
+                  >
                     <Link href="/wiseasy" onClick={() => setNavbar(false)}>
-                      {t("navlist.pos")}
+                      {t('navlist.pos')}
                     </Link>
                   </li>
-                  <li className={`text-base font-semibold tracking-wider  hover:underline ${headerClr ? 'text-[#FF4014]' : 'md:text-white text-[#FF4014]'}`}>
+                  <li
+                    className={`text-base font-semibold tracking-wider  hover:underline ${
+                      headerClr
+                        ? 'text-[#FF4014]'
+                        : 'md:text-white text-[#FF4014]'
+                    }`}
+                  >
                     <Link href="#features" onClick={() => setNavbar(false)}>
-                      {t("navlist.features")}
+                      {t('navlist.features')}
                     </Link>
                   </li>
 
-                  <li className={`text-base font-semibold tracking-wider  hover:underline ${headerClr ? 'text-[#FF4014]' : 'md:text-white text-[#FF4014]'}`}>
+                  <li
+                    className={`text-base font-semibold tracking-wider  hover:underline ${
+                      headerClr
+                        ? 'text-[#FF4014]'
+                        : 'md:text-white text-[#FF4014]'
+                    }`}
+                  >
                     <Link href="#contact" onClick={() => setNavbar(false)}>
-                      {t("navlist.contact")}
+                      {t('navlist.contact')}
                     </Link>
                   </li>
                 </ul>
               </div>
               <div className="md:block hidden">
                 <div className="flex items-center justify-between py-3 md:py-5 gap-3">
-                  <LanguageSwitcher lang={switch_lang ? "en" : "ar"}>
+                  <LanguageSwitcher lang={switch_lang ? 'en' : 'ar'}>
                     <div
-                      className={`text-sm font-semibold uppercase inline-block  rounded-md py-[10px] px-[24px] hover:shadow-lg ${headerClr ? 'bg-[#4267F1] text-white' : 'text-[#4267F1] bg-white'}`}
+                      className={`text-sm font-semibold uppercase inline-block  rounded-md py-[10px] px-[24px] hover:shadow-lg ${
+                        headerClr
+                          ? 'bg-[#4267F1] text-white'
+                          : 'text-[#4267F1] bg-white'
+                      }`}
                       onClick={() => set_switch_lang(!switch_lang)}
                     >
-                      {switch_lang ? "English" : "العربية"}
+                      {switch_lang ? 'English' : 'العربية'}
                     </div>
                   </LanguageSwitcher>
                   <a href="https://portal.anypos.app/login" className="">
                     <div className="text-sm font-semibold uppercase inline-block text-white bg-[#5DCCDA] hover:text-white rounded-md py-[10px] px-[24px] hover:shadow-lg">
-                      {t("navlist.demo")}
+                      {t('navlist.demo')}
                     </div>
                   </a>
                 </div>
