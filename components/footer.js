@@ -106,11 +106,11 @@ const socials = [
   },
   {
     icon: <FaTwitter />,
-    link: 'https://twitter.com/anypossocial?s=11&t=jQfRVt7Utg9jlhHOybpOSQ',
+    link: 'https://twitter.com/anypos social?s=11&t=jQfRVt7Utg9jlhHOybpOSQ',
   },
   {
     icon: <FaYoutube />,
-    link: 'https://youtube.com/@anyposApp',
+    link: 'https://youtube.com/@anypos App',
   },
 ];
 

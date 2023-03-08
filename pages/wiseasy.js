@@ -76,7 +76,7 @@ export default function Wiseasy() {
                     d="M18 12H6"
                   />
                 </svg>{' '}
-                Buy the POS terminal and get any free anyPOS software for 12
+                Buy the POS terminal and get any free anypos software for 12
                 months.
               </li>
 
@@ -371,10 +371,10 @@ export default function Wiseasy() {
 
         <div class="container  px-10 mx-0 min-w-full grid place-items-center">
           <a
-            href="https://portal.anypos.app/login"
+            href="https://portal.anypos .app/login"
             className="text-sm font-semibold uppercase  items-center mt-10 text-[#4267F1] border-2 border-[#4267F1] bg-transparent hover:bg-[#4267F1] hover:text-white rounded-[10px] py-[8px] px-[24px]"
           >
-            Get anyPOS
+            Get anypos
           </a>
         </div>
       </section>

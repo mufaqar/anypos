@@ -44,7 +44,7 @@ export default function Home() {
             </h2>
             <Link
               className=" items-center gap-3 p-3 px-4 md:px-7 font-semibold uppercase inline-flex mt-5 cursor-pointer bg-[#5DCCDA]  shadow-sm rounded-md hover:shadow-lg text-white"
-              href="https://portal.anypos.app/login"
+              href="https://portal.anypos .app/login"
             >
               {t('mobile_banner.btn')}
             </Link>

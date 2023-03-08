@@ -23,7 +23,7 @@ export default function Banner() {
           </h3>
           <div className="flex items-center gap-6">
             <a
-              href="https://portal.anypos.app/login"
+              href="https://portal.anypos .app/login"
               target="_blank"
               rel="noreferrer"
               className="text-sm font-semibold uppercase inline-block mt-5 bg-[#5DCCDA] p-3 px-4 md:px-10 shadow-sm rounded-md hover:shadow-lg text-white "
