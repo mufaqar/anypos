@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@300;400;500;600;700;800;900&display=swap');
 
 @font-face {
@@ -41,19 +41,10 @@ p,
 ul,
 li,
 a {
-  font-family: 'Modulus';
+  font-family: 'Comfortaa', cursive;
 }
 body {
   background: #f0f4ff;
-}
-header,
-nav {
-  font-family: 'Modulus';
-}
-p,
-li,
-span {
-  font-family: 'Modulus';
 }
 
 .rtl h1,
