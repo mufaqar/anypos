@@ -54,7 +54,7 @@ export default function Footer() {
               </li>
               <li className="flex gap-2 justify-start text-white font-sans font-extralight text-lg items-start">
                 <BsFillEnvelopeFill size={21} />
-                info@anypose.app
+                hi@anypose.app
               </li>
               <li className="flex gap-2 justify-start text-white font-sans font-extralight text-lg items-start">
                 <BsFillTelephoneFill size={21} />

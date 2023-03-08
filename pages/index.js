@@ -84,7 +84,7 @@ export default function Home() {
             return (
               <div className="main rounded-lg w-full" key={idx}>
                 <div className="">
-                  <h2 className="text-white px-4 mt-3 pt-6 text-[32px] leading-[1em] font-bold tracking-[0.5px] mb-6">
+                  <h2 className="text-white px-4 mt-3 pt-6 text-[32px] leading-[1em] font-bold tracking-[0.5px] mb-6 min-h-[90px]">
                     {' '}
                     {t(`choseus.items${idx + 1}.title`)}
                   </h2>
@@ -94,9 +94,9 @@ export default function Home() {
                   <Image
                     src={item.image}
                     alt="circle"
-                    width={550}
-                    height={300}
-                    className="rounded-br-lg"
+                    width={474}
+                    height={334}
+                    className="rounded-br-lg rounded-bl-lg"
                   />
                 </div>
               </div>
@@ -112,11 +112,11 @@ const data = [
   {
     title: 'Meets eCommerce.',
     info: 'Sell in-person, online, or from anywhere. Take secure payments from customers, clients, and more.',
-    image: '/images/selling-online.png',
+    image: '/images/support.jpg',
   },
   {
     title: 'Meets eCommerce.',
     info: 'Sell in-person, online, or from anywhere. Take secure payments from customers, clients, and more.',
-    image: '/images/selling-online.png',
+    image: '/images/price.jpg',
   },
 ];
