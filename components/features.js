@@ -1,10 +1,10 @@
 import React, { useRef } from 'react';
-import ImageBox from '../components/image_box';
+
 import Icon1 from '../public/images/icon1.svg';
 import Icon2 from '../public/images/icon2.svg';
 import Icon3 from '../public/images/icon3.svg';
 import Icon4 from '../public/images/icon4.svg';
-import Icon5 from '../public/images/icon5.svg';
+//import Icon5 from '../public/images/icon5.svg';
 import Icon6 from '../public/images/icon6.svg';
 import Icon7 from '../public/images/icon7.svg';
 import Icon8 from '../public/images/icon8.svg';
@@ -104,9 +104,7 @@ const FeatureData = [
   {
     Featue_Img: Icon4,
   },
-  {
-    Featue_Img: Icon5,
-  },
+
   {
     Featue_Img: Icon6,
   },
