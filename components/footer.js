@@ -48,15 +48,15 @@ export default function Footer() {
           <div></div>
           <div className="mt-10 md:mt-0">
             <ul className="flex flex-col gap-4">
-              <li className="flex gap-2 justify-start text-white font-sans font-extralight text-lg items-start">
+              <li className="flex gap-2 justify-start text-white  font-extralight text-lg items-start">
                 <HiLocationMarker size={35} />
                 Khalid Bin Alwaleed, Ghirnatah Second floor, Riyadh 11564
               </li>
-              <li className="flex gap-2 justify-start text-white font-sans font-extralight text-lg items-start">
+              <li className="flex gap-2 justify-start text-white  font-extralight text-lg items-start">
                 <BsFillEnvelopeFill size={21} />
                 hi@anypose.app
               </li>
-              <li className="flex gap-2 justify-start text-white font-sans font-extralight text-lg items-start">
+              <li className="flex gap-2 justify-start text-white  font-extralight text-lg items-start">
                 <BsFillTelephoneFill size={21} />
                 +92 000 8927
               </li>
@@ -66,10 +66,7 @@ export default function Footer() {
             <ul className="flex flex-col gap-7">
               {footerNav.map((nav, idx) => {
                 return (
-                  <li
-                    key={idx}
-                    className="text-white font-sans font-extralight"
-                  >
+                  <li key={idx} className="text-white  font-extralight">
                     <Link href={nav.link}>{t(`footer.link${idx + 1}`)}</Link>
                   </li>
                 );
@@ -78,7 +75,7 @@ export default function Footer() {
           </div>
         </div>
         <section className="container mx-auto text-white md:flex justify-between items-center">
-          <p className="font-light text-center mb-5 md:mb-0 md:text-left font-sans">
+          <p className="font-light text-center mb-5 md:mb-0 md:text-left ">
             {t('footer.copyright')}
           </p>
           <div className="flex gap-8">

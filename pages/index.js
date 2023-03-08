@@ -56,7 +56,7 @@ export default function Home() {
         className="container relative mx-auto my-20 gap-10 md:gap-28 md:flex"
       >
         <div>
-          <h4 className="uppercase pl-2 font-semibold text-lg font-sans text-[#542ACA]">
+          <h4 className="uppercase pl-2 font-semibold text-lg  text-[#542ACA]">
             {t('choseus.tag')}
           </h4>
           <h2 className="text-[#2A2A2A] pl-2 md:text-5xl mt-3 text-[32px] leading-[1em] font-bold tracking-[0.5px] mb-5">
@@ -88,7 +88,7 @@ export default function Home() {
                     {' '}
                     {t(`choseus.items${idx + 1}.title`)}
                   </h2>
-                  <p className="text-white px-4 pb-6 font-sans font-light">
+                  <p className="text-white px-4 pb-6  font-light">
                     {t(`choseus.items${idx + 1}.info`)}
                   </p>
                   <Image

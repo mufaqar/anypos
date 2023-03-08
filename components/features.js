@@ -1,21 +1,20 @@
-import React, { useRef } from "react";
-import ImageBox from "../components/image_box";
-import Icon1 from "../public/images/icon1.svg";
-import Icon2 from "../public/images/icon2.svg";
-import Icon3 from "../public/images/icon3.svg";
-import Icon4 from "../public/images/icon4.svg";
-import Icon5 from "../public/images/icon5.svg";
-import Icon6 from "../public/images/icon6.svg";
-import Icon7 from "../public/images/icon7.svg";
-import Icon8 from "../public/images/icon8.svg";
-import Icon9 from "../public/images/icon9.svg";
-import Icon10 from "../public/images/icon10.svg";
-import { useTranslation } from "next-export-i18n";
-import Slider from "react-slick";
-import Image from "next/image";
-import { BsArrowRight, BsArrowLeft } from "react-icons/bs";
-import {MdOutlinePictureAsPdf} from 'react-icons/md'
-
+import React, { useRef } from 'react';
+import ImageBox from '../components/image_box';
+import Icon1 from '../public/images/icon1.svg';
+import Icon2 from '../public/images/icon2.svg';
+import Icon3 from '../public/images/icon3.svg';
+import Icon4 from '../public/images/icon4.svg';
+import Icon5 from '../public/images/icon5.svg';
+import Icon6 from '../public/images/icon6.svg';
+import Icon7 from '../public/images/icon7.svg';
+import Icon8 from '../public/images/icon8.svg';
+import Icon9 from '../public/images/icon9.svg';
+import Icon10 from '../public/images/icon10.svg';
+import { useTranslation } from 'next-export-i18n';
+import Slider from 'react-slick';
+import Image from 'next/image';
+import { BsArrowRight, BsArrowLeft } from 'react-icons/bs';
+import { MdOutlinePictureAsPdf } from 'react-icons/md';
 
 export default function Features() {
   const { t } = useTranslation();
@@ -32,14 +31,14 @@ export default function Features() {
   return (
     <section id="features" className="relative py-20 mt-20">
       <div className="container mx-auto mb-10">
-        <h4 className="upparcase font-semibold text-lg font-sans text-[#542ACA]">
-        {t("features.tag")}
+        <h4 className="upparcase font-semibold text-lg  text-[#542ACA]">
+          {t('features.tag')}
         </h4>
         <h2 className="text-[#2A2A2A] md:text-[36px] mt-3 text-[32px] leading-[1em] font-bold tracking-[0.5px] mb-5">
-          {t("features.heading")}
+          {t('features.heading')}
         </h2>
         <p className="max-w-[500px] text-gray-500 font-light">
-          {t("features.short_info")}
+          {t('features.short_info')}
         </p>
       </div>
       <div className="container relative mx-auto ">
@@ -59,7 +58,7 @@ export default function Features() {
                   <h3 className="font-bold text-xl mt-10">
                     {t(`features${idx + 1}.heading`)}
                   </h3>
-                  <p className="font-sans font-light text-gray-600 mt-2">
+                  <p className=" font-light text-gray-600 mt-2">
                     {t(`features${idx + 1}.sub_heading`)}
                   </p>
                 </div>
@@ -83,7 +82,10 @@ export default function Features() {
         </div>
       </div>
       <div className="flex justify-center mt-24">
-          <a className="uppercase bg-[#5DCCDA] inline-flex items-center gap-1 px-6 text-sm text-white p-3 hover:shadow-xl cursor-pointer rounded-md"><span>{t("features.download_btn")} </span><MdOutlinePictureAsPdf color="white" size={20} /></a>
+        <a className="uppercase bg-[#5DCCDA] inline-flex items-center gap-1 px-6 text-sm text-white p-3 hover:shadow-xl cursor-pointer rounded-md">
+          <span>{t('features.download_btn')} </span>
+          <MdOutlinePictureAsPdf color="white" size={20} />
+        </a>
       </div>
     </section>
   );

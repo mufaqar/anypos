@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@300;400;500;600;700;800;900&display=swap');
 
 @font-face {
   font-family: 'sqmarketmedium';
@@ -15,17 +16,17 @@
 }
 
 @font-face {
-  font-family: 'Modulus';
+  font-family: 'Modulus-Bold';
   src: url('../public/fonts/Modulus-Bold.otf');
   font-weight: 700;
 }
 @font-face {
-  font-family: Modulus;
+  font-family: 'Modulus-Medium';
   src: url('../public/fonts/Modulus_Medium.ttf');
   font-weight: 500;
 }
 @font-face {
-  font-family: Modulus;
+  font-family: 'Modulus';
   src: url('../public/fonts/Modulus.ttf');
   font-weight: 300;
 }
@@ -36,19 +37,19 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: Modulus, sans-serif;
+  font-family: 'Modulus';
 }
 body {
   background: #f0f4ff;
 }
 header,
 nav {
-  font-family: 'sqmarketmedium';
+  font-family: 'Modulus';
 }
 p,
 li,
 span {
-  font-family: 'Roboto-Regular';
+  font-family: 'Modulus';
 }
 
 .rtl h1,
@@ -60,12 +61,16 @@ span {
 .rtl p,
 .rtl li,
 .rtl span,
-ul,
-li,
-a,
-button {
+.rtl ul,
+.rtl li,
+.rtl a,
+.rtl button {
   /* font-family: 'Cairo', sans-serif; */
-  font-family: system-ui !important;
+  font-family: 'Noto Kufi Arabic', sans-serif;
+}
+
+.rtl .bg-white {
+  text-align: right !important;
 }
 
 html {
