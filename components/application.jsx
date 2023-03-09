@@ -74,20 +74,6 @@ const Application = () => {
               );
             })}
           </Slider>
-          <div className="hidden md:block pl-2 ">
-            <button
-              className="text-[#4529C7] bg-white p-2 px-2  "
-              onClick={previous}
-            >
-              <BsArrowLeft size={22} />
-            </button>
-            <button
-              className="text-[#4529C7] bg-white p-2 ml-4 px-2 "
-              onClick={next}
-            >
-              <BsArrowRight size={22} />
-            </button>
-          </div>
         </section>
       </div>
     </section>
