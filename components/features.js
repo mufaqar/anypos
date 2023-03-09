@@ -4,12 +4,11 @@ import Icon1 from '../public/images/icon1.svg';
 import Icon2 from '../public/images/icon2.svg';
 import Icon3 from '../public/images/icon3.svg';
 import Icon4 from '../public/images/icon4.svg';
-import Icon5 from '../public/images/icon5.svg';
-import Icon6 from '../public/images/icon6.svg';
-import Icon7 from '../public/images/icon7.svg';
-import Icon8 from '../public/images/icon8.svg';
-import Icon9 from '../public/images/icon9.svg';
-import Icon10 from '../public/images/icon10.svg';
+import Icon5 from '../public/images/icon6.svg';
+import Icon6 from '../public/images/icon7.svg';
+import Icon7 from '../public/images/icon8.svg';
+import Icon8 from '../public/images/icon9.svg';
+
 import { useTranslation } from 'next-export-i18n';
 import Slider from 'react-slick';
 import Image from 'next/image';
@@ -47,7 +46,7 @@ export default function Features() {
             return (
               <div key={idx} className="relative p-2">
                 <div className="bg-white p-10 min-h-[300px] rounded-md">
-                  <div className="bg-[#E9DEFC] min-h-[90px] flex justify-center absolute p-3 px-8 z-10 -top-10 rounded-2xl">
+                  <div className="bg-[#E9DEFC] min-h-[90px] flex justify-center absolute p-3 px-8 z-10 -top-10 rounded-2xl features">
                     <Image
                       src={feature?.Featue_Img?.src}
                       alt="image"
@@ -115,9 +114,6 @@ const FeatureData = [
   },
   {
     Featue_Img: Icon8,
-  },
-  {
-    Featue_Img: Icon9,
   },
 ];
 

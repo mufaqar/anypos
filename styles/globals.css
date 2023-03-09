@@ -99,6 +99,10 @@ li {
   color: #ffffff;
 }
 
+.rtl .features {
+  right: 3rem;
+}
+
 .call_sub_banner {
   font-size: 3rem;
   color: #ffffff;
