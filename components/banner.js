@@ -36,7 +36,7 @@ export default function Banner() {
               href="https://youtu.be/fKb9m8uiFbY"
               rel="noreferrer"
             >
-              <FaPlay color="#5DCCDA" size={20} />
+              <FaPlay color="#5DCCDA" size={20} className="play_icon" />
               <span> {t('banner.watch_video')} </span>
             </a>
           </div>

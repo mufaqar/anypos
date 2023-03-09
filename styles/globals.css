@@ -35,7 +35,8 @@ body {
   background: #f0f4ff;
 }
 
-.rtl .home_en {
+.rtl .home_en,
+.rtl .play_icon {
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
 }
