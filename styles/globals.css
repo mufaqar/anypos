@@ -94,6 +94,17 @@ li {
   @apply list-disc list-inside;
 }
 
+.call_banner {
+  font-size: 2.2rem;
+  color: #ffffff;
+}
+
+.call_sub_banner {
+  font-size: 3rem;
+  color: #ffffff;
+  font-weight: 700;
+}
+
 .custom-shape-divider-bottom-1670924415 {
   position: absolute;
   bottom: 0;

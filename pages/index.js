@@ -36,12 +36,8 @@ export default function Home() {
             <Image src="/images/mbl.png" alt="mbl" width={700} height={500} />
           </div>
           <div className="md:pl-20 ">
-            <h3 className="text-white font-medium text-3xl md:text-5xl">
-              {t('mobile_banner.sub_title')}
-            </h3>
-            <h2 className="text-white font-bold mt-2 text-4xl md:text-6xl">
-              {t('mobile_banner.title')}
-            </h2>
+            <h3 className="call_banner">{t('mobile_banner.sub_title')}</h3>
+            <h2 className="call_sub_banner">{t('mobile_banner.title')}</h2>
             <Link
               className=" items-center gap-3 p-3 px-4 md:px-7 font-semibold uppercase inline-flex mt-5 cursor-pointer bg-[#5DCCDA]  shadow-sm rounded-md hover:shadow-lg text-white"
               href="https://portal.anypos .app/login"
@@ -84,7 +80,7 @@ export default function Home() {
             return (
               <div className="main rounded-lg w-full" key={idx}>
                 <div className="">
-                  <h2 className="text-white px-4 mt-3 pt-6 text-[32px] leading-[1em] font-bold tracking-[0.5px] mb-6 min-h-[90px]">
+                  <h2 className="text-white px-4 mt-3 pt-6 text-[32px] leading-[1em] font-bold tracking-[0.5px] mb-6 min-h-[96px]">
                     {' '}
                     {t(`choseus.items${idx + 1}.title`)}
                   </h2>

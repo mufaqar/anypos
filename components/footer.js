@@ -116,15 +116,15 @@ const socials = [
 
 const footerNav = [
   {
-    name: 'e-Commerce',
-    link: '#',
+    name: 'Home',
+    link: '/',
   },
   {
-    name: 'Retail',
-    link: '#',
+    name: 'POS Device',
+    link: '/wiseasy',
   },
   {
-    name: 'About Us',
-    link: '#',
+    name: 'Features',
+    link: '#features',
   },
 ];
