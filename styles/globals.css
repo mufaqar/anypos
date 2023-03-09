@@ -46,6 +46,13 @@ body {
   right: auto;
 }
 
+.lang_btn {
+  font-family: 'Kufi';
+}
+.rtl .lang_btn {
+  font-family: 'Comfortaa';
+}
+
 .rtl .circle2_en {
   left: 320px;
   right: auto;

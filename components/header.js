@@ -160,7 +160,7 @@ export default function Header() {
                 <div className="flex items-center justify-between py-3 md:py-5 gap-3">
                   <LanguageSwitcher lang={switch_lang ? 'en' : 'ar'}>
                     <div
-                      className={`text-sm font-semibold uppercase inline-block  rounded-md py-[10px] px-[24px] hover:shadow-lg ${
+                      className={`lang_btn text-sm font-semibold uppercase inline-block  rounded-md py-[10px] px-[24px] hover:shadow-lg ${
                         headerClr
                           ? 'bg-[#4267F1] text-white'
                           : 'text-[#4267F1] bg-white'
