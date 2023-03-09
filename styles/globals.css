@@ -35,6 +35,21 @@ body {
   background: #f0f4ff;
 }
 
+.rtl .home_en {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+.rtl .circle_en {
+  left: 0;
+  right: auto;
+}
+
+.rtl .circle2_en {
+  left: 320px;
+  right: auto;
+}
+
 .rtl h1,
 .rtl h2,
 .rtl h3,

@@ -47,7 +47,7 @@ export default function Banner() {
       </div>
       <Image
         src="/images/fondo-banner.png"
-        className="absolute -bottom-1 w-full"
+        className="absolute -bottom-1 w-full home_en"
         alt=""
         width={1840}
         height={641}
@@ -57,14 +57,14 @@ export default function Banner() {
         alt="circle"
         width={280}
         height={300}
-        className="-bottom-28 right-0 absolute"
+        className="-bottom-28 right-0 absolute circle_en"
       />
       <Image
         src="/images/c2.svg"
         alt="circle"
         width={120}
         height={300}
-        className="-bottom-0 right-80 absolute"
+        className="-bottom-0 right-80 absolute circle2_en"
       />
     </section>
   );
