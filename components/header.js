@@ -170,7 +170,7 @@ export default function Header() {
                       {switch_lang ? 'English' : 'العربية'}
                     </div>
                   </LanguageSwitcher>
-                  <a href="https://portal.anypos .app/login" className="">
+                  <a href="https://portal.anypos.app/login" className="">
                     <div className="text-sm font-semibold uppercase inline-block text-white bg-[#5DCCDA] hover:text-white rounded-md py-[10px] px-[24px] hover:shadow-lg">
                       {t('navlist.demo')}
                     </div>
