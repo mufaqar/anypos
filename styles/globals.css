@@ -41,6 +41,10 @@ body {
   transform: scaleX(-1);
 }
 
+.top_nav li {
+  margin-left: 0 !important;
+}
+
 .rtl .circle_en {
   left: 0;
   right: auto;

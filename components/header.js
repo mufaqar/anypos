@@ -108,7 +108,7 @@ export default function Header() {
                     : 'hidden'
                 }`}
               >
-                <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
+                <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0 gap-6 top_nav">
                   <li
                     className={`text-base font-semibold tracking-wider  hover:underline ${
                       headerClr
