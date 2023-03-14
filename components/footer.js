@@ -50,7 +50,8 @@ export default function Footer() {
             <ul className="flex flex-col gap-4">
               <li className="flex gap-2 justify-start text-white  font-extralight text-lg items-start">
                 <HiLocationMarker size={35} />
-                Khalid Bin Alwaleed, Ghirnatah Second floor, Riyadh 11564
+
+                {t('footer.address')}
               </li>
               <li className="flex gap-2 justify-start text-white  font-extralight text-lg items-start">
                 <BsFillEnvelopeFill size={21} />

@@ -145,7 +145,7 @@ export default function Header() {
                     </Link>
                   </li>
                   <li
-                    className={`text-base font-semibold tracking-wider  hover:underline ${
+                    className={`text-base font-semibold tracking-wider uppercase underline  hover:underline ${
                       headerClr
                         ? 'text-[#FF4014]'
                         : 'md:text-white text-[#FF4014]'
