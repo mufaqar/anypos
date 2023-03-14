@@ -144,6 +144,20 @@ export default function Header() {
                       {t('navlist.contact')}
                     </Link>
                   </li>
+                  <li
+                    className={`text-base font-semibold tracking-wider  hover:underline ${
+                      headerClr
+                        ? 'text-[#FF4014]'
+                        : 'md:text-white text-[#FF4014]'
+                    }`}
+                  >
+                    <Link
+                      href="https://portal.anypos.app/login"
+                      onClick={() => setNavbar(false)}
+                    >
+                      {t('navlist.login')}
+                    </Link>
+                  </li>
                 </ul>
               </div>
               <div className="md:block hidden">
