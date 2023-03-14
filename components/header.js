@@ -120,17 +120,7 @@ export default function Header() {
                       {t('navlist.home')}
                     </Link>
                   </li>
-                  <li
-                    className={`text-base font-semibold tracking-wider  hover:underline ${
-                      headerClr
-                        ? 'text-[#FF4014]'
-                        : 'md:text-white text-[#FF4014]'
-                    }`}
-                  >
-                    <Link href="/wiseasy" onClick={() => setNavbar(false)}>
-                      {t('navlist.pos')}
-                    </Link>
-                  </li>
+
                   <li
                     className={`text-base font-semibold tracking-wider  hover:underline ${
                       headerClr

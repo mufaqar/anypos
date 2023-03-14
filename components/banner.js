@@ -15,7 +15,7 @@ export default function Banner() {
           <h3 className="text-white md:text-[32px] text-[28px] leading-[1em] font-medium tracking-[0.5px] mb-4">
             {t('banner.title')}
           </h3>
-          <h1 className="text-white md:text-[60px] text-[50px] leading-[1em] font-bold tracking-[0.5px] mb-4">
+          <h1 className="text-white text-[48px] leading-[1.6em] font-bold tracking-[0.5px] mb-4">
             {t('banner.heading')}
           </h1>
           <h3 className="text-white md:text-[32px] text-[28px] leading-[1em] font-medium tracking-[0.5px] mb-4">
