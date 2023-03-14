@@ -2,7 +2,6 @@
   "i18n": {
     "navlist": {
       "home": "Home",
-      "pos": "POS Device",
       "features": "Features",
       "packages": "Packages",
       "contact": "Contact us",
@@ -73,8 +72,7 @@
       "tu":"Website Term of Uses",
       "cp":"Cookies Policy",
       "link1": "Home",
-      "link2": "POS Device",
-      "link3": "Features"
+      "link2": "Features"
 
     },
     "application":{

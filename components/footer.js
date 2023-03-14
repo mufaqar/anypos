@@ -119,10 +119,7 @@ const footerNav = [
     name: 'Home',
     link: '/',
   },
-  {
-    name: 'POS Device',
-    link: '/wiseasy',
-  },
+
   {
     name: 'Features',
     link: '#features',
