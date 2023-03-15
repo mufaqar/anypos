@@ -59,7 +59,7 @@ export default function Footer() {
               </li>
               <li className="flex gap-2 justify-start text-white  font-extralight text-lg items-start">
                 <BsFillTelephoneFill size={21} />
-                +92 000 8927
+                +966 11 52 07 077
               </li>
             </ul>
           </div>
