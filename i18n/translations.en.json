@@ -12,7 +12,7 @@
       "title": "Simple solution for",
       "heading": "Simplified Invoice",
       "sub_heading": "Point of sale in any device.",
-      "btn_text": " Get anypos ",
+      "btn_text": " Get ",
       "watch_video": "Watch video",
       "video_link": "https://youtu.be/5thFvlw2zNo" 
     },
@@ -66,7 +66,8 @@
     "contact": {
       "heading": "Start your free 14-day trial",
       "email_heading": "E-MAIL US",
-      "email_title": "hi@anypos .app"
+      "email_title": "hi@anypos.app"
+     
     },
     "footer": {  
       "copyright": "© anypos  2023, All Rights Reserved",
@@ -75,7 +76,8 @@
       "tu":"Website Term of Uses",
       "cp":"Cookies Policy",
       "link1": "Home",
-      "link2": "Features"
+      "link2": "Features",
+      "mobile": "+966 11 52 07 077"
 
     },
     "application":{
@@ -97,8 +99,8 @@
       "btn": "Get Started"
     },
     "choseus":{
-      "tag":"CHOSE US ",
-      "title":"Why chose us?",
+      "tag":" ",
+      "title":"Why chose",
       "items1":{
         "title":"Choose us for the best after-sales support!",
         "info":"Get instant solutions with just one click to ensure your satisfaction."

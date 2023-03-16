@@ -56,7 +56,7 @@ export default function Home() {
             {t('choseus.tag')}
           </h4>
           <h2 className="text-[#2A2A2A] pl-2 md:text-5xl mt-3 text-[32px] leading-[1em] font-bold tracking-[0.5px] mb-5">
-            {t('choseus.title')}
+            {t('choseus.title')} <span className="en_font">Anypos</span>?
           </h2>
           <div className="flex items-center gap-20">
             <Image

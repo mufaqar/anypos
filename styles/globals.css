@@ -86,6 +86,10 @@ html {
   scroll-behavior: smooth !important;
 }
 
+span.en_font {
+  font-family: 'Comfortaa', cursive !important;
+}
+
 .container {
   @apply px-5;
 }
