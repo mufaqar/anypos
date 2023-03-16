@@ -101,6 +101,7 @@
     "choseus":{
       "tag":" ",
       "title":"Why chose",
+      "anypos": "Anypos",
       "items1":{
         "title":"Choose us for the best after-sales support!",
         "info":"Get instant solutions with just one click to ensure your satisfaction."

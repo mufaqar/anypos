@@ -15,7 +15,8 @@
       "sub_heading": "نقطة البيع علي أي جهاز",
       "btn_text": "أحصل على نظام  " ,  
       "watch_video": "شاهد الفيديو" ,
-      "video_link": "https://www.youtube.com/embed/fKb9m8uiFbY" 
+      "video_link": "https://www.youtube.com/embed/fKb9m8uiFbY"
+      
     },
     "features": {
       "heading": "أسهل برنامج نقاط بيع وفواتير الكترونية",
@@ -67,7 +68,7 @@
     "contact": {  
       "heading": "ابدأ الإصدار التجريبي مجانا لمدة 14 يوما",
       "email_heading": "ارسل لنا عبر البريد الإلكتروني", 
-      "email_title": "hi@anypos .app" 
+      "email_title": "hi@anypos.app" 
     },
     "footer": {  
       "copyright": "© anypos  2022 ، جميع الحقوق محفوظة",
@@ -100,6 +101,7 @@
     "choseus":{
       "tag":" ",
       "title":"لماذا تختار",
+      "anypos": "Anypos",
       "items1":{
         "title":"خدمة الدعم الفني ما بعد البيع",
         "info":"دعم فني على مدار 24  ساعة لحل جميع المشاكل والرد على الاستفسارات "
