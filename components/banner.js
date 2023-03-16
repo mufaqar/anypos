@@ -95,7 +95,6 @@ export default function Banner() {
           style={customStyles}
           contentLabel="Example Modal"
         >
-          <button onClick={closeModal}>close</button>
           <div>
             {/* <iframe
               frameborder="0"
@@ -117,6 +116,7 @@ export default function Banner() {
               allowfullscreen
             ></iframe>
           </div>
+          <button onClick={closeModal}>close</button>
         </Modal>
       </div>
     </section>
