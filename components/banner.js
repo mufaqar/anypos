@@ -49,7 +49,7 @@ export default function Banner() {
               rel="noreferrer"
               className="text-sm font-semibold uppercase inline-block mt-5 bg-[#5DCCDA] p-3 px-4 md:px-10 shadow-sm rounded-md hover:shadow-lg text-white "
             >
-              {t('banner.btn_text')} <span className="en_font">Anypos</span>
+              {t('banner.btn_text')} <span className="en_font"></span>
             </a>
 
             <button

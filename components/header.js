@@ -161,7 +161,7 @@ export default function Header() {
                 </ul>
               </div>
               <div className="md:block hidden">
-                <div className="flex items-center justify-between py-3 md:py-5 gap-3">
+                <div className="flex items-center justify-between py-3 md:py-5 gap-3 ar_text">
                   <LanguageSwitcher lang={switch_lang ? 'en' : 'ar'}>
                     <div
                       className={`lang_btn text-sm font-semibold uppercase inline-block  rounded-md py-[10px] px-[24px] hover:shadow-lg ${
