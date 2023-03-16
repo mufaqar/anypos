@@ -2,12 +2,33 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 import { FaPlay } from 'react-icons/fa';
-
 import Any_device from '../public/images/any_device.png';
 import { useTranslation } from 'next-export-i18n';
+import Modal from 'react-modal';
+
+const customStyles = {
+  content: {
+    top: '50%',
+    left: '50%',
+    right: 'auto',
+    bottom: 'auto',
+    marginRight: '-50%',
+    transform: 'translate(-50%, -50%)',
+  },
+  overlay: { zIndex: 1000 },
+};
 
 export default function Banner() {
   const { t } = useTranslation();
+  const [modalIsOpen, setIsOpen] = React.useState(false);
+  function openModal() {
+    setIsOpen(true);
+  }
+
+  function closeModal() {
+    setIsOpen(false);
+  }
+
   return (
     <section id="home" className="relative py-40 main">
       <div className="container  mx-auto grid md:grid-cols-2 grid-cols-1 gap-10 items-center md:pl-20">
@@ -31,14 +52,14 @@ export default function Banner() {
               {t('banner.btn_text')} <span className="en_font">Anypos</span>
             </a>
 
-            <a
+            <button
               className=" items-center gap-3 p-3 px-4 md:px-7 text-sm font-semibold uppercase inline-flex mt-5 cursor-pointer bg-white  shadow-sm rounded-md hover:shadow-lg text-[#6433D4]"
-              href={t('banner.video_link')}
               rel="noreferrer"
+              onClick={openModal}
             >
               <FaPlay color="#5DCCDA" size={20} className="play_icon" />
               <span> {t('banner.watch_video')} </span>
-            </a>
+            </button>
           </div>
         </div>
         <div className="flex justify-end z-[1]">
@@ -66,6 +87,38 @@ export default function Banner() {
         height={300}
         className="-bottom-0 right-80 absolute circle2_en"
       />
+
+      <div className="z-[2]">
+        <Modal
+          isOpen={modalIsOpen}
+          onRequestClose={closeModal}
+          style={customStyles}
+          contentLabel="Example Modal"
+        >
+          <button onClick={closeModal}>close</button>
+          <div>
+            {/* <iframe
+              frameborder="0"
+              scrolling="no"
+              marginheight="0"
+              marginwidth="0"
+              width="788.54"
+              height="443"
+              type="text/html"
+              src={`${t('banner.video_link')}`}
+            ></iframe> */}
+            <iframe
+              width="560"
+              height="315"
+              src={`${t('banner.video_link')}`}
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </Modal>
+      </div>
     </section>
   );
 }
