@@ -100,10 +100,6 @@ span.en_font {
   @apply px-5;
 }
 
-.rtl .banner {
-  padding-right: 80px;
-}
-
 .content_box h3 {
   @apply text-[#5C5C5C] md:text-[32px] text-[28px] leading-[1em] font-medium tracking-[0.5px];
 }
