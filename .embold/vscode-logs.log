@@ -1195,3 +1195,45 @@
 2023-03-18 17:41:36 error: SQLITE_ERROR: no such table: issues
 2023-03-18 17:41:49 info: file:///f%3A/sf/anypos/.git/index.lock
 2023-03-18 17:41:49 error: SQLITE_ERROR: no such table: issues
+2023-03-18 17:42:45 info: file:///f%3A/sf/anypos/.git/index.lock
+2023-03-18 17:42:45 error: SQLITE_ERROR: no such table: issues
+2023-03-18 17:42:54 info: file:///f%3A/sf/anypos/.git/index.lock
+2023-03-18 17:42:54 error: SQLITE_ERROR: no such table: issues
+2023-03-18 17:42:59 info: file:///f%3A/sf/anypos/.git/refs/remotes/origin/main.lock
+2023-03-18 17:42:59 error: SQLITE_ERROR: no such table: issues
+2023-03-18 17:50:15 info: file:///f%3A/sf/anypos/.git/index.lock
+2023-03-18 17:50:15 error: SQLITE_ERROR: no such table: issues
+2023-03-18 17:50:40 info: file:///f%3A/sf/anypos/.next/cache/webpack/client-development/14.pack_
+2023-03-18 17:50:40 error: SQLITE_ERROR: no such table: issues
+2023-03-18 17:50:40 info: file:///f%3A/sf/anypos/.next/cache/webpack/server-development/index.pack
+2023-03-18 17:50:40 error: SQLITE_ERROR: no such table: issues
+2023-03-18 17:50:40 info: file:///f%3A/sf/anypos/.next/cache/webpack/server-development/0.pack_
+2023-03-18 17:50:40 info: file:///f%3A/sf/anypos/.next/cache/webpack/server-development/16.pack_
+2023-03-18 17:50:40 info: file:///f%3A/sf/anypos/.next/cache/webpack/server-development/index.pack_
+2023-03-18 17:50:40 error: SQLITE_ERROR: no such table: issues
+2023-03-18 17:50:40 error: SQLITE_ERROR: no such table: issues
+2023-03-18 17:50:40 error: SQLITE_ERROR: no such table: issues
+2023-03-18 17:57:55 info: file:///f%3A/sf/anypos/.next/cache/webpack/client-development/14.pack_
+2023-03-18 17:57:55 info: file:///f%3A/sf/anypos/.next/cache/webpack/client-development/index.pack_
+2023-03-18 17:57:55 error: SQLITE_ERROR: no such table: issues
+2023-03-18 17:57:55 error: SQLITE_ERROR: no such table: issues
+2023-03-18 17:58:04 info: file:///f%3A/sf/anypos/.next/cache/webpack/client-development/14.pack_
+2023-03-18 17:58:04 error: SQLITE_ERROR: no such table: issues
+2023-03-18 17:59:28 info: file:///f%3A/sf/anypos/.next/cache/webpack/client-development/14.pack_
+2023-03-18 17:59:28 info: file:///f%3A/sf/anypos/.next/cache/webpack/client-development/index.pack_
+2023-03-18 17:59:28 error: SQLITE_ERROR: no such table: issues
+2023-03-18 17:59:28 error: SQLITE_ERROR: no such table: issues
+2023-03-18 18:00:26 info: file:///f%3A/sf/anypos/.next/cache/webpack/server-development/16.pack_
+2023-03-18 18:00:26 error: SQLITE_ERROR: no such table: issues
+2023-03-18 18:00:29 info: file:///f%3A/sf/anypos/.git/index.lock
+2023-03-18 18:00:29 error: SQLITE_ERROR: no such table: issues
+2023-03-18 18:05:19 info: file:///f%3A/sf/anypos/.next/cache/webpack/client-development/index.pack_
+2023-03-18 18:05:19 error: SQLITE_ERROR: no such table: issues
+2023-03-18 18:05:34 info: file:///f%3A/sf/anypos/.next/cache/webpack/client-development/14.pack_
+2023-03-18 18:05:34 info: file:///f%3A/sf/anypos/.next/cache/webpack/client-development/15.pack_
+2023-03-18 18:05:34 info: file:///f%3A/sf/anypos/.next/cache/webpack/client-development/index.pack_
+2023-03-18 18:05:34 error: SQLITE_ERROR: no such table: issues
+2023-03-18 18:05:34 error: SQLITE_ERROR: no such table: issues
+2023-03-18 18:05:34 error: SQLITE_ERROR: no such table: issues
+2023-03-18 18:05:37 info: file:///f%3A/sf/anypos/.git/index.lock
+2023-03-18 18:05:37 error: SQLITE_ERROR: no such table: issues
