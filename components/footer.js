@@ -1,19 +1,19 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
-import FtLogo from '../public/images/ftlogo.png';
-import { useTranslation } from 'next-export-i18n';
 //import TawkTo from 'tawkto-react';
-import { useEffect } from 'react';
 import { FaFacebookF, FaTwitter, FaYoutube } from 'react-icons/fa';
 import { FiInstagram } from 'react-icons/fi';
 import LogoWhite from '../public/images/logo-white.png';
+import { useEffect, useState } from 'react';
+import { useTranslation, LanguageSwitcher } from 'next-export-i18n';
 
 import { HiLocationMarker } from 'react-icons/hi';
 import { BsFillTelephoneFill, BsFillEnvelopeFill } from 'react-icons/bs';
 
 export default function Footer() {
   const { t } = useTranslation();
+  const [switch_lang, set_switch_lang] = useState(false);
   // useEffect(() => {
   //   // const propertyId = '639eea61b0d6371309d4fd77';
   //   // const tawkId = '1gkic73os';
@@ -72,6 +72,15 @@ export default function Footer() {
                   </li>
                 );
               })}
+
+              <LanguageSwitcher lang={switch_lang ? 'en' : 'ar'}>
+                <li
+                  onClick={() => set_switch_lang(!switch_lang)}
+                  className="text-white  font-extralight"
+                >
+                  {switch_lang ? 'English' : 'العربية'}
+                </li>
+              </LanguageSwitcher>
             </ul>
           </div>
         </div>
