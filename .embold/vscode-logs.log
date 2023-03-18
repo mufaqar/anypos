@@ -1183,3 +1183,5 @@
 2023-03-18 17:40:50 error: SQLITE_ERROR: no such table: issues
 2023-03-18 17:40:51 info: file:///f%3A/sf/anypos/.git/index.lock
 2023-03-18 17:40:51 error: SQLITE_ERROR: no such table: issues
+2023-03-18 17:40:53 info: file:///f%3A/sf/anypos/.git/index.lock
+2023-03-18 17:40:53 error: SQLITE_ERROR: no such table: issues
