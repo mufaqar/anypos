@@ -58,7 +58,7 @@ body {
 }
 
 .rtl .circle2_en {
-  left: 260;
+  left: 300px;
   right: auto;
 }
 @media only screen and (max-width: 768px) {
