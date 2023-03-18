@@ -33,7 +33,7 @@ export default function Features() {
         <h4 className="upparcase font-semibold text-lg  text-[#542ACA]">
           {t('features.tag')}
         </h4>
-        <h2 className="text-[#2A2A2A] md:text-[36px] mt-3 text-[32px] leading-[1em] font-bold tracking-[0.5px] mb-5">
+        <h2 className="text-[#2A2A2A] md:text-[36px] mt-3 text-[32px] leading-[2em] font-bold tracking-[0.5px] mb-5">
           {t('features.heading')}
         </h2>
         <p className="max-w-[500px] text-gray-500 font-light">

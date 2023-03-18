@@ -13,7 +13,7 @@ import { BsFillTelephoneFill, BsFillEnvelopeFill } from 'react-icons/bs';
 
 export default function Footer() {
   const { t } = useTranslation();
-  const [switch_lang, set_switch_lang] = useState(false);
+  const [switch_flang, set_switch_flang] = useState(false);
   // useEffect(() => {
   //   // const propertyId = '639eea61b0d6371309d4fd77';
   //   // const tawkId = '1gkic73os';
@@ -73,12 +73,12 @@ export default function Footer() {
                 );
               })}
 
-              <LanguageSwitcher lang={switch_lang ? 'en' : 'ar'}>
+              <LanguageSwitcher lang={switch_flang ? 'en' : 'ar'}>
                 <li
-                  onClick={() => set_switch_lang(!switch_lang)}
+                  onClick={() => set_switch_flang(!switch_flang)}
                   className="text-white  font-extralight"
                 >
-                  {switch_lang ? 'English' : 'العربية'}
+                  {switch_flang ? 'English' : 'العربية'}
                 </li>
               </LanguageSwitcher>
             </ul>
@@ -129,7 +129,6 @@ const footerNav = [
     name: 'Home',
     link: '/',
   },
-
   {
     name: 'Features',
     link: '#features',
