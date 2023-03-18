@@ -58,8 +58,14 @@ body {
 }
 
 .rtl .circle2_en {
-  left: 260px;
+  left: 260;
   right: auto;
+}
+@media only screen and (max-width: 768px) {
+  .rtl .circle2_en {
+    left: 0;
+    right: auto;
+  }
 }
 
 .rtl h1,
