@@ -5,17 +5,17 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  webpack: (config) => {
+  webpack: (config, options) => {
     config.module.rules.push({
       test: /\.pdf$/,
-      use: {
-        loader: 'file-loader',
-        options: {
-          name: '[path][name].[ext]',
+      use: [
+        {
+          loader: 'file-loader',
         },
-      },
+      ],
     });
     return config;
+  },
 };
 
 module.exports = nextConfig;
