@@ -84,6 +84,10 @@ body {
   font-family: 'Kufi' !important;
 }
 
+[dir='rtl'] .slick-slide {
+  float: left;
+}
+
 .rtl .bg-white {
   text-align: right !important;
 }

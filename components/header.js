@@ -159,6 +159,20 @@ export default function Header() {
                     </Link>
                   </li>
                 </ul>
+                <div className="md:hidden mt-5">
+                  <LanguageSwitcher lang={switch_lang ? 'en' : 'ar'}>
+                    <div
+                      className={`lang_btn text-sm font-semibold uppercase inline-block  rounded-md py-[10px] px-[24px] hover:shadow-lg ${
+                        headerClr
+                          ? 'bg-[#4267F1] text-white'
+                          : 'text-[#fff] bg-[#5DCCDA]'
+                      }`}
+                      onClick={() => set_switch_lang(!switch_lang)}
+                    >
+                      {switch_lang ? 'English' : 'العربية'}
+                    </div>
+                  </LanguageSwitcher>
+                </div>
               </div>
               <div className="md:block hidden">
                 <div className="flex items-center justify-between py-3 md:py-5 gap-3 ar_text">

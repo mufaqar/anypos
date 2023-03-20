@@ -1,4 +1,5 @@
 import React, { useRef } from 'react';
+import Link from 'next/link';
 
 import Icon1 from '../public/images/icon1.svg';
 import Icon2 from '../public/images/icon2.svg';
@@ -81,10 +82,13 @@ export default function Features() {
         </div>
       </div>
       <div className="flex justify-center mt-24">
-        <a className="uppercase bg-[#5DCCDA] inline-flex items-center gap-1 px-6 text-sm text-white p-3 hover:shadow-xl cursor-pointer rounded-md">
+        <Link
+          className="uppercase bg-[#5DCCDA] inline-flex items-center gap-1 px-6 text-sm text-white p-3 hover:shadow-xl cursor-pointer rounded-md"
+          href={Icon8}
+        >
           <span>{t('features.download_btn')} </span>
           <MdOutlinePictureAsPdf color="white" size={20} />
-        </a>
+        </Link>
       </div>
     </section>
   );
@@ -125,6 +129,7 @@ var settings = {
   slidesToScroll: 1,
   initialSlide: 0,
   arrows: false,
+  rtl: true,
   responsive: [
     {
       breakpoint: 1280,
