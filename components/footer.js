@@ -5,6 +5,7 @@ import React from 'react';
 import { FaFacebookF, FaTwitter, FaYoutube } from 'react-icons/fa';
 import { FiInstagram } from 'react-icons/fi';
 import LogoWhite from '../public/images/logo-white.png';
+import LogoGoogle from '../public/images/google.png';
 import { useEffect, useState } from 'react';
 import { useTranslation, LanguageSwitcher } from 'next-export-i18n';
 
@@ -81,6 +82,10 @@ export default function Footer() {
                   {switch_flang ? 'English' : 'العربية'}
                 </li>
               </LanguageSwitcher>
+
+              <li>
+                <Image src={LogoGoogle} alt="Logo" width={200} height={62} />
+              </li>
             </ul>
           </div>
         </div>
