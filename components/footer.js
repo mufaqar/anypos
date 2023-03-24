@@ -2,7 +2,13 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 //import TawkTo from 'tawkto-react';
-import { FaFacebookF, FaTwitter, FaYoutube } from 'react-icons/fa';
+import {
+  FaFacebookF,
+  FaTwitter,
+  FaYoutube,
+  FaTiktok,
+  FaSnapchat,
+} from 'react-icons/fa';
 import { FiInstagram } from 'react-icons/fi';
 import LogoWhite from '../public/images/logo-white.png';
 import LogoGoogle from '../public/images/google.png';
@@ -11,8 +17,8 @@ import { useTranslation, LanguageSwitcher } from 'next-export-i18n';
 
 import { HiLocationMarker } from 'react-icons/hi';
 import { BsFillTelephoneFill, BsFillEnvelopeFill } from 'react-icons/bs';
-import Script from 'next/script';
-import tawlk from '../public/script';
+//import Script from 'next/script';
+//import tawlk from '../public/script';
 
 export default function Footer() {
   const { t } = useTranslation();
@@ -86,7 +92,12 @@ export default function Footer() {
               </LanguageSwitcher>
 
               <li>
-                <Image src={LogoGoogle} alt="Logo" width={200} height={62} />
+                <Image
+                  src={LogoGoogle}
+                  alt="Google Playstore"
+                  width={200}
+                  height={62}
+                />
               </li>
             </ul>
           </div>
@@ -108,7 +119,7 @@ export default function Footer() {
           </div>
         </section>
       </footer>
-      <Script src={tawlk}></Script>
+      {/* <Script src={tawlk}></Script> */}
     </>
   );
 }
@@ -116,19 +127,27 @@ export default function Footer() {
 const socials = [
   {
     icon: <FaFacebookF />,
-    link: 'https://www.facebook.com/profile.php?id=100090413934551&mibextid=LQQJ4d',
+    link: 'https://www.facebook.com/profile.php?id=100090951673490',
   },
   {
     icon: <FiInstagram />,
-    link: 'https://instagram.com/any__pos?igshid=YmMyMTA2M2Y=',
+    link: 'https://www.instagram.com/anypos.app/',
   },
   {
     icon: <FaTwitter />,
-    link: 'https://twitter.com/anypossocial?s=11&t=jQfRVt7Utg9jlhHOybpOSQ',
+    link: 'https://twitter.com/AnyPOSapp',
   },
   {
     icon: <FaYoutube />,
-    link: 'https://youtube.com/@anyposApp',
+    link: 'https://www.youtube.com/channel/UCUYHhIZaoY58sHB8uhbMofQ',
+  },
+  {
+    icon: <FaTiktok />,
+    link: 'https://www.tiktok.com/@anypos.app?_t=8av0mX1YkE5&_r=1',
+  },
+  {
+    icon: <FaSnapchat />,
+    link: 'https://www.snapchat.com/add/anypos.social',
   },
 ];
 
