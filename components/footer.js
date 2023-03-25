@@ -17,9 +17,8 @@ import { useTranslation, LanguageSwitcher } from 'next-export-i18n';
 
 import { HiLocationMarker } from 'react-icons/hi';
 import { BsFillTelephoneFill, BsFillEnvelopeFill } from 'react-icons/bs';
-//import Script from 'next/script';
-//import tawlk from '../public/script';
-
+import Script from 'next/script';
+import tawlk from '../public/script';
 export default function Footer() {
   const { t } = useTranslation();
   const [switch_flang, set_switch_flang] = useState(false);
@@ -119,7 +118,7 @@ export default function Footer() {
           </div>
         </section>
       </footer>
-      {/* <Script src={tawlk}></Script> */}
+      <Script src={tawlk}></Script>
     </>
   );
 }
