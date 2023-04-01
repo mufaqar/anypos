@@ -5,6 +5,7 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+
   webpack: (config, options) => {
     config.module.rules.push({
       test: /\.pdf$/,

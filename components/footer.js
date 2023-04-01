@@ -12,13 +12,14 @@ import {
 import { FiInstagram } from 'react-icons/fi';
 import LogoWhite from '../public/images/logo-white.png';
 import LogoGoogle from '../public/images/google.png';
+import LogoApple from '../public/images/apple.png';
+
 import { useEffect, useState } from 'react';
 import { useTranslation, LanguageSwitcher } from 'next-export-i18n';
 
 import { HiLocationMarker } from 'react-icons/hi';
 import { BsFillTelephoneFill, BsFillEnvelopeFill } from 'react-icons/bs';
-import Script from 'next/script';
-import tawlk from '../public/script';
+
 export default function Footer() {
   const { t } = useTranslation();
   const [switch_flang, set_switch_flang] = useState(false);
@@ -98,6 +99,9 @@ export default function Footer() {
                   height={62}
                 />
               </li>
+              <li>
+                <Image src={LogoApple} alt="APPLE" width={200} height={62} />
+              </li>
             </ul>
           </div>
         </div>
@@ -118,7 +122,6 @@ export default function Footer() {
           </div>
         </section>
       </footer>
-      <Script src={tawlk}></Script>
     </>
   );
 }
