@@ -4,14 +4,11 @@ import Footer from '../components/footer';
 import { useRouter } from 'next/router';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-//import Script from 'next/script';
-//import tawlk from '../public/script';
 
 export default function App({ Component, pageProps }) {
   const router = useRouter();
   const { query } = router;
   // console.log('🚀 ~ file: _app.tsx:9 ~ App ~ router', query);
-
   return (
     <>
       <div
@@ -20,7 +17,6 @@ export default function App({ Component, pageProps }) {
         className={query.lang === 'ar' && 'rtl'}
       >
         <Header />
-        {/* <Script src={tawlk} /> */}
         <Component {...pageProps} />
         <Footer />
       </div>

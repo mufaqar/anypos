@@ -19,6 +19,7 @@ import { useTranslation, LanguageSwitcher } from 'next-export-i18n';
 
 import { HiLocationMarker } from 'react-icons/hi';
 import { BsFillTelephoneFill, BsFillEnvelopeFill } from 'react-icons/bs';
+import Script from 'next/script';
 
 export default function Footer() {
   const { t } = useTranslation();
@@ -35,6 +36,10 @@ export default function Footer() {
 
   return (
     <>
+      <Script
+        strategy="lazyOnload"
+        src="https://embed.tawk.to/639eea61b0d6371309d4fd77/1gkic73os"
+      />
       <footer className="relative pt-14 pb-8 bg-[url('/images/footer-bg.svg')] bg-no-repeat bg-cover bg-top">
         <div className="grid container mx-auto my-20 mt-48 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
           <div>
