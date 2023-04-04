@@ -75,6 +75,12 @@ export default function Footer() {
                 <BsFillTelephoneFill size={21} />
                 {t('footer.mobile')}
               </li>
+              <li className="flex gap-2 justify-start text-white  font-extralight text-lg items-start">
+                Ramadan Official timings
+              </li>
+              <li className="flex gap-2 justify-start text-white  font-extralight text-lg items-start">
+                11:00 am to 2:00 pm & 9:00 pm to 12:00 am
+              </li>
             </ul>
           </div>
           <div className="flex md:justify-center mt-10 md:mt-0">
