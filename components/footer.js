@@ -103,12 +103,18 @@ export default function Footer() {
               </LanguageSwitcher>
 
               <li>
-                <Image
-                  src={LogoGoogle}
-                  alt="Google Playstore"
-                  width={200}
-                  height={62}
-                />
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.anyposmobileapp"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <Image
+                    src={LogoGoogle}
+                    alt="Google Playstore"
+                    width={200}
+                    height={62}
+                  />
+                </a>
               </li>
               <li>
                 <Image src={LogoApple} alt="APPLE" width={200} height={62} />
