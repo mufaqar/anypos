@@ -4,6 +4,7 @@ import Banner from '../components/banner';
 import Features from '../components/features';
 import { useTranslation } from 'next-export-i18n';
 import Application from '../components/application';
+import Video_Section from '../components/videoSection';
 
 export default function Home() {
   const { t } = useTranslation();
@@ -100,6 +101,12 @@ export default function Home() {
             );
           })}
         </div>
+      </section>
+
+      <section
+        id="videos"       
+      >
+        <Video_Section/>
       </section>
     </>
   );
