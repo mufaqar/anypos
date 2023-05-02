@@ -76,10 +76,10 @@ export default function Footer() {
                 {t('footer.mobile')}
               </li>
               <li className="flex gap-2 justify-start text-white  font-extralight text-lg items-start">
-                Ramadan Official timings
+                Official timings
               </li>
               <li className="flex gap-2 justify-start text-white  font-extralight text-lg items-start">
-                11:00 am to 2:00 pm & 9:00 pm to 12:00 am
+                9:00 am to 05:00 pm
               </li>
             </ul>
           </div>

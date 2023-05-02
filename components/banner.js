@@ -44,12 +44,12 @@ export default function Banner() {
           </h3>
           <div className="flex items-center gap-6">
             <a
-              href="https://portal.anypos.app/register"
+              href="https://calendly.com/anypos/30min?back=1&month=2023-05"
               target="_blank"
               rel="noreferrer"
               className="text-sm font-semibold uppercase inline-block mt-5 bg-[#5DCCDA] p-3 px-4 md:px-10 shadow-sm rounded-md hover:shadow-lg text-white "
             >
-              {t('banner.btn_text')} <span className="en_font">Anypos</span>
+              {t('banner.btn_text')}
             </a>
 
             <button
