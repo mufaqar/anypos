@@ -38,7 +38,7 @@ function Video_Section() {
         <div>
           <div className="md:h-[348px] h-[275px] w-full rounded-[15px] relative">
             <Image
-              src={Moka}
+              src={MokaBackend}
               alt=""
               className="object-cover w-full h-full rounded-[15px]"
             />
@@ -54,7 +54,7 @@ function Video_Section() {
         <div>
           <div className="md:h-[348px] h-[275px] w-full rounded-[15px] relative">
             <Image
-              src={Moka}
+              src={MokaAbout}
               alt=""
               className="object-cover w-full h-full rounded-[15px]"
             />
