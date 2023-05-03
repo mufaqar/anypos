@@ -19,7 +19,7 @@ function Video_Section() {
               <div className='md:h-[348px] h-[275px] w-full rounded-[15px] relative'>
                 <Image src={item.image} alt="" className='object-cover w-full h-full rounded-[15px]' />
                 <Link href={item.video_link} >
-                  <BsPlayCircle className='absolute text-white inset-0 z-10 text-7xl w-[76px] h-[76px] m-auto' />
+                  <BsPlayCircle className='absolute text-white inset-0 z-auto text-7xl w-[76px] h-[76px] m-auto' />
                 </Link>
               </div>
               <div className='mt-8'>
