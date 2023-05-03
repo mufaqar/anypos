@@ -95,6 +95,27 @@
         "info" : "Access your business's live progress anytime with our cloud technology - your data is always available."
       }
     },
+    "videos":{
+      "title": "Watch Our Videos",
+   
+      "sec1":{
+        "title": "Demonstration Videos",
+        "link" : "https://youtu.be/_ahG22s9vh0" 
+      
+      },
+      "sec2":{
+        "title": "Back-office Tutorials",
+        "link" : "https://youtu.be/_ahG22s9vh0"
+        
+      },
+      "sec3":{
+        "title": "About anypos",
+        "link" : "https://youtu.be/_ahG22s9vh0"
+        
+      }   
+   
+    
+    },
     "mobile_banner":{
       "sub_title":"Buy our certified hardware",
       "title": "with 12 months local warranty",
