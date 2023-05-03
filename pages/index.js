@@ -58,7 +58,6 @@ export default function Home() {
           </h4>
           <h2 className="text-[#2A2A2A] pl-2 md:text-5xl mt-3 text-[32px] leading-[1em] font-bold tracking-[0.5px] mb-5">
             {t('choseus.title')}
-            <span className="en_font">{t('choseus.anypos')} </span>
           </h2>
           <div className="flex items-center gap-20">
             <Image
@@ -103,10 +102,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section
-        id="videos"       
-      >
-        <Video_Section/>
+      <section id="videos">
+        <Video_Section />
       </section>
     </>
   );
