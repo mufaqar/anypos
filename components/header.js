@@ -49,6 +49,10 @@ export default function Header() {
             content="Simple solution for Simplified Invoice"
           />
           <link rel="icon" href="/favicon.ico" />
+          <script
+            async
+            src={`https://www.googletagmanager.com/gtm.js?id=GTM-TSTQ4LM`}
+          />
         </Head>
         <nav className="relative w-full">
           <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-0">

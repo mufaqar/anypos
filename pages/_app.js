@@ -4,6 +4,7 @@ import Footer from '../components/footer';
 import { useRouter } from 'next/router';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import GoogleTagManager from '../components/GoogleTagManager';
 
 export default function App({ Component, pageProps }) {
   const router = useRouter();
@@ -16,6 +17,7 @@ export default function App({ Component, pageProps }) {
         lang={query.lang === 'ar' ? 'ar' : 'en'}
         className={query.lang === 'ar' && 'rtl'}
       >
+        <GoogleTagManager />
         <Header />
         <Component {...pageProps} />
         <Footer />
