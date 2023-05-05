@@ -42,18 +42,18 @@ export default function Banner() {
           <h3 className="text-white md:text-[32px] text-[28px] leading-[1em] font-medium tracking-[0.5px] mb-4">
             {t('banner.sub_heading')}
           </h3>
-          <div className="flex items-center gap-6">
+          <div className="flex items-center gap-2 md:gap-6">
             <a
               href="https://calendly.com/anypos/30min?back=1&month=2023-05"
               target="_blank"
               rel="noreferrer"
-              className="text-sm font-semibold uppercase inline-block mt-5 bg-[#5DCCDA] p-3 px-4 md:px-10 shadow-sm rounded-md hover:shadow-lg text-white "
+              className="text-sm font-semibold uppercase inline-block mt-5 bg-[#5DCCDA]  p-3 px-[10px] md:px-10 shadow-sm rounded-md hover:shadow-lg text-white "
             >
               {t('banner.btn_text')}
             </a>
 
             <button
-              className=" items-center gap-3 p-3 px-4 md:px-7 text-sm font-semibold uppercase inline-flex mt-5 cursor-pointer bg-white  shadow-sm rounded-md hover:shadow-lg text-[#6433D4]"
+              className=" items-center gap-2 p-3 px-[10px] md:px-7 text-sm font-semibold uppercase inline-flex mt-5 cursor-pointer bg-white  shadow-sm rounded-md hover:shadow-lg text-[#6433D4]"
               rel="noreferrer"
               onClick={openModal}
             >
