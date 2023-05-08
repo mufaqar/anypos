@@ -1,8 +1,8 @@
 import Image from 'next/image';
 import React from 'react';
 import Andriod from '../public/images/andriod.jpeg';
-import MokaBackend from '../public/images/web.jpeg';
-import MokaAbout from '../public/images/about-vide.jpeg';
+import WEb from '../public/images/web.jpeg';
+import AboutVid from '../public/images/about-vide.jpeg';
 import { BsPlayCircle } from 'react-icons/bs';
 import Link from 'next/link';
 import { useTranslation } from 'next-export-i18n';
@@ -28,17 +28,14 @@ function Video_Section() {
             </Link>
           </div>
           <div className="mt-8">
-            <h4 className="font-semibold text-2xl">
-              {' '}
-              {t('videos.sec1.title')}
-            </h4>
+            <h4 className="font-semibold text-2xl">{t('videos.sec1.title')}</h4>
             <div className="bg-[#00b4eb] w-20 h-[3px] mt-5"></div>
           </div>
         </div>
         <div>
           <div className=" h-[240x] w-full rounded-[15px] relative">
             <Image
-              src={MokaBackend}
+              src={Web}
               alt=""
               className="object-cover w-full h-full rounded-[15px]"
             />
@@ -54,7 +51,7 @@ function Video_Section() {
         <div>
           <div className="md:h-[240px] h-[240px] w-full rounded-[15px] relative">
             <Image
-              src={MokaAbout}
+              src={AboutVid}
               alt=""
               className="object-cover w-full h-full rounded-[15px]"
             />
@@ -63,10 +60,7 @@ function Video_Section() {
             </Link>
           </div>
           <div className="mt-8">
-            <h4 className="font-semibold text-2xl">
-              {' '}
-              {t('videos.sec3.title')}
-            </h4>
+            <h4 className="font-semibold text-2xl">{t('videos.sec3.title')}</h4>
             <div className="bg-[#00b4eb] w-20 h-[3px] mt-5"></div>
           </div>
         </div>
