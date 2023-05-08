@@ -99,17 +99,17 @@
       "title": "Watch Our Videos",
    
       "sec1":{
-        "title": "AnyPOS Android App Tutorial ",
+        "title": "Android App Tutorial",
         "link" : "https://www.youtube.com/playlist?list=PLU67mcsJprnAapwnSlVv7bWrDmkigro9R" 
       
       },
       "sec2":{
-        "title": "AnyPOS Web-Portal Tutorial",
+        "title": "Web-Portal Tutorial",
         "link" : "https://www.youtube.com/playlist?list=PLU67mcsJprnDmRUSt6Sh1pzVIPX6AkZU_"
         
       },
       "sec3":{
-        "title": "About anypos",
+        "title": "About AnyPOS",
         "link" : "https://youtu.be/_ahG22s9vh0"
         
       }   
