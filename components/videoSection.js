@@ -1,8 +1,8 @@
 import Image from 'next/image';
 import React from 'react';
 import Andriod from '../public/images/andriod.jpeg';
-import MokaBackend from '../public/images/anypos.jpeg';
-import MokaAbout from '../public/images/videos.jpeg';
+import MokaBackend from '../public/images/web.jpeg';
+import MokaAbout from '../public/images/about-vide.jpeg';
 import { BsPlayCircle } from 'react-icons/bs';
 import Link from 'next/link';
 import { useTranslation } from 'next-export-i18n';
@@ -17,7 +17,7 @@ function Video_Section() {
       </h2>
       <div className="grid md:grid-cols-3 grid-cols-1 gap-16 ">
         <div>
-          <div className="md:h-[348px] h-[275px] w-full rounded-[15px] relative ">
+          <div className="h-[240px] w-full rounded-[15px] relative">
             <Image
               src={Andriod}
               alt=""
@@ -36,7 +36,7 @@ function Video_Section() {
           </div>
         </div>
         <div>
-          <div className="md:h-[348px] h-[275px] w-full rounded-[15px] relative">
+          <div className=" h-[240x] w-full rounded-[15px] relative">
             <Image
               src={MokaBackend}
               alt=""
@@ -52,7 +52,7 @@ function Video_Section() {
           </div>
         </div>
         <div>
-          <div className="md:h-[348px] h-[275px] w-full rounded-[15px] relative">
+          <div className="md:h-[240px] h-[240px] w-full rounded-[15px] relative">
             <Image
               src={MokaAbout}
               alt=""
