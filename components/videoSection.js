@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
 import Andriod from '../public/images/andriod.jpeg';
-import WEb from '../public/images/web.jpeg';
+import webportal from '../public/images/web.jpeg';
 import AboutVid from '../public/images/about-vide.jpeg';
 import { BsPlayCircle } from 'react-icons/bs';
 import Link from 'next/link';
@@ -35,7 +35,7 @@ function Video_Section() {
         <div>
           <div className=" h-[240x] w-full rounded-[15px] relative">
             <Image
-              src={Web}
+              src={AboutVid}
               alt=""
               className="object-cover w-full h-full rounded-[15px]"
             />
@@ -51,7 +51,7 @@ function Video_Section() {
         <div>
           <div className="md:h-[240px] h-[240px] w-full rounded-[15px] relative">
             <Image
-              src={AboutVid}
+              src={webportal}
               alt=""
               className="object-cover w-full h-full rounded-[15px]"
             />
