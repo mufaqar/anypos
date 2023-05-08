@@ -1,8 +1,8 @@
 import Image from 'next/image';
 import React from 'react';
-import Moka from '../public/images/moka.jpeg';
-import MokaBackend from '../public/images/backend.jpg';
-import MokaAbout from '../public/images/any-about.jpg';
+import Andriod from '../public/images/andriod.jpeg';
+import MokaBackend from '../public/images/anypos.jpeg';
+import MokaAbout from '../public/images/videos.jpeg';
 import { BsPlayCircle } from 'react-icons/bs';
 import Link from 'next/link';
 import { useTranslation } from 'next-export-i18n';
@@ -17,14 +17,14 @@ function Video_Section() {
       </h2>
       <div className="grid md:grid-cols-3 grid-cols-1 gap-16 ">
         <div>
-          <div className="md:h-[348px] h-[275px] w-full rounded-[15px] relative">
+          <div className="md:h-[348px] h-[275px] w-full rounded-[15px] relative ">
             <Image
-              src={Moka}
+              src={Andriod}
               alt=""
               className="object-cover w-full h-full rounded-[15px]"
             />
             <Link href={t('videos.sec1.link')}>
-              <BsPlayCircle className="absolute text-white inset-0 z-auto text-7xl w-[76px] h-[76px] m-auto" />
+              <BsPlayCircle className="absolute text-[#FF4014] inset-0 z-auto text-7xl w-[76px] h-[76px] m-auto" />
             </Link>
           </div>
           <div className="mt-8">
@@ -43,7 +43,7 @@ function Video_Section() {
               className="object-cover w-full h-full rounded-[15px]"
             />
             <Link href={t('videos.sec2.link')}>
-              <BsPlayCircle className="absolute text-white inset-0 z-auto text-7xl w-[76px] h-[76px] m-auto" />
+              <BsPlayCircle className="absolute text-[#FF4014]  inset-0 z-auto text-7xl w-[76px] h-[76px] m-auto" />
             </Link>
           </div>
           <div className="mt-8">
@@ -59,7 +59,7 @@ function Video_Section() {
               className="object-cover w-full h-full rounded-[15px]"
             />
             <Link href={t('videos.sec3.link')}>
-              <BsPlayCircle className="absolute text-white inset-0 z-auto text-7xl w-[76px] h-[76px] m-auto" />
+              <BsPlayCircle className="absolute text-[#FF4014]  inset-0 z-auto text-7xl w-[76px] h-[76px] m-auto" />
             </Link>
           </div>
           <div className="mt-8">
@@ -76,21 +76,3 @@ function Video_Section() {
 }
 
 export default Video_Section;
-
-const data = [
-  {
-    title: 'Demonstration Videos',
-    video_link: 'https://youtu.be/_ahG22s9vh0',
-    image: Moka,
-  },
-  {
-    title: 'Back-office Tutorials',
-    video_link: 'https://youtu.be/_ahG22s9vh0',
-    image: MokaBackend,
-  },
-  {
-    title: 'About anypos',
-    video_link: 'https://www.youtube.com/watch?v=5thFvlw2zNo&ab_channel=anypos',
-    image: MokaAbout,
-  },
-];
