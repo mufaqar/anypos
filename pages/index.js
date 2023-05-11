@@ -21,14 +21,14 @@ export default function Home() {
         <Image
           src="/images/_top.png"
           className="absolute right-0 left-0 -top-1 w-full"
-          alt=""
+          alt="Top Banner"
           width={1840}
           height={236}
         />
         <Image
           src="/images/_bottom.png"
           className="absolute right-0 left-0 -bottom-1 w-full"
-          alt=""
+          alt="bottom background"
           width={1840}
           height={236}
         />

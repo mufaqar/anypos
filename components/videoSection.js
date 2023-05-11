@@ -20,7 +20,7 @@ function Video_Section() {
           <div className="h-[240px] w-full rounded-[15px] relative">
             <Image
               src={Andriod}
-              alt=""
+              alt="Andriod"
               className="object-cover w-full h-full rounded-[15px]"
             />
             <Link href={t('videos.sec1.link')}>
@@ -36,7 +36,7 @@ function Video_Section() {
           <div className=" h-[240x] w-full rounded-[15px] relative">
             <Image
               src={AboutVid}
-              alt=""
+              alt="AboutVid"
               className="object-cover w-full h-full rounded-[15px]"
             />
             <Link href={t('videos.sec2.link')}>
@@ -52,7 +52,7 @@ function Video_Section() {
           <div className="md:h-[240px] h-[240px] w-full rounded-[15px] relative">
             <Image
               src={webportal}
-              alt=""
+              alt="webportal"
               className="object-cover w-full h-full rounded-[15px]"
             />
             <Link href={t('videos.sec3.link')}>

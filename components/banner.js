@@ -69,7 +69,7 @@ export default function Banner() {
       <Image
         src="/images/fondo-banner.png"
         className="absolute -bottom-1 w-full home_en"
-        alt=""
+        alt="background Banner"
         width={1840}
         height={641}
       />
