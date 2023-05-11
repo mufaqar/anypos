@@ -5,27 +5,14 @@ import Features from '../components/features';
 import { useTranslation } from 'next-export-i18n';
 import Application from '../components/application';
 import Video_Section from '../components/videoSection';
-import Script from 'next/script';
+
 
 export default function Home() {
   const { t } = useTranslation();
 
   return (
     <>
-      <Script
-        src="https://www.googletagmanager.com/gtag/js?id=UA-266724692-1"
-        strategy="afterInteractive"
-      />
-      <Script id="google-analytics" strategy="afterInteractive">
-        {`
-          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-          ga('create', 'UA-266724692-1', 'auto');
-          ga('send', 'pageview');
-        `}
-      </Script>
+      
       <Banner />
       <Features />
       <Application />
