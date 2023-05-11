@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+
 const GoogleTagManager = () => {
   useEffect(() => {
     (function (w, d, s, l, i) {
