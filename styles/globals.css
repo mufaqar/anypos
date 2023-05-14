@@ -239,3 +239,9 @@ li {
 .application .slick-track {
   padding-top: 1rem !important;
 }
+
+@media only screen and (max-width: 768px) {
+  .call_sub_banner {
+    font-size: 2rem;
+  }
+}

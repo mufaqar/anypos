@@ -61,7 +61,6 @@ export default function Home() {
           <div className="md:pl-20 ">
             <h3 className="call_banner">{t('mobile_banner.sub_title')}</h3>
             <h2 className="call_sub_banner">{t('mobile_banner.title')}</h2>
-
             <button
               className=" items-center gap-2 p-3 px-[10px] md:px-7 text-sm font-semibold uppercase inline-flex mt-5 cursor-pointer bg-[#5DCCDA]   shadow-sm rounded-md hover:shadow-lg text-white"
               rel="noreferrer"
