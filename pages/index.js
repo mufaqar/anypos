@@ -1,18 +1,38 @@
 import Image from 'next/image';
+import React from 'react';
 import Link from 'next/link';
 import Banner from '../components/banner';
 import Features from '../components/features';
 import { useTranslation } from 'next-export-i18n';
 import Application from '../components/application';
 import Video_Section from '../components/videoSection';
-
+import Modal from 'react-modal';
+import { FaPlay } from 'react-icons/fa';
+const customStyles = {
+  content: {
+    top: '50%',
+    left: '50%',
+    right: 'auto',
+    bottom: 'auto',
+    marginRight: '-50%',
+    transform: 'translate(-50%, -50%)',
+  },
+  overlay: { zIndex: 1000 },
+};
 
 export default function Home() {
   const { t } = useTranslation();
+  const [modalIsOpen, setIsOpen] = React.useState(false);
+  function openModal() {
+    setIsOpen(true);
+  }
+
+  function closeModal() {
+    setIsOpen(false);
+  }
 
   return (
     <>
-      
       <Banner />
       <Features />
       <Application />
@@ -41,12 +61,15 @@ export default function Home() {
           <div className="md:pl-20 ">
             <h3 className="call_banner">{t('mobile_banner.sub_title')}</h3>
             <h2 className="call_sub_banner">{t('mobile_banner.title')}</h2>
-            <Link
-              className=" items-center gap-3 p-3 px-4 md:px-7 font-semibold uppercase inline-flex mt-5 cursor-pointer bg-[#5DCCDA]  shadow-sm rounded-md hover:shadow-lg text-white"
-              href="https://portal.anypos.app/register"
+
+            <button
+              className=" items-center gap-2 p-3 px-[10px] md:px-7 text-sm font-semibold uppercase inline-flex mt-5 cursor-pointer bg-[#5DCCDA]   shadow-sm rounded-md hover:shadow-lg text-white"
+              rel="noreferrer"
+              onClick={openModal}
             >
-              {t('mobile_banner.btn')}
-            </Link>
+              <FaPlay color="#fff" size={20} className="play_icon" />
+              <span> {t('banner.watch_video')} </span>
+            </button>
           </div>
         </div>
       </section>
@@ -101,6 +124,38 @@ export default function Home() {
               </div>
             );
           })}
+        </div>
+
+        <div className="z-[2]">
+          <Modal
+            isOpen={modalIsOpen}
+            onRequestClose={closeModal}
+            style={customStyles}
+            contentLabel="Example Modal"
+          >
+            <div>
+              {/* <iframe
+              frameborder="0"
+              scrolling="no"
+              marginheight="0"
+              marginwidth="0"
+              width="788.54"
+              height="443"
+              type="text/html"
+              src={`${t('banner.video_link')}`}
+            ></iframe> */}
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/EUc6BeAmCo4"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <button onClick={closeModal}>close</button>
+          </Modal>
         </div>
       </section>
 
