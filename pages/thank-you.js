@@ -34,7 +34,7 @@ export default function Thanks() {
         />
       </section>
 
-      <div className="max-w-[650px] w-full relative  mt-[-750px] mx-auto  items-center md:pl-20 banner bg-white rounded-3xl text-center ">
+      <div className="max-w-[650px] w-full relative  mt-[-750px] mx-auto  items-center banner bg-white rounded-3xl text-center p-7 ">
         <div className="flex flex-col justify-center items-center">
           <figure className="bg-[#5DCCDA] rounded-full p-6 flex  justify-center items-center my-5">
             <Image
@@ -52,13 +52,17 @@ export default function Thanks() {
             We appreciate your trust in our platform and welcome you to our
             community.
           </h2>
-          <h3 className="text-black md:text-[20px] leading-[1em] font-medium tracking-[0.5px] mb-4">
+          <h3 className="text-black md:text-[18px] leading-[1.2em] font-medium tracking-[0.5px] mb-4">
             As a member of AnyPos, you'll have access to exclusive features and
             updates. If you have any questions or concerns, our customer support
-            team is here to help at +966115207077 or you may schedule a demo
-            with our experts.
+            team is here to help at{' '}
+            <Link href="tel:+966115207077">
+              {' '}
+              <span className="text-[#5DCCDA]">+966115207077</span>
+            </Link>{' '}
+            or you may schedule a demo with our experts.
           </h3>
-          <h3 className="text-black md:text-[20px] leading-[1em] font-medium tracking-[0.5px] mb-4">
+          <h3 className="text-black md:text-[18px] leading-[1.2em] font-medium tracking-[0.5px] mb-4">
             Thank you again for choosing AnyPos. We look forward to providing
             you with the best possible service and experience.
           </h3>
