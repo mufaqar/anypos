@@ -46,25 +46,21 @@ export default function Thanks() {
             />
           </figure>
           <h1 className="text-black md:text-[20px] leading-[1em] font-medium tracking-[0.5px] mb-4">
-            Thank you for Signing Up with AnyPOS!
+            {t('thanks.title')}
           </h1>
           <h2 className="text-black text-[24px] leading-[1.6em] font-bold tracking-[0.5px] mb-4">
-            We appreciate your trust in our platform and welcome you to our
-            community.
+            {t('thanks.heading')}
           </h2>
           <h3 className="text-black md:text-[18px] leading-[1.2em] font-medium tracking-[0.5px] mb-4">
-            As a member of AnyPos, you'll have access to exclusive features and
-            updates. If you have any questions or concerns, our customer support
-            team is here to help at{' '}
+            {t('thanks.beforetel')}
             <Link href="tel:+966115207077">
               {' '}
-              <span className="text-[#5DCCDA]">+966115207077</span>
+              <span className="text-[#5DCCDA]">+ {t('thanks.mobile')}</span>
             </Link>{' '}
-            or you may schedule a demo with our experts.
+            {t('thanks.aftertel')}
           </h3>
           <h3 className="text-black md:text-[18px] leading-[1.2em] font-medium tracking-[0.5px] mb-4">
-            Thank you again for choosing AnyPos. We look forward to providing
-            you with the best possible service and experience.
+            {t('thanks.message')}
           </h3>
         </div>
       </div>

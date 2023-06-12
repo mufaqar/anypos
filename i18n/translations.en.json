@@ -134,6 +134,15 @@
         "title":"Unbeatable pricing!",
         "info":"Our transparent billing plans are budget-friendly and great for your business. Get 12 months free."
       }
+    },
+     "thanks": {  
+      "title": "Thank you for Signing Up with AnyPOS!",
+      "heading": " We appreciate your trust in our platform and welcome you to our community.",
+      "beforetel": " As a member of AnyPos, you'll have access to exclusive features and updates. If you have any questions or concerns, our customer support  team is here to help at{' '}",
+      "aftertel":" or you may schedule a demo with our experts.",
+      "message":"Thank you again for choosing AnyPos. We look forward to providing you with the best possible service and experience.",    
+      "mobile": "+966 11 52 07 077 "
+
     }
   }
 }
