@@ -23,7 +23,7 @@ export default function Thanks() {
           alt="circle"
           width={280}
           height={300}
-          className="-bottom-28 right-0 absolute circle_en"
+          className="-bottom-10 right-0 absolute circle_en"
         />
         <Image
           src="/images/c2.svg"
