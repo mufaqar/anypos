@@ -63,6 +63,9 @@ export default function Footer() {
           <div className="mt-10 md:mt-0">
             <ul className="flex flex-col gap-4">
               <li className="flex gap-2 justify-start text-white  font-extralight text-lg items-start">
+                {t('footer.c_name')}
+              </li>
+              <li className="flex gap-2 justify-start text-white  font-extralight text-lg items-start">
                 <HiLocationMarker size={35} />
 
                 {t('footer.address')}

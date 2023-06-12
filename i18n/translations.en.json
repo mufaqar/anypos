@@ -10,7 +10,7 @@
     },
     "banner": {
       "title": "Simple solution for",
-      "heading": "Simplified Invoice",
+      "heading": "Simplified E-invoicing",
       "sub_heading": "Point of sale in any device.",
       "btn_text": "Talk to an Expert",
       "watch_video": "Watch video",
@@ -72,6 +72,7 @@
     },
     "footer": {  
       "copyright": "© anypos  2022, All Rights Reserved",
+        "c_name": "Modern Sale Technology for IT",
       "address": "Abi Bakr As Siddiq Rd, exit6 , Riyadh 13712",
       "pp":"Privacy Policy",
       "tu":"Website Term of Uses",
