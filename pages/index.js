@@ -6,6 +6,13 @@ import Features from '../components/features';
 import { useTranslation } from 'next-export-i18n';
 import Application from '../components/application';
 import Video_Section from '../components/videoSection';
+
+import Solutions from '../components/solutions'
+import Clients_Sec from '../components/clients'
+import Business_Sec from '../components/business'
+
+
+
 import Modal from 'react-modal';
 import { FaPlay } from 'react-icons/fa';
 const customStyles = {
@@ -35,7 +42,9 @@ export default function Home() {
     <>
       <Banner />
       <Features />
+      <Solutions />
       <Application />
+      <Clients_Sec />
       <section
         id="home"
         className="main gap-16 flex flex-col justify-center items-center relative h-[700px] xl:h-[800px] "
@@ -72,6 +81,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <Business_Sec />
       <section
         id="contact"
         className="container relative mx-auto my-20 gap-10 md:gap-28 md:flex"
