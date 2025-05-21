@@ -22,7 +22,7 @@ function Business_Sec() {
                         </h5>
                     </div>
                     <div className='max-w-[371px] h-[301px] grid justify-center items-end bg-white drop-shadow-[0_3px_6px_rgba(0,0,0,0.17)] py-7 px-10 rounded-md'>
-                        <Image src="/images/business/4.png" alt="business/4.png" width={223} height={154} />
+                        <Image src="/images/business/cafe.jpg" alt="cafe" width={223} height={154} />
                         <h5 className='text-2xl font-normal text-[#212030] text-center'>
                             Cafe
                         </h5>
